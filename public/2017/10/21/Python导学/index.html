@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-tw,en,default">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+  
+  
+    
+      
+    
+    
+      
+    
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  <link href="//cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icont.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=6.6.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=6.6.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+
+
+
+  <meta name="msapplication-config" content="/images/browserconfig.xml">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.6.0',
+    sidebar: {"position":"left","width":240,"display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Python导学 Life is short,I use Python!  面向对象 已经深入系统学习过一门语言(包括matlab) 刚入门计算机专业  如果是以上情况之一，欢迎试水。如果接触很泛，建议不要跳水。对英文抵触、习惯于汉化软件、中文命名的请绕道(祝你成功)">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python导学">
+<meta property="og:url" content="https://blog.makergyt.com/2017/10/21/Python导学/index.html">
+<meta property="og:site_name" content="一骑白马开无疆的博客">
+<meta property="og:description" content="Python导学 Life is short,I use Python!  面向对象 已经深入系统学习过一门语言(包括matlab) 刚入门计算机专业  如果是以上情况之一，欢迎试水。如果接触很泛，建议不要跳水。对英文抵触、习惯于汉化软件、中文命名的请绕道(祝你成功)">
+<meta property="og:locale" content="zh-tw">
+<meta property="og:image" content="http://dxstudio.cc/md/imgs/list.png">
+<meta property="og:image" content="http://dxstudio.cc/md/game.png">
+<meta property="og:updated_time" content="2018-12-27T04:04:49.887Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python导学">
+<meta name="twitter:description" content="Python导学 Life is short,I use Python!  面向对象 已经深入系统学习过一门语言(包括matlab) 刚入门计算机专业  如果是以上情况之一，欢迎试水。如果接触很泛，建议不要跳水。对英文抵触、习惯于汉化软件、中文命名的请绕道(祝你成功)">
+<meta name="twitter:image" content="http://dxstudio.cc/md/imgs/list.png">
+
+
+
+
+
+
+  <link rel="canonical" href="https://blog.makergyt.com/2017/10/21/Python导学/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Python导学 | 一骑白马开无疆的博客</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion .logo-line-before i { left: initial; }
+    .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-tw">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">一骑白马开无疆的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+      <a>
+        <img class="custom-logo-image" src="/images/favicon-32x32.png" alt="一骑白马开无疆的博客">
+      </a>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+    <div class="reading-progress-bar"></div>
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2017/10/21/Python导学/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="makergyt">
+      <meta itemprop="description" content="技术回归艺术">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="一骑白马开无疆的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Python导学
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2017-10-21 07:06:36" itemprop="dateCreated datePublished" datetime="2017-10-21T07:06:36+08:00">2017-10-21</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-12-27 12:04:49" itemprop="dateModified" datetime="2018-12-27T12:04:49+08:00">2018-12-27</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">6.9k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">6 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="Python导学"><a href="#Python导学" class="headerlink" title="Python导学"></a>Python导学</h2><blockquote>
+<p>Life is short,I use Python!</p>
+</blockquote>
+<h4 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h4><ul>
+<li>已经深入系统学习过一门语言(包括matlab)</li>
+<li>刚入门计算机专业</li>
+</ul>
+<p>如果是以上情况之一，欢迎试水。如果接触很泛，建议不要跳水。对英文抵触、习惯于汉化软件、中文命名的请<a href="http://www.pythondoc.com/" target="_blank" rel="noopener">绕道</a>(祝你成功)</p>
+<a id="more"></a>
+<h4 id="学习准备"><a href="#学习准备" class="headerlink" title="学习准备"></a>学习准备</h4><ul>
+<li>学习环境：<a href="https://repo.continuum.io/archive/Anaconda3-5.0.0.1-Linux-x86_64.sh" target="_blank" rel="noopener">Anaconda 5.0.0</a></li>
+<li>编辑器：<a href="https://www.sublimetext.com/" target="_blank" rel="noopener">sublime text 3143</a></li>
+<li>虚拟机：<a href="http://sw.bos.baidu.com/sw-search-sp/software/aff3469fe5f99/VMware-workstation-full-12.5.7.20721.exe" target="_blank" rel="noopener">VMwarePro 12</a></li>
+<li>Linux镜像：<a href="http://blog.csdn.net/zhu_xun/article/details/16921413" target="_blank" rel="noopener">Ubuntu 16.04</a></li>
+</ul>
+<p>(建议用迅雷)下载以上文件到本地，1/2/3的安装步骤自行百度</p>
+<h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><ul>
+<li>Python介绍:<a href="https://baike.baidu.com/item/Python/407313" target="_blank" rel="noopener">中</a>     <a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29" target="_blank" rel="noopener">英</a></li>
+<li>计算机语言类型：<a href="http://blog.csdn.net/zhu_xun/article/details/16921413" target="_blank" rel="noopener">编译型和解释型的区别</a></li>
+</ul>
+<p>如果你对以上知识不了解请提前补充</p>
+<h4 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h4><p>通过本文，你将学会：</p>
+<ul>
+<li>配置Python运行环境，在Anaconda下运行python</li>
+<li>了解Python的基础知识及与其他语言的区别及优势</li>
+<li>学会配置虚拟机，在linux默认环境下运行python</li>
+<li>练习用Python写一个贪吃蛇游戏<br>更重要的是你能够明确自己的学习途径及计划</li>
+</ul>
+<h4 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h4><ul>
+<li>慕课：<a href="http://www.icourse163.org/u/1732151471?userId=4462001" target="_blank" rel="noopener">嵩天</a></li>
+<li>教程：<a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="noopener">廖雪峰</a></li>
+<li>参考：<a href="https://docs.python.org/3/" target="_blank" rel="noopener">官方文档</a></li>
+</ul>
+<p>一个Python实例代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Fibonacci series up to n</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="function"><span class="keyword">def</span> <span class="title">fib</span><span class="params">(n)</span>:</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>    a, b = <span class="number">0</span>, <span class="number">1</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>    <span class="keyword">while</span> a &lt; n:</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>        print(a, end=<span class="string">' '</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>        a, b = b, a+b</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>    print()</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>fib(<span class="number">1000</span>)</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h3><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>   现在切入正题，首先为什么是要学习python？<br>首先因为这是个讲求效率的时代，当然这里Python的效率在于其开发效率，你可以试下用其他语言写上面的斐波那契数列。在运行效率上依然C/C++是首位，这是毋庸置疑的。然而在计算资源不再是问题的现在，开发效率显得极其重要。Python没有复杂晦涩的语法概念，它更像是为人类语言设计的，更多的面向算法实现而不是考虑底层实现机制，这与C++或者Java有很大不同。就语言本身来看，它始终基于自身不断迭代而不像其他语言不断新增各种各样的库或者包，让开发者应接不暇。当然也由于要“脱胎换骨“，不得不壮士断腕，于是形成2.7和3.x版本不兼容的”脾气“，这一点也让很多人苦恼。</p>
+<p>   其次，Python现在太受欢迎了。在今年10月10日召开的<a href="https://octoverse.github.com/" target="_blank" rel="noopener">Github Universe</a>大会上，根据发布的Github Octoverse报告显示，Python已代替Java从去年的第三突进到了第二（第一是js），新增了40%的Pull。不是我们追风，而是在很多开源项目中，越来越多的开发者选择使用Python，尤其是一些大公司(联盟)主导的开源项目，例如被fork最多的TensorFlow（谷歌开发的深度学习平台），开发者不可避免的要去使用进而也就必须要学习。这是一个提高语言热度的良性循环。<br>   因而，正如本文开始提到的，越来越多的开发者在感慨”人生苦短“了。<br><img src="http://dxstudio.cc/md/imgs/list.png" alt="语言排行"></p>
+<p>   然后是Python能干什么？<br>在此之前，相信你也听说过爬虫、图像处理，对，如果使用python编写，这将变得十分容易。在研究领域，Python可以很快的将算法付诸实现，从而让研究者有更多精力去测试并改进算法而不必把时间耗费在语言工具上，这也正是在机器学习领域python更受欢迎的原因。</p>
+<h4 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h4><p>1.安装环境<br>主要分为两种，</p>
+<ul>
+<li>在windows64平台上,集成了<code>python3.6</code>的<a href="https://docs.anaconda.com/anaconda/install/windows" target="_blank" rel="noopener">Anaconda</a>。点击查看安装步骤，也可以参考<a href="https://jingyan.baidu.com/article/7908e85c9e4725af481ad2e2.html" target="_blank" rel="noopener">这个</a>不过不全面。<br><strong>注意</strong>：不用勾选add to environment path和register to …,安装路径不要含中文、空格(这些都在官方文档有所说明，所以还是建议看文档)</li>
+<li>在Ubuntu16.04平台上，内置的<code>python2.7</code>。在此之前需要先安装<a href="https://jingyan.baidu.com/article/c275f6ba07e269e33d756714.html" target="_blank" rel="noopener">VMware</a>,一个虚拟机软件，便于在win平台上运行ubuntu系统。或者你也可以选择安装双系统，当然目前不推荐。<strong>注意</strong>：一般会遇到两个问题，<a href="https://jingyan.baidu.com/article/3065b3b6e8dedabecff8a435.html" target="_blank" rel="noopener">安装VMtools</a>用于与主机的文件交互，<a href="http://blog.csdn.net/jjmjeffrey/article/details/54972676" target="_blank" rel="noopener">网络无法连接</a>,耐心试错，参照解决。</li>
+</ul>
+<p>其实也可以在一个平台上配置两种版本的环境，不过在当前只是入门的情况下，还是隔离开学习比较好。使用Ubuntu也可以顺便学习linux的基本操作</p>
+<p>测试已正确安装</p>
+<ul>
+<li><p>win:找到Anaconda prompt右键管理员运行，键入<code>python</code>,出现欢迎语和版本，前面提示符变为&gt;&gt;,试一下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;<span class="keyword">print</span> <span class="string">"hello python"</span></span><br><span class="line"><span class="comment">#有结果即安装成功。</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>linux:左上方找到terminal，键入<code>python</code>,出现欢迎语和版本,前面提示符变为&gt;&gt;,试一下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;<span class="keyword">print</span> <span class="string">"hello ubuntu"</span></span><br><span class="line"><span class="comment">#有结果即安装成功。</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.安装sublime</p>
+<ul>
+<li>win:直接下载安装，默认到底</li>
+<li>linux:通过apt方式安装<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">~$ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -</span><br><span class="line">~$ sudo apt-get install apt-transport-https</span><br><span class="line">~$ echo &quot;deb https://download.sublimetext.com/ apt/stable/&quot; | sudo tee /etc/apt/sources.list.d/sublime-text.list</span><br><span class="line">~$ sudo apt-get update</span><br><span class="line">~$ sudo apt-get install sublime-text</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="学习基本知识"><a href="#学习基本知识" class="headerlink" title="学习基本知识"></a>学习基本知识</h4><p>一般学习一门语言，都会从运行机制然后是基础语法入手。为了便于语言选择的迁移，几乎所有语言的基础语法都是类似的，如变量类型、逻辑关系、逻辑式等等，接着是函数定义。因此如果你已经系统学习过一门语言，上手其他是很容易的。<br>学习基础语法还是要参考<a href="https://docs.python.org/3/tutorial/index.html" target="_blank" rel="noopener">官方文档</a>,更加细致权威，这里阅读1~8节即可，有语言基础的可以很容易就扫过，读取差异即可。</p>
+<h3 id="练手"><a href="#练手" class="headerlink" title="练手"></a>练手</h3><ul>
+<li>爬虫:推荐一个<a href="http://www.ehcoblog.ml/post/1/" target="_blank" rel="noopener">系列</a></li>
+<li>web编程:推荐一个<a href="https://zhuanlan.zhihu.com/p/29685446" target="_blank" rel="noopener">专栏</a></li>
+<li>游戏：推荐这个<a href="http://eyehere.net/2011/python-pygame-novice-professional-index/" target="_blank" rel="noopener">blog</a></li>
+</ul>
+<p>在这里，以贪吃蛇游戏为例介绍。</p>
+<h4 id="基本环境"><a href="#基本环境" class="headerlink" title="基本环境"></a>基本环境</h4><ul>
+<li>系统：Ubuntu16.04</li>
+<li>版本：Python2.7</li>
+<li>第三方库：pygame1.9.3</li>
+<li>编辑器：sublime text3143</li>
+<li>效果如图</li>
+</ul>
+<p><img src="http://dxstudio.cc/md/game.png" alt="贪吃蛇"></p>
+<p>操作方法：<br>上下左右键或wsad键控制<br>ESC键退出游戏</p>
+<h4 id="练习一下"><a href="#练习一下" class="headerlink" title="练习一下"></a>练习一下</h4><p><strong>注意</strong>：安装库需要pip方式，打开terminal,键入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">~$ sudo apt-get install python-pip</span><br><span class="line">~$ sudo apt-get install python-pip python-dev</span><br><span class="line">~$ sudo pip install --upgrade pip</span><br><span class="line">#确认安装好pip：</span><br><span class="line">~$ pip -V</span><br><span class="line">#会出现版本号即pip安装成功</span><br><span class="line">~$ pip install pygame</span><br></pre></td></tr></table></figure></p>
+<p>进入python终端<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;<span class="keyword">import</span> pygame</span><br><span class="line">&gt;&gt;&gt;<span class="keyword">print</span> pygame.ver</span><br><span class="line"><span class="comment">##可看到版本号成功</span></span><br></pre></td></tr></table></figure></p>
+<p>可以继续在解释器终端编写；也可以先写好snake.py脚本（用sublime,也可以用vim，推荐前者），然后在命令行用<code>python snake.py</code>执行（推荐这种）<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pygame,sys,time,random</span><br><span class="line"><span class="keyword">from</span> pygame.locals <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">redColour = pygame.Color(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">blackColour = pygame.Color(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">whiteColour = pygame.Color(<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>)</span><br><span class="line">greyColour = pygame.Color(<span class="number">150</span>,<span class="number">150</span>,<span class="number">150</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gameOver</span><span class="params">(playSurface)</span>:</span></span><br><span class="line">    gameOverFont = font = pygame.font.SysFont(<span class="keyword">None</span>, <span class="number">48</span>)</span><br><span class="line">    gameOverSurf = gameOverFont.render(<span class="string">'Game Over'</span>, <span class="keyword">True</span>, greyColour)</span><br><span class="line">    gameOverRect = gameOverSurf.get_rect()</span><br><span class="line">    gameOverRect.midtop = (<span class="number">320</span>, <span class="number">10</span>)</span><br><span class="line">    playSurface.blit(gameOverSurf, gameOverRect)</span><br><span class="line">    pygame.display.flip()</span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br><span class="line">    pygame.quit()</span><br><span class="line">    sys.exit()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">  </span><br><span class="line">    pygame.init()</span><br><span class="line">    pygame.font.init()</span><br><span class="line">    fpsClock = pygame.time.Clock()</span><br><span class="line">   </span><br><span class="line">    playSurface = pygame.display.set_mode((<span class="number">640</span>,<span class="number">480</span>))</span><br><span class="line">    pygame.display.set_caption(<span class="string">'Raspberry Snake'</span>)</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">    snakePosition = [<span class="number">100</span>,<span class="number">100</span>]</span><br><span class="line">    snakeSegments = [[<span class="number">100</span>,<span class="number">100</span>],[<span class="number">80</span>,<span class="number">100</span>],[<span class="number">60</span>,<span class="number">100</span>]]</span><br><span class="line">    raspberryPosition = [<span class="number">300</span>,<span class="number">300</span>]</span><br><span class="line">    raspberrySpawned = <span class="number">1</span></span><br><span class="line">    direction = <span class="string">'right'</span></span><br><span class="line">    changeDirection = direction</span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> event <span class="keyword">in</span> pygame.event.get():</span><br><span class="line">            <span class="keyword">if</span> event.type == QUIT:</span><br><span class="line">                pygame.quit()</span><br><span class="line">                sys.exit()</span><br><span class="line">            <span class="keyword">elif</span> event.type == KEYDOWN:</span><br><span class="line">                </span><br><span class="line">                <span class="keyword">if</span> event.key == K_RIGHT <span class="keyword">or</span> event.key == ord(<span class="string">'d'</span>):</span><br><span class="line">                    changeDirection = <span class="string">'right'</span></span><br><span class="line">                <span class="keyword">if</span> event.key == K_LEFT <span class="keyword">or</span> event.key == ord(<span class="string">'a'</span>):</span><br><span class="line">                    changeDirection = <span class="string">'left'</span></span><br><span class="line">                <span class="keyword">if</span> event.key == K_UP <span class="keyword">or</span> event.key == ord(<span class="string">'w'</span>):</span><br><span class="line">                    changeDirection = <span class="string">'up'</span></span><br><span class="line">                <span class="keyword">if</span> event.key == K_DOWN <span class="keyword">or</span> event.key == ord(<span class="string">'s'</span>):</span><br><span class="line">                    changeDirection = <span class="string">'down'</span></span><br><span class="line">                <span class="keyword">if</span> event.key == K_ESCAPE:</span><br><span class="line">                    pygame.event.post(pygame.event.Event(QUIT))</span><br><span class="line">       </span><br><span class="line">        <span class="keyword">if</span> changeDirection == <span class="string">'right'</span> <span class="keyword">and</span> <span class="keyword">not</span> direction == <span class="string">'left'</span>:</span><br><span class="line">            direction = changeDirection</span><br><span class="line">        <span class="keyword">if</span> changeDirection == <span class="string">'left'</span> <span class="keyword">and</span> <span class="keyword">not</span> direction == <span class="string">'right'</span>:</span><br><span class="line">            direction = changeDirection</span><br><span class="line">        <span class="keyword">if</span> changeDirection == <span class="string">'up'</span> <span class="keyword">and</span> <span class="keyword">not</span> direction == <span class="string">'down'</span>:</span><br><span class="line">            direction = changeDirection</span><br><span class="line">        <span class="keyword">if</span> changeDirection == <span class="string">'down'</span> <span class="keyword">and</span> <span class="keyword">not</span> direction == <span class="string">'up'</span>:</span><br><span class="line">            direction = changeDirection</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> direction == <span class="string">'right'</span>:</span><br><span class="line">            snakePosition[<span class="number">0</span>] += <span class="number">20</span></span><br><span class="line">        <span class="keyword">if</span> direction == <span class="string">'left'</span>:</span><br><span class="line">            snakePosition[<span class="number">0</span>] -= <span class="number">20</span></span><br><span class="line">        <span class="keyword">if</span> direction == <span class="string">'up'</span>:</span><br><span class="line">            snakePosition[<span class="number">1</span>] -= <span class="number">20</span></span><br><span class="line">        <span class="keyword">if</span> direction == <span class="string">'down'</span>:</span><br><span class="line">            snakePosition[<span class="number">1</span>] += <span class="number">20</span></span><br><span class="line">      </span><br><span class="line">        snakeSegments.insert(<span class="number">0</span>,list(snakePosition))</span><br><span class="line">       </span><br><span class="line">        <span class="keyword">if</span> snakePosition[<span class="number">0</span>] == raspberryPosition[<span class="number">0</span>] <span class="keyword">and</span> snakePosition[<span class="number">1</span>] == raspberryPosition[<span class="number">1</span>]:</span><br><span class="line">            raspberrySpawned = <span class="number">0</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            snakeSegments.pop()</span><br><span class="line">       </span><br><span class="line">        <span class="keyword">if</span> raspberrySpawned == <span class="number">0</span>:</span><br><span class="line">            x = random.randrange(<span class="number">1</span>,<span class="number">32</span>)</span><br><span class="line">            y = random.randrange(<span class="number">1</span>,<span class="number">24</span>)</span><br><span class="line">            raspberryPosition = [int(x*<span class="number">20</span>),int(y*<span class="number">20</span>)]</span><br><span class="line">            raspberrySpawned = <span class="number">1</span></span><br><span class="line">      </span><br><span class="line">        playSurface.fill(blackColour)</span><br><span class="line">        <span class="keyword">for</span> position <span class="keyword">in</span> snakeSegments:</span><br><span class="line">            pygame.draw.rect(playSurface,whiteColour,Rect(position[<span class="number">0</span>],position[<span class="number">1</span>],<span class="number">20</span>,<span class="number">20</span>))</span><br><span class="line">            pygame.draw.rect(playSurface,redColour,Rect(raspberryPosition[<span class="number">0</span>], raspberryPosition[<span class="number">1</span>],<span class="number">20</span>,<span class="number">20</span>))</span><br><span class="line"></span><br><span class="line">      </span><br><span class="line">        pygame.display.flip()</span><br><span class="line">       </span><br><span class="line">        <span class="keyword">if</span> snakePosition[<span class="number">0</span>] &gt; <span class="number">620</span> <span class="keyword">or</span> snakePosition[<span class="number">0</span>] &lt; <span class="number">0</span>:</span><br><span class="line">            gameOver(playSurface)</span><br><span class="line">        <span class="keyword">if</span> snakePosition[<span class="number">1</span>] &gt; <span class="number">460</span> <span class="keyword">or</span> snakePosition[<span class="number">1</span>] &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">for</span> snakeBody <span class="keyword">in</span> snakeSegments[<span class="number">1</span>:]:</span><br><span class="line">                <span class="keyword">if</span> snakePosition[<span class="number">0</span>] == snakeBody[<span class="number">0</span>] <span class="keyword">and</span> snakePosition[<span class="number">1</span>] == snakeBody[<span class="number">1</span>]:</span><br><span class="line">                    gameOver(playSurface)</span><br><span class="line">       </span><br><span class="line">        fpsClock.tick(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></p>
+<p><em>本文仅作为过程性记录，不具有一般适用性，本文采用<a href="https://makergyt.com/md" target="_blank" rel="noopener">https://makergyt.com/md</a> 构建</em></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/qrcode.jpg" alt="makergyt wechat" style="width: 200px; max-width: 100%;">
+    <div>Scan the code, meet me and you.</div>
+</div>
+
+      </div>
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="makergyt WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"># python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/14/TensorFLow1-3文档中文翻译之1-0-0安装/" rel="next" title="TensorFLow1.3文档中文翻译之1.0.0安装">
+                <i class="fa fa-chevron-left"></i> TensorFLow1.3文档中文翻译之1.0.0安装
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/03/安装matlab/" rel="prev" title="安装matlab">
+                安装matlab <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div id="gitalk-container">
+    </div>
+    
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">makergyt</p>
+              <p class="site-description motion-element" itemprop="description">技术回归艺术</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives">
+                
+                    <span class="site-state-item-count">27</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/makergyt" title="GitHub &rarr; https://github.com/makergyt" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="/about/" title="E-Mail &rarr; /about/"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/u/5165628041" title="Weibo &rarr; https://weibo.com/u/5165628041" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/makergyt1" title="Twitter &rarr; https://twitter.com/makergyt1" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.facebook.com/makergyt" title="FB Page &rarr; https://www.facebook.com/makergyt" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.500px.com/makergyt" title="500PX &rarr; https://www.500px.com/makergyt" rel="noopener" target="_blank"><i class="fa fa-fw fa-500px"></i>500PX</a>
+                </span>
+              
+            </div>
+          
+
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+             </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Other Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://vpn.makergyt.com" title="https://vpn.makergyt.com" rel="noopener" target="_blank">vpn</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python导学"><span class="nav-number">1.</span> <span class="nav-text">Python导学</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#面向对象"><span class="nav-number">1.0.1.</span> <span class="nav-text">面向对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习准备"><span class="nav-number">1.0.2.</span> <span class="nav-text">学习准备</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基础知识"><span class="nav-number">1.0.3.</span> <span class="nav-text">基础知识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#目标"><span class="nav-number">1.0.4.</span> <span class="nav-text">目标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习资源"><span class="nav-number">1.0.5.</span> <span class="nav-text">学习资源</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开始"><span class="nav-number">1.1.</span> <span class="nav-text">开始</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言"><span class="nav-number">1.1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#准备"><span class="nav-number">1.1.2.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习基本知识"><span class="nav-number">1.1.3.</span> <span class="nav-text">学习基本知识</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#练手"><span class="nav-number">1.2.</span> <span class="nav-text">练手</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本环境"><span class="nav-number">1.2.1.</span> <span class="nav-text">基本环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#练习一下"><span class="nav-number">1.2.2.</span> <span class="nav-text">练习一下</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">  <a href="http://www.miitbeian.gov.cn" rel="noopener" target="_blank">陕ICP备16017712号-1 </a>&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">makergyt</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="Symbols count total">69k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="Reading time total">1:03</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+      <div>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=5c245c67b6b62bec" async="async"></script>
+</div>
+
+      </div>
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+      
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest-nomobile.min.js"></script>
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+    <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/three.min.js"></script>
+  
+
+  
+  
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/three-waves.min.js"></script>
+  
+
+  
+  
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_lines.min.js"></script>
+  
+
+  
+  
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_sphere.min.js"></script>
+  
+
+  
+  
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"></script>
+  
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.6.0"></script>
+
+  <script src="/js/src/motion.js?v=6.6.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.6.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+
+  
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.css">
+
+  
+  
+  <script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+   <script>
+        var gitalk = new Gitalk({
+          clientID: '64a9c28ff540acfb8d4b',
+          clientSecret: '647cb5af47a926a76f6eb1d1001fe8a5230dd0b0',
+          repo: 'makergyt.github.io',
+          owner: 'MakerGYT',
+          admin: ['MakerGYT'],
+          id: md5(location.pathname),
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+       </script>
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  <script src="/js/src/js.cookie.js?v=6.6.0"></script>
+  <script src="/js/src/scroll-cookie.js?v=6.6.0"></script>
+
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var range = document.createRange(); //For Chrome
+        var sel = window.getSelection(); //For Chrome
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; //Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.value = code;
+        ta.textContent = code; //For FireFox
+        ta.contentEditable = true;
+        ta.readOnly = false;
+        document.body.appendChild(ta);
+        range.selectNode(ta);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        ta.setSelectionRange(0, code.length);
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('Copied');
+          else $(this).text('Copy failed');
+        
+        ta.blur(); //For iOS
+        $(this).blur();
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function () {
+          $b.text('Copy');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
+
+  
+
+</body>
+</html>
