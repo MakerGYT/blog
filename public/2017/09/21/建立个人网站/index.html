@@ -196,7 +196,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-tw">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
 
   
   
@@ -206,7 +206,7 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta custom-logo">
     
@@ -355,20 +355,20 @@
     <div class="reading-progress-bar"></div>
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2017/09/21/建立个人网站/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="makergyt">
       <meta itemprop="description" content="技术回归艺术">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="一骑白马开无疆的博客">
     </span>
 
@@ -488,7 +488,7 @@
 <p>完成学生认证后，是直接获取支付宝认证信息，一步完成，就能使用这种优惠，<em>购买时记得选择设置密码而不是密钥，牢记你的密码</em>。然后你进入管理控制台，就能看到你的服务器信息。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3234038-89e0ec0aeb204589.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/3234038-89e0ec0aeb204589.JPG?imageMogr2/auto-orient/strip" data-image-slug="89e0ec0aeb204589" data-width="1342" data-height="527"><br>点击左侧云服务器ECS-&gt;实例，进入操作。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3234038-c92de9e9d0f7238c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" data-original-src="http://upload-images.jianshu.io/upload_images/3234038-c92de9e9d0f7238c.JPG?imageMogr2/auto-orient/strip" data-image-slug="c92de9e9d0f7238c" data-width="1365" data-height="350"><br>启动你服务器，运行中</p>
-<p>配置安全组,左侧安全组-&gt;配置规则-&gt;公网入方向-&gt;快速创建规则<img class="alignnone size-medium wp-image-167" src="http://gaoyuting.org/wp-content/uploads/2017/09/Capture-1-289x300.jpg" alt="" width="289" height="300"><br>端口就先全开了，自定义端口因为我们这里推荐linux系统，填22/22（winserver填3389/3389），授权对象填0.0.0.0/0，表示允许任何地方连接你的服务器，先这样设置（一般没人闲的黑学生机吧）。<br>然后就开始ssh配置，这里使用阿里云的<strong><a href="http://pan.baidu.com/s/1geUK7wJ" target="_blank">一键部署web环境包</a></strong>（密码：h1ac,包含php环境），包含了官方参考文档。安装<a href="http://www.netsarang.com/download/down_xfp.html" target="_blank"><strong>xshel</strong>l</a>(一个与linux通信的软件)和<strong><a href="http://www.netsarang.com/download/down_xfp.html" target="_blank">xftp</a></strong>(一个与服务器进行文件操作的软件)，然后其他的操作文档写的很详细，你也可以参照<strong><a href="http://source.docs.cloudcare.cn/support/tool/web/web_1/" target="_blank">最新官网文档</a></strong>。我这里提几点建议：</p>
+<p>配置安全组,左侧安全组-&gt;配置规则-&gt;公网入方向-&gt;快速创建规则<img class="alignnone size-medium wp-image-167" src="http://gaoyuting.org/wp-content/uploads/2017/09/Capture-1-289x300.jpg" alt width="289" height="300"><br>端口就先全开了，自定义端口因为我们这里推荐linux系统，填22/22（winserver填3389/3389），授权对象填0.0.0.0/0，表示允许任何地方连接你的服务器，先这样设置（一般没人闲的黑学生机吧）。<br>然后就开始ssh配置，这里使用阿里云的<strong><a href="http://pan.baidu.com/s/1geUK7wJ" target="_blank">一键部署web环境包</a></strong>（密码：h1ac,包含php环境），包含了官方参考文档。安装<a href="http://www.netsarang.com/download/down_xfp.html" target="_blank"><strong>xshel</strong>l</a>(一个与linux通信的软件)和<strong><a href="http://www.netsarang.com/download/down_xfp.html" target="_blank">xftp</a></strong>(一个与服务器进行文件操作的软件)，然后其他的操作文档写的很详细，你也可以参照<strong><a href="http://source.docs.cloudcare.cn/support/tool/web/web_1/" target="_blank">最新官网文档</a></strong>。我这里提几点建议：</p>
 <p>web服务器选择Apache就行，因为你桌面调试一般也是这样的，免去兼容的操作。Nginx虽然性能好（我也测试过，确实很强），总有一些新操作，对开发形成难度，建议以后再使用。其他的版本根据你桌面使用的环境，就高不就低。我们的原则是快速入门配置，搭好工具把时间留给学习开发，不要被这些门槛绊住。那些命令行操作慢慢就熟悉了，其实后面使用时只需要知道怎么连接，怎么上传文件即可。</p>
 <p><strong>-&gt;</strong>如果你是安装了php环境，它会默认安装phpwind(一个开源论坛)和phpmyadmin（一个可以在线访问数据库的工具，留着）,因为访问你的IP时，它是指向phpwind的，所以我们可以先卸载掉这个东西，直接指向到你的网站根目录alidata/www/,这样以后就很方便的能访问到下面的不同文件夹内容。这里的操作就需要<strong><a href="http://source.docs.cloudcare.cn/support/tool/web/web_1/" target="_blank">参考官网文档</a></strong>了，也一样很详细。，在修改conf那一步，你要是觉得麻烦可以直接使用我写的<a href="http://pan.baidu.com/s/1skXirtr" target="_blank" rel="noopener">配置文件</a>（密码a3f1）替换掉phpwind.conf</p>
 <p><strong>-&gt;</strong>好了，现在你可以上传几个文件进行测试，浏览器键入IP时如果下面没有index的引导文件，是这样直接显示的，你可以写一个简单的index.html上传看下效果，然后使用手机浏览器，QQ/微信内部打开（发个链接给别人，会自动识别）再访问下，保证正常访问到就说明基本的配置已经成功了。由于微信的安全保护，如果是IP或者没有被他收录的域名，是会跳出提示框，不过也不影响继续能访问到。解决这个的方法就是备案，https认证等等一系列证明你的网站是zhengzhi正确的良站。</p>
@@ -644,7 +644,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">makergyt</p>
               <p class="site-description motion-element" itemprop="description">技术回归艺术</p>
@@ -657,7 +657,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">27</span>
+                    <span class="site-state-item-count">32</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -863,7 +863,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">69k</span>
+    <span title="Symbols count total">75k</span>
   
 
   
@@ -872,7 +872,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">1:03</span>
+    <span title="Reading time total">1:08</span>
   
 </div>
 

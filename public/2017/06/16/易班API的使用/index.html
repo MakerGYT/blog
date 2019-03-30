@@ -191,7 +191,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-tw">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
 
   
   
@@ -201,7 +201,7 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta custom-logo">
     
@@ -350,20 +350,20 @@
     <div class="reading-progress-bar"></div>
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2017/06/16/易班API的使用/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="makergyt">
       <meta itemprop="description" content="技术回归艺术">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="一骑白马开无疆的博客">
     </span>
 
@@ -489,16 +489,16 @@
 <p>1.php环境</p>
 <p>php需要开启CURL，这是文档要求，如果没有启用这个扩展，会报错！</p>
 <p>当然也有其他的要求，不过j后两个一般来说应该都会满足的</p>
-<p><img class="size-medium wp-image-122 alignnone" src="http://gaoyuting.org/wp-content/uploads/2017/06/Capture-300x95.jpg" alt="" width="300" height="95">。</p>
+<p><img class="size-medium wp-image-122 alignnone" src="http://gaoyuting.org/wp-content/uploads/2017/06/Capture-300x95.jpg" alt width="300" height="95">。</p>
 <p>那么如果不支持curl扩展该怎么办呢？当然，你可以参照网上那堆资料<a href="http://blog.163.com/ymboy@126/blog/static/2871108420108253201587/" target="_blank" rel="noopener">http://blog.163.com/ymboy@126/blog/static/2871108420108253201587/</a>，不过我的经验是，可能是机子的特色，无论是改php.ini还是copy那些.dll文件到system32，亲测无效！那么简单粗暴的方式是重新配置升级php服务器（也别太高了，5.6就行），然后就OK了。</p>
 <p>2.注册开放平台账号</p>
 <p><strong>易班</strong>：可以直接申请<a href="https://open.yiban.cn/" target="_blank" rel="noopener">https://open.yiban.cn/</a>（也不费事）。</p>
 <p>申请后就获得了<a href="https://o.yiban.cn/debug/apitest" target="_blank" rel="noopener">测试权限</a>（就是可以体验接口是个啥的权限），至于要上线的网站，肯定会用到一些实名认证信息，就需要跟管理员申请更多权限<a href="https://open.yiban.cn/wiki/index.php?page=%E6%9D%83%E9%99%90%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B" target="_blank" rel="noopener">https://open.yiban.cn/wiki/index.php?page=%E6%9D%83%E9%99%90%E7%94%B3%E8%AF%B7%E6%B5%81%E7%A8%8B</a></p>
 <p><strong>QQ</strong>：文档在<a href="http://wiki.connect.qq.com/" target="_blank" rel="noopener">http://wiki.connect.qq.com/</a></p>
-<p>首先个人开发者需要完成认证：<a href="https://connect.qq.com/" target="_blank" rel="noopener">https://connect.qq.com/</a>，用QQ登录后<img class="alignnone size-medium wp-image-123" src="http://gaoyuting.org/wp-content/uploads/2017/06/2e-300x169.jpg" alt="" width="300" height="169"><img class="alignnone size-medium wp-image-124" src="http://gaoyuting.org/wp-content/uploads/2017/06/5-300x170.jpg" alt="" width="300" height="170"></p>
+<p>首先个人开发者需要完成认证：<a href="https://connect.qq.com/" target="_blank" rel="noopener">https://connect.qq.com/</a>，用QQ登录后<img class="alignnone size-medium wp-image-123" src="http://gaoyuting.org/wp-content/uploads/2017/06/2e-300x169.jpg" alt width="300" height="169"><img class="alignnone size-medium wp-image-124" src="http://gaoyuting.org/wp-content/uploads/2017/06/5-300x170.jpg" alt width="300" height="170"></p>
 <p>然后就耐心等待吧</p>
 <p><strong>微信</strong>：<a href="https://open.weixin.qq.com" target="_blank" rel="noopener">https://open.weixin.qq.com</a>当然你也可以申请，不过</p>
-<p><img class="alignnone size-medium wp-image-125" src="http://gaoyuting.org/wp-content/uploads/2017/06/7-300x123.jpg" alt="" width="300" height="123"></p>
+<p><img class="alignnone size-medium wp-image-125" src="http://gaoyuting.org/wp-content/uploads/2017/06/7-300x123.jpg" alt width="300" height="123"></p>
 <p>（看你情况吧）</p>
 <p>其他的百度、微博之类的找相应开发者平台/开放平台。</p>
 <p>3.下载SDK</p>
@@ -637,7 +637,7 @@
 
       <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">makergyt</p>
               <p class="site-description motion-element" itemprop="description">技术回归艺术</p>
@@ -650,7 +650,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">27</span>
+                    <span class="site-state-item-count">32</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -839,7 +839,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">69k</span>
+    <span title="Symbols count total">75k</span>
   
 
   
@@ -848,7 +848,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">1:03</span>
+    <span title="Reading time total">1:08</span>
   
 </div>
 

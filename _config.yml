@@ -4,13 +4,13 @@
 
 # Site
 title: 一骑白马开无疆的博客
-subtitle: 
+subtitle:
 description: 技术回归艺术
 keywords: blog makergyt
 author: makergyt
 language:
-- zh-tw
-- en
+  - zh-CN
+  - en
 timezone:
 
 # URL
@@ -45,16 +45,16 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -81,11 +81,11 @@ theme: next
 # Security
 ##
 encrypt:
-    enable: true
+  enable: true
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git 
+  type: git
   repo: git@github.com:MakerGYT/makergyt.github.io.git
   branch: master
 
@@ -95,8 +95,7 @@ symbols_count_time:
   total_symbols: true
   total_time: true
 
-sitemap: 
+sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
-

@@ -125,7 +125,7 @@
 <meta property="og:site_name" content="一骑白马开无疆的博客">
 <meta property="og:description" content="https://coding.net/help/doc/git/ssh-key.html1234cd ~/.sshssh-keygen -t rsa -C &amp;quot;me@makergyt.com&amp;quot;cat id_rsa.pub #复制到https://dev.tencent.com/user/account/setting/keysssh -T git@coding.net">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2019-01-10T12:33:12.497Z">
+<meta property="og:updated_time" content="2019-03-26T13:28:26.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git">
 <meta name="twitter:description" content="https://coding.net/help/doc/git/ssh-key.html1234cd ~/.sshssh-keygen -t rsa -C &amp;quot;me@makergyt.com&amp;quot;cat id_rsa.pub #复制到https://dev.tencent.com/user/account/setting/keysssh -T git@coding.net">
@@ -186,7 +186,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-tw">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
 
   
   
@@ -196,7 +196,7 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta custom-logo">
     
@@ -345,20 +345,20 @@
     <div class="reading-progress-bar"></div>
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2019/01/06/git/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="makergyt">
       <meta itemprop="description" content="技术回归艺术">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="一骑白马开无疆的博客">
     </span>
 
@@ -410,7 +410,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-10 20:33:12" itemprop="dateModified" datetime="2019-01-10T20:33:12+08:00">2019-01-10</time>
+                <time title="Modified: 2019-03-26 21:28:26" itemprop="dateModified" datetime="2019-03-26T21:28:26+08:00">2019-03-26</time>
               
             
           </span>
@@ -437,7 +437,7 @@
                 
                   <span class="post-meta-item-text">Symbols count in article: </span>
                 
-                <span title="Symbols count in article">491</span>
+                <span title="Symbols count in article">1.8k</span>
               
 
               
@@ -451,7 +451,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="Reading time">2 mins.</span>
               
             </div>
           
@@ -473,8 +473,15 @@
       
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a href="https://coding.net/help/doc/git/ssh-key.html" target="_blank" rel="noopener">https://coding.net/help/doc/git/ssh-key.html</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh</span><br><span class="line">ssh-keygen -t rsa -C &quot;me@makergyt.com&quot;</span><br><span class="line">cat id_rsa.pub #复制到https://dev.tencent.com/user/account/setting/keys</span><br><span class="line">ssh -T git@coding.net</span><br></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<h2 id="Coding-Webhook-自动部署Git项目"><a href="#Coding-Webhook-自动部署Git项目" class="headerlink" title="Coding Webhook 自动部署Git项目"></a>Coding Webhook 自动部署Git项目</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;me@makergyt.com&quot; #git公钥</span><br><span class="line">mkdir /var/www/.ssh</span><br><span class="line">chown -R www-data:www-data /var/www/.ssh/</span><br><span class="line">sudo -Hu www-data ssh-keygen -t rsa #部署公钥</span><br><span class="line">cd /var/www/test</span><br><span class="line">mkdir hook</span><br><span class="line">chown -R www-data:www-data /var/www/test/hook</span><br></pre></td></tr></table></figure>
-<p>git恢复文件文件夹<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout file/folder</span><br></pre></td></tr></table></figure></p>
+<h2 id="上传项目"><a href="#上传项目" class="headerlink" title="上传项目"></a>上传项目</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"message"</span></span><br><span class="line">git remote add origin https://github.com/user/repo.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<h2 id="免密连接github"><a href="#免密连接github" class="headerlink" title="免密连接github"></a>免密连接github</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"makergyt"</span></span><br><span class="line">git config --global user.email <span class="string">"me@makergyt.com"</span></span><br><span class="line"><span class="comment"># test</span></span><br><span class="line">git config --list</span><br><span class="line">user.email=me@makergyt.com</span><br><span class="line">user.name=makergyt</span><br></pre></td></tr></table></figure>
+<h3 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:user/repo.git</span><br><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line">ssh-keygen -t rsa -C <span class="string">"me@makergyt.com"</span></span><br><span class="line">cat id_rsa.pub <span class="comment"># paste to https://github.com/settings/keys</span></span><br><span class="line"><span class="comment"># test</span></span><br><span class="line">ssh -T git@github.com</span><br><span class="line">Hi MakerGYT! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access</span></span><br></pre></td></tr></table></figure>
+<h3 id="https"><a href="#https" class="headerlink" title="https"></a>https</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/user/repo.git</span><br><span class="line">touch ~/.git-credentials</span><br><span class="line">vim ~/.git-credentials</span><br><span class="line">https://username:password@github.com</span><br><span class="line">git config --global credential.helper store</span><br><span class="line">cat ~/.gitconfig</span><br><span class="line">[credential]</span><br><span class="line">    helper = store</span><br></pre></td></tr></table></figure>
+<h2 id="Coding-Webhook-自动部署Git项目"><a href="#Coding-Webhook-自动部署Git项目" class="headerlink" title="Coding Webhook 自动部署Git项目"></a>Coding Webhook 自动部署Git项目</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"me@makergyt.com"</span> <span class="comment">#git公钥</span></span><br><span class="line">mkdir /var/www/.ssh</span><br><span class="line">chown -R www-data:www-data /var/www/.ssh/</span><br><span class="line">sudo -Hu www-data ssh-keygen -t rsa <span class="comment">#部署公钥</span></span><br><span class="line"><span class="built_in">cd</span> /var/www/<span class="built_in">test</span></span><br><span class="line">mkdir hook</span><br><span class="line">chown -R www-data:www-data /var/www/<span class="built_in">test</span>/hook</span><br></pre></td></tr></table></figure>
+<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># view branch</span></span><br><span class="line">git branch</span><br><span class="line">*master <span class="comment"># default</span></span><br><span class="line"><span class="comment"># setup local branch</span></span><br><span class="line">git branch <span class="built_in">local</span></span><br><span class="line"><span class="comment"># test</span></span><br><span class="line">*master</span><br><span class="line"><span class="built_in">local</span></span><br><span class="line"><span class="comment"># publish branch</span></span><br><span class="line">git push origin <span class="built_in">local</span>:<span class="built_in">local</span></span><br><span class="line"><span class="comment"># change branch</span></span><br><span class="line">git checkout <span class="built_in">local</span></span><br><span class="line"><span class="comment"># merge branch</span></span><br><span class="line">git merge master</span><br><span class="line"><span class="comment"># delete remote branch</span></span><br><span class="line">git push origin :master</span><br></pre></td></tr></table></figure>
+<h2 id="github文件夹图标为灰色，打不开文件夹"><a href="#github文件夹图标为灰色，打不开文件夹" class="headerlink" title="github文件夹图标为灰色，打不开文件夹"></a>github文件夹图标为灰色，打不开文件夹</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># enter the grey folder</span></span><br><span class="line">ll -a</span><br><span class="line">.git <span class="comment"># delete the folder</span></span><br><span class="line"><span class="built_in">cd</span> ..</span><br><span class="line">git rm -r  --cached folder</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"remove the cache"</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<h2 id="强制更新本地分支"><a href="#强制更新本地分支" class="headerlink" title="强制更新本地分支"></a>强制更新本地分支</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch --all</span><br><span class="line">git reset --hard origin/master</span><br><span class="line">git fetch</span><br></pre></td></tr></table></figure>
+<p><code>`</code></p>
 
       
     </div>
@@ -537,8 +544,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/06/ssh-连接/" rel="next" title="ssh 连接">
-                <i class="fa fa-chevron-left"></i> ssh 连接
+              <a href="/2019/01/06/软件著作权申请/" rel="next" title="软件著作权">
+                <i class="fa fa-chevron-left"></i> 软件著作权
               </a>
             
           </div>
@@ -547,8 +554,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/06/软件著作权申请/" rel="prev" title="软件著作权">
-                软件著作权 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/01/06/绕不过去的node/" rel="prev" title="绕不过去的node">
+                绕不过去的node <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -610,7 +617,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">makergyt</p>
               <p class="site-description motion-element" itemprop="description">技术回归艺术</p>
@@ -623,7 +630,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">27</span>
+                    <span class="site-state-item-count">32</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -797,7 +804,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Coding-Webhook-自动部署Git项目"><span class="nav-number">1.</span> <span class="nav-text">Coding Webhook 自动部署Git项目</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#上传项目"><span class="nav-number">1.</span> <span class="nav-text">上传项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#免密连接github"><span class="nav-number">2.</span> <span class="nav-text">免密连接github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ssh"><span class="nav-number">2.1.</span> <span class="nav-text">ssh</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#https"><span class="nav-number">2.2.</span> <span class="nav-text">https</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Coding-Webhook-自动部署Git项目"><span class="nav-number">3.</span> <span class="nav-text">Coding Webhook 自动部署Git项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支管理"><span class="nav-number">4.</span> <span class="nav-text">分支管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#github文件夹图标为灰色，打不开文件夹"><span class="nav-number">5.</span> <span class="nav-text">github文件夹图标为灰色，打不开文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#强制更新本地分支"><span class="nav-number">6.</span> <span class="nav-text">强制更新本地分支</span></a></li></ol></div>
             
 
           </div>
@@ -829,7 +836,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">69k</span>
+    <span title="Symbols count total">75k</span>
   
 
   
@@ -838,7 +845,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">1:03</span>
+    <span title="Reading time total">1:08</span>
   
 </div>
 
