@@ -29,3 +29,7 @@ gitalk:
   # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
   language:
 ```
+|github|coding|
+|--|--|
+|local|cloud studio|
+|moeditor | hexo editor(web)

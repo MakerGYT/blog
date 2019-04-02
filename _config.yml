@@ -114,3 +114,22 @@ sitemap:
 #   path: baidusitemap.xml
 aplayer:
   meting: true
+qiniu:
+  offline: false
+  sync: true
+  bucket:  blog 
+  # secret_file: sec/qn.json or C:
+  access_key: 3X7IjPdLqQ3UBQAhZ3NNHMbKVyUGZgn4IWlSBFn0
+  secret_key: GFMTuRORuFLx_gwfB9-7s1GaiE82h-AKUAIqsd9X
+  dirPrefix: static
+  urlPrefix: https://blog-cdn.makergyt.com/static
+  up_host: http://upload.qiniu.com
+  local_dir: cdn
+  update_exist: true
+  image: 
+    folder: images
+    extend: 
+  js:
+    folder: js
+  css:
+    folder: css

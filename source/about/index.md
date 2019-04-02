@@ -13,5 +13,5 @@ comments: false
  - 2017.12 京东云主机到期，暂时下架
 - 2018.12 迁移使用hexo ，由github托管，使用makergyt.github.io访问，映射为blog.makergyt.com
  - 2019.1 发现百度不会收录github pages,考虑迁移至国内coding,但样式无法加载，暂时放弃迁移
-
+ - 2019.4 部署至coding pages,使用memakergyt.coding.me访问，映射为blog-cn.makergyt.com，百度收录
 <div class="text-center">{% btn ../en/about-config, About config of this site, arrow-right fa-fw fa-lg, Next Chapter (Label) %}</div>
