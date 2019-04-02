@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-tw,en,default">
+<html class="theme-next pisces use-motion" lang="zh-CN,en,default">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,64 +26,81 @@
 
 
 
+
+
+
+
+  <meta name="google-site-verification" content="XAprdFd37bx8X8i-_S77-8ArPy8hkI5RCtKym1Z52rY">
+
+
+
+  <meta name="msvalidate.01" content="E14AC9D3BA8CE3C20D05F77EE7BC738F">
+
+
+
+
+
+  <meta name="baidu-site-verification" content="X1fnAis2FT">
+
+
+
   
   
     
-      
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+
+
+
+  
+  
+  
+  
+
+  
     
     
-      
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  <script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-  <link href="//cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
 
 
 
 
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.1">
 
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=7.0.1">
 
 
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=7.0.1">
 
 
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=7.0.1">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icont.png?v=6.6.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=6.6.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=6.6.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=7.0.1" color="#222">
 
 
 
   <meta name="msapplication-config" content="/images/browserconfig.xml">
-
-
 
 
 
@@ -94,13 +111,15 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    version: '6.6.0',
-    sidebar: {"position":"left","width":240,"display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: true,
+    fancybox: true,
     fastclick: false,
-    lazyload: false,
+    lazyload: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"shrinkIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -117,23 +136,24 @@
 
 
 
-  <meta name="description" content="技术回归艺术">
+  <meta name="description" content="Technology returns to art">
 <meta name="keywords" content="blog makergyt">
 <meta property="og:type" content="website">
-<meta property="og:title" content="一骑白马开无疆的博客">
+<meta property="og:title" content="MakerGYT">
 <meta property="og:url" content="https://blog.makergyt.com/page/3/index.html">
-<meta property="og:site_name" content="一骑白马开无疆的博客">
-<meta property="og:description" content="技术回归艺术">
-<meta property="og:locale" content="zh-tw">
+<meta property="og:site_name" content="MakerGYT">
+<meta property="og:description" content="Technology returns to art">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一骑白马开无疆的博客">
-<meta name="twitter:description" content="技术回归艺术">
+<meta name="twitter:title" content="MakerGYT">
+<meta name="twitter:description" content="Technology returns to art">
 
 
 
 
 
-
+  
+  
   <link rel="canonical" href="https://blog.makergyt.com/page/3/">
 
 
@@ -144,13 +164,23 @@
   };
 </script>
 
-  <title>一骑白马开无疆的博客</title>
+  <title>MakerGYT</title>
   
 
 
 
 
 
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3af747eaf2360bbaf46d8aa9f5b62d22";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -160,32 +190,32 @@
 
   <noscript>
   <style>
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
 
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
 
-    .use-motion .logo-line-before i { left: initial; }
-    .use-motion .logo-line-after i { right: initial; }
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
   </style>
 </noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -198,26 +228,26 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta custom-logo">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">一骑白马开无疆的博客</span>
+        <span class="site-title">MakerGYT</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
     
+      
+        <h1 class="site-subtitle" itemprop="description">Gao Yuting's world</h1>
+      
     
-      <a>
-        <img class="custom-logo-image" src="/images/favicon-32x32.png" alt="一骑白马开无疆的博客">
-      </a>
     
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -245,7 +275,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-chrome"></i> <br>首页</a>
 
   </li>
         
@@ -262,14 +292,14 @@
 
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-address-card"></i> <br>关于</a>
 
   </li>
         
         
         
           
-          <li class="menu-item menu-item-tags">
+          <li class="menu-item menu-item-photo">
 
     
     
@@ -279,34 +309,46 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+    <a href="/photo/" rel="section"><i class="menu-item-icon fa fa-fw fa-camera-retro"></i> <br>影像</a>
 
   </li>
-        
-        
-        
+
+      
+      
+        <li class="menu-item menu-item-search">
           
-          <li class="menu-item menu-item-categories">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
-
-  </li>
-
-      
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
       
     </ul>
   
 
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -320,6 +362,13 @@
     </header>
 
     
+  
+  
+
+  
+
+  <a href="https://github.com/makergyt" class="github-corner" title="GitHub" aria-label="GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
 
 
     <main id="main" class="main">
@@ -348,16 +397,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2018/05/08/《在细雨中呼喊》一个积极的悲观主义者/">
+    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/zh-CN/安装pthreads多线程扩展记录/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="makergyt">
-      <meta itemprop="description" content="技术回归艺术">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gao Yuting">
+      <meta itemprop="description" content="Technology returns to art">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一骑白马开无疆的博客">
+      <meta itemprop="name" content="MakerGYT">
     </span>
 
     
@@ -368,7 +417,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2018/05/08/《在细雨中呼喊》一个积极的悲观主义者/" class="post-title-link" itemprop="url">《在细雨中呼喊》一个积极的悲观主义者</a>
+                <a href="/zh-CN/安装pthreads多线程扩展记录/" class="post-title-link" itemprop="url">安装pthreads多线程扩展记录</a>
               
             
           </h2>
@@ -386,14 +435,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
 
               
                 
               
 
-              <time title="Created: 2018-05-08 21:43:18" itemprop="dateCreated datePublished" datetime="2018-05-08T21:43:18+08:00">2018-05-08</time>
+              <time title="创建时间：2017-11-16 19:37:04" itemprop="dateCreated datePublished" datetime="2017-11-16T19:37:04+08:00">2017-11-16</time>
             
 
             
@@ -408,16 +457,35 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Edited on</span>
+                  <span class="post-meta-item-text">更新于</span>
                 
-                <time title="Modified: 2019-01-08 22:01:29" itemprop="dateModified" datetime="2019-01-08T22:01:29+08:00">2019-01-08</time>
+                <time title="修改时间：2019-04-01 14:46:17" itemprop="dateModified" datetime="2019-04-01T14:46:17+08:00">2019-04-01</time>
               
             
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/record/" itemprop="url" rel="index"><span itemprop="name">record</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
             
           
 
@@ -435,9 +503,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Symbols count in article: </span>
+                  <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="Symbols count in article">653</span>
+                <span title="本文字数">3.4k</span>
               
 
               
@@ -449,9 +517,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -472,778 +540,17 @@
 
       
         
-          <blockquote>
-<p>当我虚构的人物越来越真实时，我忍不住会去怀疑自己真正的现实是否在被虚构<br>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/05/08/《在细雨中呼喊》一个积极的悲观主义者/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </p></blockquote></div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2018/05/01/凡是过往，皆为序章/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="makergyt">
-      <meta itemprop="description" content="技术回归艺术">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一骑白马开无疆的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/05/01/凡是过往，皆为序章/" class="post-title-link" itemprop="url">凡是过往，皆为序章</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2018-05-01 12:14:02" itemprop="dateCreated datePublished" datetime="2018-05-01T12:14:02+08:00">2018-05-01</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-12-27 12:05:37" itemprop="dateModified" datetime="2018-12-27T12:05:37+08:00">2018-12-27</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">590</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">1 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>30-4-2018</p>
-<h2 id="凡是过往，皆为序章"><a href="#凡是过往，皆为序章" class="headerlink" title="凡是过往，皆为序章"></a>凡是过往，皆为序章</h2><p><em>因过竹院逢僧话，偷得浮生半日闲。</em></p>
-<blockquote>
-<p>有一个夜晚，我烧毁了所有的记忆，从此我的梦就透明了，有一个早晨我扔掉了所有的昨天，从此我的脚步就轻盈了。 </p>
-</blockquote>
-<p><img src="https://thumbnail0.baidupcs.com/thumbnail/32dfa1b315edf1228671739381eaa818?fid=2033391989-250528-1010603830075708&amp;time=1525147200&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-5uBf76rhDwcKcZGvrlmtHWfyoaY%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=489720488188150787&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="请输入图片描述"></p>
-<p>（<em>N32°49′32.60″，E109°21′48.60″</em>）</p>
-<p><img src="https://thumbnail0.baidupcs.com/thumbnail/435f999b2b920cac287abe29842416b8?fid=2033391989-250528-348236752449058&amp;time=1525147200&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ucrp3aeX0Mh5rbWEroKGjv8giGc%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=489758928186521110&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="请输入图片描述"></p>
-<p><img src="https://thumbnail0.baidupcs.com/thumbnail/765e550b4f47d3e6f1b511efc6905868?fid=2033391989-250528-507211731632321&amp;time=1525147200&amp;rt=sh&amp;sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-CoAmO2H%2FCHQvMYZeP2yWaclde7E%3D&amp;expires=8h&amp;chkv=0&amp;chkbd=0&amp;chkpc=&amp;dp-logid=489774384659744160&amp;dp-callid=0&amp;size=c710_u400&amp;quality=100&amp;vuk=-&amp;ft=video" alt="请输入图片描述"></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2018/05/01/凡是过往，皆为序章/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2017/11/29/越是进入一个深度，越是觉得能力撑不起野心。/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="makergyt">
-      <meta itemprop="description" content="技术回归艺术">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一骑白马开无疆的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/11/29/越是进入一个深度，越是觉得能力撑不起野心。/" class="post-title-link" itemprop="url">越是进入一个深度，越是觉得能力撑不起野心。</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2017-11-29 10:52:16" itemprop="dateCreated datePublished" datetime="2017-11-29T10:52:16+08:00">2017-11-29</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-12-27 12:07:31" itemprop="dateModified" datetime="2018-12-27T12:07:31+08:00">2018-12-27</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">7k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">6 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          Welcome to my blog, enter password to read.
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2017/11/29/越是进入一个深度，越是觉得能力撑不起野心。/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2017/11/19/本地“模拟”一台服务器/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="makergyt">
-      <meta itemprop="description" content="技术回归艺术">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一骑白马开无疆的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/11/19/本地“模拟”一台服务器/" class="post-title-link" itemprop="url">本地“模拟”一台服务器</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2017-11-19 18:33:16" itemprop="dateCreated datePublished" datetime="2017-11-19T18:33:16+08:00">2017-11-19</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-12-27 12:06:53" itemprop="dateModified" datetime="2018-12-27T12:06:53+08:00">2018-12-27</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">5k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">5 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>手头有租用阿里云的centos7的服务器，但目前它的角色既是实验机又是生产环境，感觉这样不太合适，于是产生了下面的需求<br>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2017/11/19/本地“模拟”一台服务器/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </p></div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2017/11/16/安装pthreads多线程扩展/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="makergyt">
-      <meta itemprop="description" content="技术回归艺术">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一骑白马开无疆的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2017/11/16/安装pthreads多线程扩展/" class="post-title-link" itemprop="url">安装pthreads多线程扩展</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2017-11-16 19:37:04" itemprop="dateCreated datePublished" datetime="2017-11-16T19:37:04+08:00">2017-11-16</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-12-27 12:06:01" itemprop="dateModified" datetime="2018-12-27T12:06:01+08:00">2018-12-27</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Symbols count in article: </span>
-                
-                <span title="Symbols count in article">3.5k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">3 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="安装pthreads多线程扩展"><a href="#安装pthreads多线程扩展" class="headerlink" title="安装pthreads多线程扩展"></a>安装pthreads多线程扩展</h2><h4 id="教程环境"><a href="#教程环境" class="headerlink" title="教程环境"></a>教程环境</h4><ul>
+          <h1 id="1-当前环境"><a href="#1-当前环境" class="headerlink" title="1 当前环境"></a>1 当前环境</h1><ul>
 <li>WampServer Version 3.1.0 64bit</li>
 <li>PHP 5.6.31</li>
 <li>windows 10 pro 1703</li>
-<li><a href="http://windows.php.net/downloads/pecl/releases/pthreads/2.0.9/" target="_blank" rel="noopener">pthreads-2.0.9-5.6-ts-vc11-x64</a><br>5.6对应php version,vc11代表是Visual Studio 2010 compiler编译器编译的(暂无需考虑)，x64代表wamp平台。在以上环境下已测试通过。</li>
+<li><a href="http://windows.php.net/downloads/pecl/releases/pthreads/2.0.9/" target="_blank" rel="noopener">pthreads-2.0.9-5.6-ts-vc11-x64</a><br>5.6对应php version,vc11代表是Visual Studio 2010 compiler编译器编译的(暂无需考虑)，x64代表wamp平台。</li>
 </ul>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2017/11/16/安装pthreads多线程扩展/#more" rel="contents">
-                Read more &raquo;
+              <a class="btn" href="/zh-CN/安装pthreads多线程扩展记录/#more" rel="contents">
+                阅读全文 &raquo;
               </a>
             </div>
           
@@ -1251,7 +558,9 @@
         
       
     </div>
-
+    <div>
+      
+    </div>
     
 
     
@@ -1266,7 +575,7 @@
     
 
     
-
+    
     <footer class="post-footer">
       
 
@@ -1302,16 +611,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2017/11/03/安装matlab/">
+    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/zh-CN/安装matlab/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="makergyt">
-      <meta itemprop="description" content="技术回归艺术">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gao Yuting">
+      <meta itemprop="description" content="Technology returns to art">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一骑白马开无疆的博客">
+      <meta itemprop="name" content="MakerGYT">
     </span>
 
     
@@ -1322,7 +631,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2017/11/03/安装matlab/" class="post-title-link" itemprop="url">安装matlab</a>
+                <a href="/zh-CN/安装matlab/" class="post-title-link" itemprop="url">安装matlab</a>
               
             
           </h2>
@@ -1340,14 +649,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
 
               
                 
               
 
-              <time title="Created: 2017-11-03 13:55:21" itemprop="dateCreated datePublished" datetime="2017-11-03T13:55:21+08:00">2017-11-03</time>
+              <time title="创建时间：2017-11-03 13:55:21" itemprop="dateCreated datePublished" datetime="2017-11-03T13:55:21+08:00">2017-11-03</time>
             
 
             
@@ -1362,16 +671,35 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Edited on</span>
+                  <span class="post-meta-item-text">更新于</span>
                 
-                <time title="Modified: 2018-12-27 12:05:50" itemprop="dateModified" datetime="2018-12-27T12:05:50+08:00">2018-12-27</time>
+                <time title="修改时间：2019-04-01 14:46:00" itemprop="dateModified" datetime="2019-04-01T14:46:00+08:00">2019-04-01</time>
               
             
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/config/" itemprop="url" rel="index"><span itemprop="name">config</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
             
           
 
@@ -1389,9 +717,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Symbols count in article: </span>
+                  <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="Symbols count in article">2.1k</span>
+                <span title="本文字数">2.1k</span>
               
 
               
@@ -1403,9 +731,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="Reading time">2 mins.</span>
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -1426,18 +754,17 @@
 
       
         
-          <blockquote>
-<p>无论是分析数据、开发算法还是创建模型，<br>MATLAB 都是针对您的思维方式和工作内容而设计的。</p>
+          <blockquote class="blockquote-center"><p>无论是分析数据、开发算法还是创建模型，<br>MATLAB 都是针对您的思维方式和工作内容而设计的。</p>
 </blockquote>
-<h2 id="winx64平台"><a href="#winx64平台" class="headerlink" title="winx64平台"></a>winx64平台</h2><h3 id="教程环境"><a href="#教程环境" class="headerlink" title="教程环境"></a>教程环境</h3><ul>
+<h1 id="1-winx64平台"><a href="#1-winx64平台" class="headerlink" title="1 winx64平台"></a>1 winx64平台</h1><h2 id="1-1-教程环境"><a href="#1-1-教程环境" class="headerlink" title="1.1 教程环境"></a>1.1 教程环境</h2><ul>
 <li>系统：windows 10pro 1703</li>
 <li>版本：matlab R2017b win64</li>
 </ul>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2017/11/03/安装matlab/#more" rel="contents">
-                Read more &raquo;
+              <a class="btn" href="/zh-CN/安装matlab/#more" rel="contents">
+                阅读全文 &raquo;
               </a>
             </div>
           
@@ -1445,7 +772,9 @@
         
       
     </div>
-
+    <div>
+      
+    </div>
     
 
     
@@ -1460,7 +789,7 @@
     
 
     
-
+    
     <footer class="post-footer">
       
 
@@ -1496,16 +825,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2017/10/21/Python导学/">
+    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/zh-CN/Python初探/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="makergyt">
-      <meta itemprop="description" content="技术回归艺术">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gao Yuting">
+      <meta itemprop="description" content="Technology returns to art">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一骑白马开无疆的博客">
+      <meta itemprop="name" content="MakerGYT">
     </span>
 
     
@@ -1516,7 +845,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2017/10/21/Python导学/" class="post-title-link" itemprop="url">Python导学</a>
+                <a href="/zh-CN/Python初探/" class="post-title-link" itemprop="url">Python 初探</a>
               
             
           </h2>
@@ -1534,14 +863,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
 
               
                 
               
 
-              <time title="Created: 2017-10-21 07:06:36" itemprop="dateCreated datePublished" datetime="2017-10-21T07:06:36+08:00">2017-10-21</time>
+              <time title="创建时间：2017-10-21 07:06:36" itemprop="dateCreated datePublished" datetime="2017-10-21T07:06:36+08:00">2017-10-21</time>
             
 
             
@@ -1556,16 +885,35 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Edited on</span>
+                  <span class="post-meta-item-text">更新于</span>
                 
-                <time title="Modified: 2018-12-27 12:04:49" itemprop="dateModified" datetime="2018-12-27T12:04:49+08:00">2018-12-27</time>
+                <time title="修改时间：2019-04-01 18:18:28" itemprop="dateModified" datetime="2019-04-01T18:18:28+08:00">2019-04-01</time>
               
             
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">study</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
             
           
 
@@ -1583,9 +931,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Symbols count in article: </span>
+                  <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="Symbols count in article">6.9k</span>
+                <span title="本文字数">6.7k</span>
               
 
               
@@ -1597,9 +945,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="Reading time">6 mins.</span>
+                <span title="阅读时长">6 分钟</span>
               
             </div>
           
@@ -1620,19 +968,14 @@
 
       
         
-          <h2 id="Python导学"><a href="#Python导学" class="headerlink" title="Python导学"></a>Python导学</h2><blockquote>
-<p>Life is short,I use Python!</p>
+          <blockquote class="blockquote-center"><p>Life is short,I use Python!</p>
 </blockquote>
-<h4 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h4><ul>
-<li>已经深入系统学习过一门语言(包括matlab)</li>
-<li>刚入门计算机专业</li>
-</ul>
-<p>如果是以上情况之一，欢迎试水。如果接触很泛，建议不要跳水。对英文抵触、习惯于汉化软件、中文命名的请<a href="http://www.pythondoc.com/" target="_blank" rel="noopener">绕道</a>(祝你成功)</p>
+<h1 id="1-学习准备"><a href="#1-学习准备" class="headerlink" title="1 学习准备"></a>1 学习准备</h1><h2 id="1-1-环境"><a href="#1-1-环境" class="headerlink" title="1.1 环境"></a>1.1 环境</h2>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2017/10/21/Python导学/#more" rel="contents">
-                Read more &raquo;
+              <a class="btn" href="/zh-CN/Python初探/#more" rel="contents">
+                阅读全文 &raquo;
               </a>
             </div>
           
@@ -1640,7 +983,9 @@
         
       
     </div>
-
+    <div>
+      
+    </div>
     
 
     
@@ -1655,7 +1000,7 @@
     
 
     
-
+    
     <footer class="post-footer">
       
 
@@ -1691,16 +1036,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2017/10/14/TensorFLow1-3文档中文翻译之1-0-0安装/">
+    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/zh-CN/TensorFLow1-3文档中文翻译之1-0-0安装/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="makergyt">
-      <meta itemprop="description" content="技术回归艺术">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gao Yuting">
+      <meta itemprop="description" content="Technology returns to art">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一骑白马开无疆的博客">
+      <meta itemprop="name" content="MakerGYT">
     </span>
 
     
@@ -1711,7 +1056,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2017/10/14/TensorFLow1-3文档中文翻译之1-0-0安装/" class="post-title-link" itemprop="url">TensorFLow1.3文档中文翻译之1.0.0安装</a>
+                <a href="/zh-CN/TensorFLow1-3文档中文翻译之1-0-0安装/" class="post-title-link" itemprop="url">TensorFLow1.3文档中文翻译之1.0.0安装</a>
               
             
           </h2>
@@ -1729,14 +1074,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
 
               
                 
               
 
-              <time title="Created: 2017-10-14 12:11:06" itemprop="dateCreated datePublished" datetime="2017-10-14T12:11:06+08:00">2017-10-14</time>
+              <time title="创建时间：2017-10-14 12:11:06" itemprop="dateCreated datePublished" datetime="2017-10-14T12:11:06+08:00">2017-10-14</time>
             
 
             
@@ -1751,16 +1096,35 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Edited on</span>
+                  <span class="post-meta-item-text">更新于</span>
                 
-                <time title="Modified: 2018-12-27 12:05:01" itemprop="dateModified" datetime="2018-12-27T12:05:01+08:00">2018-12-27</time>
+                <time title="修改时间：2019-04-01 14:44:52" itemprop="dateModified" datetime="2019-04-01T14:44:52+08:00">2019-04-01</time>
               
             
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/translate/" itemprop="url" rel="index"><span itemprop="name">translate</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
             
           
 
@@ -1778,9 +1142,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Symbols count in article: </span>
+                  <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="Symbols count in article">3.9k</span>
+                <span title="本文字数">3.9k</span>
               
 
               
@@ -1792,9 +1156,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="Reading time">4 mins.</span>
+                <span title="阅读时长">4 分钟</span>
               
             </div>
           
@@ -1815,17 +1179,15 @@
 
       
         
-          <p><blockquote>译者：MakerGYT</blockquote></p>
-<p>原文：<a href="https://tensorflow.google.cn/" target="_blank" rel="noopener">https://tensorflow.google.cn/</a><br>今天起也成为了tfboy，中文社区并没有及时做到更新，于是边翻译边学习，发现效果很显著，会强迫自己去确保理解了每一部分，以前是常常会跳过。也希望能做一点贡献。</p>
-<hr>
-
-<p>安装TensorFlow</p>
+          <div class="note info">
+            <p>中文社区并没有及时做到更新，于是边翻译边学习，发现效果很显著，会强迫自己去确保理解了每一部分，以前是常常会跳过。</p>
+          </div>
 <p>下面的引导解释了如何安装让你可以使用Python写程序的一个TensorFlow的版本</p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2017/10/14/TensorFLow1-3文档中文翻译之1-0-0安装/#more" rel="contents">
-                Read more &raquo;
+              <a class="btn" href="/zh-CN/TensorFLow1-3文档中文翻译之1-0-0安装/#more" rel="contents">
+                阅读全文 &raquo;
               </a>
             </div>
           
@@ -1833,7 +1195,9 @@
         
       
     </div>
-
+    <div>
+      
+    </div>
     
 
     
@@ -1848,7 +1212,7 @@
     
 
     
-
+    
     <footer class="post-footer">
       
 
@@ -1884,16 +1248,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2017/09/21/建立个人网站/">
+    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/zh-CN/建立个人网站/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="makergyt">
-      <meta itemprop="description" content="技术回归艺术">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gao Yuting">
+      <meta itemprop="description" content="Technology returns to art">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一骑白马开无疆的博客">
+      <meta itemprop="name" content="MakerGYT">
     </span>
 
     
@@ -1904,7 +1268,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2017/09/21/建立个人网站/" class="post-title-link" itemprop="url">建立个人网站</a>
+                <a href="/zh-CN/建立个人网站/" class="post-title-link" itemprop="url">建立个人网站</a>
               
             
           </h2>
@@ -1922,14 +1286,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
 
               
                 
               
 
-              <time title="Created: 2017-09-21 04:04:51" itemprop="dateCreated datePublished" datetime="2017-09-21T04:04:51+08:00">2017-09-21</time>
+              <time title="创建时间：2017-09-21 04:04:51" itemprop="dateCreated datePublished" datetime="2017-09-21T04:04:51+08:00">2017-09-21</time>
             
 
             
@@ -1944,16 +1308,35 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Edited on</span>
+                  <span class="post-meta-item-text">更新于</span>
                 
-                <time title="Modified: 2018-12-27 12:06:25" itemprop="dateModified" datetime="2018-12-27T12:06:25+08:00">2018-12-27</time>
+                <time title="修改时间：2019-04-01 18:19:04" itemprop="dateModified" datetime="2019-04-01T18:19:04+08:00">2019-04-01</time>
               
             
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/config/" itemprop="url" rel="index"><span itemprop="name">config</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
             
           
 
@@ -1971,9 +1354,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Symbols count in article: </span>
+                  <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="Symbols count in article">2.8k</span>
+                <span title="本文字数">3k</span>
               
 
               
@@ -1985,9 +1368,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="Reading time">3 mins.</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -2008,21 +1391,25 @@
 
       
         
-          <p>本文面向已经有一定开发经验的同学，概念性内容可能表述不严谨，但不必在此处吹毛求疵，因为主要以实际操作为主，一些下载资料已附带链接。</p>
-<h2 id="理一理基础知识"><a href="#理一理基础知识" class="headerlink" title="理一理基础知识"></a>理一理基础知识</h2><p>（如果你已经了解，可以直接跳过）<br>首先，我们为什么要用到服务器。刚开始入门web的同学可能一直沉浸于使用自己的电脑本地调试出各种奇技淫巧而兴奋不已，然而当你想向他人炫耀一番时，你的方式是什么？打个包发过去，她/他可能还在用IE6，然后你的花哨的页面就没有然后了，当然这也得基于知道你网页入口在哪里。这时，服务器会派上用场，它就相当于一个寄存在遥远天边的电脑，与你桌上那台不同的是，每个人只要可以上网就能访问到里面的内容（当然深入了解还需要端口等知识）。那么，怎么访问呢？我们知道，每个网络上的机器都有一个IP地址，就像这样，127.0.0.1（这是电脑本地的IP），我们可以通过浏览器键入IP访问到它的内容。如果它那台主机配置了域名，你现在暂且可以这样理解，域名与IP是一一对应的关系，域名只是为了便于你记忆，就像baidu.com,大多数人肯定不会记住它的IP。不过作为我们这类人来说，IP就可以了，我相信你是可以记住的。域名的话，毕竟考虑国情，你还得经过备案，上传各种资料以及自拍，在你不准备正式对外发布使用之前是没什么必要的。<br>
+          <div class="note info">
+            <p>本文概念性内容可能表述不严谨，但不必吹毛求疵，主要以实际操作为主，一些下载资料已附带链接。</p>
+          </div>
+<h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1 前言"></a>1 前言</h1>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2017/09/21/建立个人网站/#more" rel="contents">
-                Read more &raquo;
+              <a class="btn" href="/zh-CN/建立个人网站/#more" rel="contents">
+                阅读全文 &raquo;
               </a>
             </div>
           
           <!--/noindex-->
         
       
-    </p></div>
-
+    </div>
+    <div>
+      
+    </div>
     
 
     
@@ -2037,7 +1424,7 @@
     
 
     
-
+    
     <footer class="post-footer">
       
 
@@ -2073,16 +1460,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/2017/07/24/从心所欲，无欲则刚/">
+    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/zh-CN/从心所欲，无欲则刚/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="makergyt">
-      <meta itemprop="description" content="技术回归艺术">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Gao Yuting">
+      <meta itemprop="description" content="Technology returns to art">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一骑白马开无疆的博客">
+      <meta itemprop="name" content="MakerGYT">
     </span>
 
     
@@ -2093,7 +1480,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2017/07/24/从心所欲，无欲则刚/" class="post-title-link" itemprop="url">从心所欲，无欲则刚</a>
+                <a href="/zh-CN/从心所欲，无欲则刚/" class="post-title-link" itemprop="url">从心所欲，无欲则刚</a>
               
             
           </h2>
@@ -2111,14 +1498,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
 
               
                 
               
 
-              <time title="Created: 2017-07-24 14:28:49" itemprop="dateCreated datePublished" datetime="2017-07-24T14:28:49+08:00">2017-07-24</time>
+              <time title="创建时间：2017-07-24 14:28:49" itemprop="dateCreated datePublished" datetime="2017-07-24T14:28:49+08:00">2017-07-24</time>
             
 
             
@@ -2133,9 +1520,9 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Edited on</span>
+                  <span class="post-meta-item-text">更新于</span>
                 
-                <time title="Modified: 2018-12-27 12:05:24" itemprop="dateModified" datetime="2018-12-27T12:05:24+08:00">2018-12-27</time>
+                <time title="修改时间：2019-04-01 10:54:56" itemprop="dateModified" datetime="2019-04-01T10:54:56+08:00">2019-04-01</time>
               
             
           </span>
@@ -2143,6 +1530,7 @@
           
 
           
+            
             
           
 
@@ -2160,9 +1548,9 @@
                   <i class="fa fa-file-word-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Symbols count in article: </span>
+                  <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="Symbols count in article">1.4k</span>
+                <span title="本文字数">1.4k</span>
               
 
               
@@ -2174,9 +1562,9 @@
                   <i class="fa fa-clock-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="Reading time">1 mins.</span>
+                <span title="阅读时长">1 分钟</span>
               
             </div>
           
@@ -2204,8 +1592,8 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2017/07/24/从心所欲，无欲则刚/#more" rel="contents">
-                Read more &raquo;
+              <a class="btn" href="/zh-CN/从心所欲，无欲则刚/#more" rel="contents">
+                阅读全文 &raquo;
               </a>
             </div>
           
@@ -2213,7 +1601,9 @@
         
       
     </div>
-
+    <div>
+      
+    </div>
     
 
     
@@ -2228,7 +1618,421 @@
     
 
     
+    
+    <footer class="post-footer">
+      
 
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/zh-CN/第三方平台API(以易班为例)的使用记录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Gao Yuting">
+      <meta itemprop="description" content="Technology returns to art">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MakerGYT">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/zh-CN/第三方平台API(以易班为例)的使用记录/" class="post-title-link" itemprop="url">第三方平台API(以易班为例)的使用记录</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-06-16 04:14:42" itemprop="dateCreated datePublished" datetime="2017-06-16T04:14:42+08:00">2017-06-16</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-01 15:50:58" itemprop="dateModified" datetime="2019-04-01T15:50:58+08:00">2019-04-01</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/record/" itemprop="url" rel="index"><span itemprop="name">record</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">901</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h1><p>服务商提供给第三方网站的API使用原理基本相似，使用说明都可以在相应开发平台查看wiki文档。以<a href="https://open.yiban.cn" target="_blank" rel="noopener">易班开放平台</a>为例:</p>
+<p>鉴于易班API使用目前最主要的用户身份验证和授权方式——<a href="https://oauth.net/2/" target="_blank" rel="noopener">oauth2.0</a>，先了解下它的<a href="http://www.cnblogs.com/neutra/archive/2012/07/26/2609300.html" target="_blank" rel="noopener">授权机制</a></p>
+<p>当然，易班开放平台也给出了<a href="https://open.yiban.cn/wiki/index.php?page=%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">授权概述</a></p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/zh-CN/第三方平台API(以易班为例)的使用记录/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+    <div>
+      
+    </div>
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+    
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.makergyt.com/zh-CN/总有一种美好值得期待/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Gao Yuting">
+      <meta itemprop="description" content="Technology returns to art">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MakerGYT">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/zh-CN/总有一种美好值得期待/" class="post-title-link" itemprop="url">总有一种美好值得期待</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-05-10 13:39:04" itemprop="dateCreated datePublished" datetime="2017-05-10T13:39:04+08:00">2017-05-10</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-01 16:57:34" itemprop="dateModified" datetime="2019-04-01T16:57:34+08:00">2019-04-01</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/thoughts/" itemprop="url" rel="index"><span itemprop="name">thoughts</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">117</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <center><br>你不知道前面什么等着你，可你必须往前走。<br>即使迷茫，时间依旧拖着你。<br>所以我更在意的是与什么样的人同行，而我比过去前进了多少。<br>不悲观也不乐观，如果前方坦途就大步向前走，<br>如果是堵墙就把它砸出个口来。<br>毕竟只有前行的人，才能遇到同样前行的人。<br></center>
+
+          
+        
+      
+    </div>
+    <div>
+      
+    </div>
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+    
     <footer class="post-footer">
       
 
@@ -2253,7 +2057,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
   </nav>
 
 
@@ -2274,7 +2078,6 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
@@ -2285,8 +2088,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">makergyt</p>
-              <p class="site-description motion-element" itemprop="description">技术回归艺术</p>
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Gao Yuting">
+            
+              <p class="site-author-name" itemprop="name">Gao Yuting</p>
+              <div class="site-description motion-element" itemprop="description">Technology returns to art</div>
           </div>
 
           
@@ -2296,19 +2101,54 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">32</span>
-                    <span class="site-state-item-name">posts</span>
+                    <span class="site-state-item-count">28</span>
+                    <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
 
               
                 
                 
                 <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
                     
                     
                       
@@ -2341,8 +2181,14 @@
                     
                       
                     
-                    <span class="site-state-item-count">15</span>
-                    <span class="site-state-item-name">tags</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
               
@@ -2352,105 +2198,99 @@
           
 
           
+          
+          
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
                   
                   
-                    
-                  
                   
                     
                   
-                  <a href="https://github.com/makergyt" title="GitHub &rarr; https://github.com/makergyt" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <a href="mailto:me@makergyt.com" title="E-Mail &rarr; mailto:me@makergyt.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
                   
                   
-                    
-                  
                   
                     
                   
-                  <a href="/about/" title="E-Mail &rarr; /about/"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="https://weibo.com/u/5165628041" title="Weibo &rarr; https://weibo.com/u/5165628041" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
                   
                   
-                    
-                  
                   
                     
                   
-                  <a href="https://weibo.com/u/5165628041" title="Weibo &rarr; https://weibo.com/u/5165628041" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  <a href="https://twitter.com/makergyt" title="Twitter &rarr; https://twitter.com/makergyt" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
                   
                   
-                    
-                  
                   
                     
                   
-                  <a href="https://twitter.com/makergyt1" title="Twitter &rarr; https://twitter.com/makergyt1" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  <a href="https://www.facebook.com/makergyt" title="FB Page &rarr; https://www.facebook.com/makergyt" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
                   
                   
-                    
-                  
                   
                     
                   
-                  <a href="https://www.facebook.com/makergyt" title="FB Page &rarr; https://www.facebook.com/makergyt" rel="noopener" target="_blank"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  <a href="https://500px.com" title="500PX &rarr; https://500px.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-500px"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
                   
                   
-                    
-                  
                   
                     
                   
-                  <a href="https://www.500px.com/makergyt" title="500PX &rarr; https://www.500px.com/makergyt" rel="noopener" target="_blank"><i class="fa fa-fw fa-500px"></i>500PX</a>
+                  <a href="https://t.me/makergyt" title="Telegram &rarr; https://t.me/makergyt" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i></a>
                 </span>
               
             </div>
           
-
+          
           
              <div class="cc-license motion-element" itemprop="license">
+              
               
                 
               
               
               
-              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
              </div>
           
-
           
           
-            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                Other Links
+                <i class="fa  fa-fw fa-anchor"></i>
+                Links
               </div>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://vpn.makergyt.com" title="https://vpn.makergyt.com" rel="noopener" target="_blank">vpn</a>
+                    <a href="https://makergyt.com" title="https://makergyt.com" rel="noopener" target="_blank">Main site</a>
                   </li>
                 
               </ul>
             </div>
           
-
+          
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=28692687&auto=0&height=66"></iframe>
+          
           
             
           
@@ -2462,9 +2302,17 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
+  
 
 
         
@@ -2473,28 +2321,14 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">  <a href="http://www.miitbeian.gov.cn" rel="noopener" target="_blank">陕ICP备16017712号-1 </a>&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">  <a href="http://www.miitbeian.gov.cn" rel="noopener" target="_blank">陕ICP备16017712号-1 </a>&copy; 2018 – <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-heartbeat"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">makergyt</span>
+  <span class="author" itemprop="copyrightHolder">Gao Yuting</span>
 
   
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    
-    <span title="Symbols count total">75k</span>
-  
 
-  
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    
-    <span title="Reading time total">1:08</span>
   
 </div>
 
@@ -2520,24 +2354,11 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
     
 
     
 
-    
-      <div>
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<div class="addthis_inline_share_toolbox">
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=5c245c67b6b62bec" async="async"></script>
-</div>
-
-      </div>
     
   </div>
 
@@ -2555,10 +2376,14 @@
 
 
 
+  
 
 
 
 
+
+
+  
 
 
 
@@ -2568,105 +2393,7 @@
       
     
   
-  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest-nomobile.min.js"></script>
-
-
-
-  
-  
-
-
-
-  
-  
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-
-  
-  
-    <script src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/three.min.js"></script>
-  
-
-  
-  
-    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/three-waves.min.js"></script>
-  
-
-  
-  
-    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_lines.min.js"></script>
-  
-
-  
-  
-    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_sphere.min.js"></script>
-  
-
-  
-  
-    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"></script>
-  
-
-
-  
-
-
-  <script src="/js/src/utils.js?v=6.6.0"></script>
-
-  <script src="/js/src/motion.js?v=6.6.0"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/src/affix.js?v=6.6.0"></script>
-
-  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
-
-
-
-  
-
-  
-
-
-  <script src="/js/src/bootstrap.js?v=6.6.0"></script>
-
-
-
-  
-
-
-
-  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="//cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js"></script>
 
 
 
@@ -2682,26 +2409,465 @@
 
 
 
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
+
 
 
   
 
   
+
+
+  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+
 
   
 <script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '500px'
+        });
+      });
+    },
+  });
+}
+</script>
+
+
+  
+<script>
+if ($('body').find('pre.mermaid').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/mermaid@8.0.0/dist/mermaid.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      mermaid.initialize({
+        theme: 'neutral',
+        logLevel: 3,
+        flowchart: { curve: 'linear' },
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 }
+      });
     }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
+  });
+}
 </script>
 
 
@@ -2710,97 +2876,51 @@
   
 
   
-  
-
-  
-
-  
-  <script src="/js/src/js.cookie.js?v=6.6.0"></script>
-  <script src="/js/src/scroll-cookie.js?v=6.6.0"></script>
-
 
   
 
   
 
   
-  <style>
-    .copy-btn {
-      display: inline-block;
-      padding: 6px 12px;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 20px;
-      color: #333;
-      white-space: nowrap;
-      vertical-align: middle;
-      cursor: pointer;
-      background-color: #eee;
-      background-image: linear-gradient(#fcfcfc, #eee);
-      border: 1px solid #d5d5d5;
-      border-radius: 3px;
-      user-select: none;
-      outline: 0;
-    }
 
-    .highlight-wrap .copy-btn {
-      transition: opacity .3s ease-in-out;
-      opacity: 0;
-      padding: 2px 6px;
-      position: absolute;
-      right: 4px;
-      top: 8px;
-    }
+  
+<script>
+  $('.highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('复制');
+      }, 300);
+    }).append(e);
+  })
+</script>
 
-    .highlight-wrap:hover .copy-btn,
-    .highlight-wrap .copy-btn:focus {
-      opacity: 1
-    }
 
-    .highlight-wrap {
-      position: relative;
-    }
-  </style>
-  <script>
-    $('.highlight').each(function (i, e) {
-      var $wrap = $('<div>').addClass('highlight-wrap');
-      $(e).after($wrap);
-      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
-        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
-          return $(e).text();
-        }).toArray().join('\n');
-        var ta = document.createElement('textarea');
-        var range = document.createRange(); //For Chrome
-        var sel = window.getSelection(); //For Chrome
-        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
-        ta.style.top = yPosition + 'px'; //Prevent page scroll
-        ta.style.position = 'absolute';
-        ta.style.opacity = '0';
-        ta.value = code;
-        ta.textContent = code; //For FireFox
-        ta.contentEditable = true;
-        ta.readOnly = false;
-        document.body.appendChild(ta);
-        range.selectNode(ta);
-        sel.removeAllRanges();
-        sel.addRange(range);
-        ta.setSelectionRange(0, code.length);
-        var result = document.execCommand('copy');
-        
-          if (result) $(this).text('Copied');
-          else $(this).text('Copy failed');
-        
-        ta.blur(); //For iOS
-        $(this).blur();
-      })).on('mouseleave', function (e) {
-        var $b = $(this).find('.copy-btn');
-        setTimeout(function () {
-          $b.text('Copy');
-        }, 300);
-      }).append(e);
-    })
-  </script>
-
+  
 
   
 

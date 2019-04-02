@@ -3,22 +3,24 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 一骑白马开无疆的博客
-subtitle:
-description: 技术回归艺术
+title: MakerGYT
+subtitle: Gao Yuting's world
+description: Technology returns to art
 keywords: blog makergyt
-author: makergyt
+author: Gao Yuting
 language:
   - zh-CN
   - en
-timezone:
+  
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://blog.makergyt.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :lang/:title/
 permalink_defaults:
+  lang: zh-CN
 
 # Directory
 source_dir: source
@@ -31,7 +33,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :lang/:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -77,6 +79,10 @@ pagination_dir: page
 
 ## Themes: https://hexo.io/themes/
 theme: next
+# Include/Exclude Files/Folders
+include:
+
+exclude:
 
 # Security
 ##
@@ -85,17 +91,26 @@ encrypt:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@github.com:MakerGYT/makergyt.github.io.git
-  branch: master
+  - type: git
+    repo: git@github.com:MakerGYT/makergyt.github.io.git
+    branch: master
+  - type: git
+    repo: git@git.dev.tencent.com:memakergytcom/memakergytcom.git
+    branch: master
 
 symbols_count_time:
   symbols: true
   time: true
-  total_symbols: true
-  total_time: true
-
+  total_symbols: false
+  total_time: false
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 sitemap:
   path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml
+# baidusitemap:
+#   path: baidusitemap.xml
+aplayer:
+  meting: true

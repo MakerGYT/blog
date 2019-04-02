@@ -143,9 +143,8 @@ $(document).ready(function() {
         display : 'block',
         duration: SIDEBAR_DISPLAY_DURATION,
         begin   : function() {
-          $('.sidebar .motion-element').velocity(
-            'transition.slideRightIn',
-            {
+          $('.sidebar .motion-element').not('.site-state').velocity(
+            'transition.slideRightIn', {
               stagger : 50,
               drag    : true,
               complete: function() {
@@ -153,13 +152,19 @@ $(document).ready(function() {
               }
             }
           );
+          $('.site-state').velocity(
+            'transition.slideRightIn', {
+              stagger : 50,
+              drag    : true,
+              display : 'flex'
+            }
+          );
         },
         complete: function() {
           self.sidebarEl.addClass('sidebar-active');
           self.sidebarEl.trigger('sidebar.didShow');
         }
-      }
-      );
+      });
 
       this.sidebarEl.trigger('sidebar.isShowing');
     },
