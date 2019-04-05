@@ -31,6 +31,10 @@ $$\begin{equation}
 e=mc^2
 \end{equation}\label{eq1}$$
 
+### reference
+
+<small>[1] samypesse.how-to-create-an-operating-system[EB/OL].https://samypesse.gitbooks.io/how-to-create-an-operating-system .2015.</small> 
+
 ### Centered Quote
 
 {% cq %}Elegant in code, simple in core{% endcq %}
