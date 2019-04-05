@@ -115,6 +115,14 @@ qiniu:
 # md reference.md
 {% qnimg book.jpg title:图片标题 alt:图片说明  extend:?imageView2/2/w/600 %}
 ```
+
+### 2.1.2 hexo-reference
+```sh
+cnpm install hexo-reference --save
+# ./_config.yml
+Plugins:
+  - hexo-reference
+```
 ## 2.2 next
 
 ```yml

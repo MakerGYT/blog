@@ -98,3 +98,9 @@ git fetch --all
 git reset --hard origin/master
 git fetch
 ```
+## proxy
+
+```git
+git config --global http.proxy
+git config --global --unset http.proxy
+```
