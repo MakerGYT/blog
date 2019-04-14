@@ -188,3 +188,5 @@ and another one[^4]
 footnote
 content
 [^4]: footnote content with some [markdown](https://en.wikipedia.org/wiki/Markdown)
+
+{% pdf https://blog-cdn.makergyt.com/progit.pdf %}

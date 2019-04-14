@@ -45,5 +45,9 @@ https://github.com/leo9960/wechat-app-unpack/
 {% endnote %}
 
 2. 使用脚本解包为小程序典型文件结构  
+
 # Reference
+
+<small>
 [1] 微信小程序团队.小程序开发指南[EB/OL].[https://0x9.me/Uk63r](https://developers.weixin.qq.com/ebook?action=get_post_info&docid=000c8a2f9ac0b0ab0086aafeb5d80a) .2018.
+</small>
