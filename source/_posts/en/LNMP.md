@@ -7,6 +7,7 @@ tags:
   - php
   - mysql
 ---
+
 # nginx
 传统基于线程提交请求
 可扩展的事件异步驱动
@@ -241,3 +242,15 @@ restart the machine:
 
 ``nginx start automaticlly``
 ``php-fpm need to start``
+
+# mysql
+>version: `8.0`
+
+```sh
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
+sudo apt-get update
+sudo apt-get install mysql-server
+sudo service mysql status
+mysql -u root -p
+```
