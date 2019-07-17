@@ -440,7 +440,7 @@ font:
   enable: true
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
-  host: //fonts.geekzu.org #//fonts.css.network/ # //fonts.lug.ustc.edu.cn/  
+  host: //fonts.geekzu.org #//fonts.css.network/ # //fonts.lug.ustc.edu.cn/
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -450,14 +450,14 @@ font:
   # Global font settings used for all elements in <body>.
   global:
     external: true
-    family: Monda
+    family:
     size:
 
   # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
   # Fallback to `global` font settings.
   headings:
     external: true
-    family: 
+    family:
     size:
 
   # Font settings for posts.
@@ -947,7 +947,7 @@ motion:
     # slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut
     # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
     # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
-    post_block: shrinkIn #flipXIn
+    post_block: fadeIn #flipXIn
     post_header: slideDownIn #slideDownIn
     post_body: slideDownIn
     coll_header: slideLeftIn
@@ -1199,6 +1199,6 @@ images: images
 
 passage_end_tag:
   enabled: true
-music: 
+music:
   enabled: true
   song: //music.163.com/outchain/player?type=2&id=28692687&auto=0&height=66

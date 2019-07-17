@@ -8,13 +8,18 @@ tags:
   - mysql
 ---
 
-# nginx
+# 1 nginx
 传统基于线程提交请求
 可扩展的事件异步驱动
 反向代理服务器（邮件代理、通用TCP/UDP代理服务器）
 <!-- more -->
-## intall nginx 
+## 1.1 intall nginx 
+### 1.1.1 Prebuilt Packages
+#### 1.1.1.1 try
 ```sh
+# can install directly
+sudo apt-get install nginx
+# install the latest version as follows
 sudo vim /etc/apt/sources.list
 # append to the end
 deb http://nginx.org/packages/ubuntu/ xenial nginx
@@ -28,34 +33,178 @@ sudo apt-get update
 # refer:https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $key
 sudo apt-get update # Warning again
-# browser and copy the key via http://nginx.org/keys/nginx_signing.key
-sudo vim nginx_signing.key # paste the key
+```
+```sh
+wget http://nginx.org/keys/nginx_signing.key
 sudo apt-key add nginx_signing.key
 sudo apt-get update # OK
 # install
 sudo apt-get install nginx
+# test
+service nginx start
+service nginx status
+```
+Available [install_nginx.sh](https://github.com/MakerGYT/ubuntu-sh/blob/master/install_nginx.sh)
+#### 1.1.1.2 uninstall
+```sh
+sudo service nginx stop
+sudo apt-get remove nginx
+sudo apt-get --purge remove nginx
+sudo apt-get autoremove
+# test
+sudo service nginx status
+which nginx
+dpkg --get-selections|grep nginx
+```
+### Building from Sources
+```sh
+wget https://nginx.org/download/nginx-1.16.0.tar.gz
+tar -zxvf nginx-1.16.0.tar.gz
+./configure --prefix=/etc/nginx
+```
+{% note danger %}
+./configure: error: the HTTP rewrite module requires the PCRE library.
+You can either disable the module by using --without-http_rewrite_module
+option, or install the PCRE library into the system, or build the PCRE library
+statically from the source with nginx by using --with-pcre=<path> option.
+{% endnote%}
+```sh
+wget wget https://ftp.pcre.org/pub/pcre/pcre2-10.33.tar.gz
+tar -zxvf pcre2-10.33.tar.gz
+cd nginx-1.16.0
+./configure --prefix=/etc/nginx --with-pcre=../pcre2-10.33
+```
+{% note danger %}
+./configure: error: the HTTP gzip module requires the zlib library.
+You can either disable the module by using --without-http_gzip_module
+option, or install the zlib library into the system, or build the zlib library
+statically from the source with nginx by using --with-zlib=<path> option.
+{% endnote%}
+```sh
+wget http://www.zlib.net/zlib-1.2.11.tar.gz
+tar -zxvf zlib-1.2.11.tar.gz
+cd nginx-1.16.0 && ./configure --prefix=/etc/nginx --with-pcre=../pcre2-10.33 --with-zlib=../zlib-1.2.11
+```
+{% note info %}
+Configuration summary
+  + using PCRE library: ../pcre2-10.33
+  + OpenSSL library is not used
+  + using zlib library: ../zlib-1.2.11
+{% endnote%}
+```sh
+wget https://www.openssl.org/source/openssl-1.1.1b.tar.gz
+tar -zxvf openssl-1.1.1b.tar.gz
+cd nginx-1.16.0 &&  ./configure --prefix=/etc/nginx --with-pcre=../pcre2-10.33 --with-zlib=../zlib-1.2.11 --with-http_ssl_module --with-openssl=../openssl-1.1.1b # ok
+```
+{% note danger %}
+src/core/ngx_regex.h:15:18: fatal error: pcre.h: No such file or directory
+compilation terminated.
+objs/Makefile:383: recipe for target 'objs/src/core/nginx.o' failed
+make[1]: *** [objs/src/core/nginx.o] Error 1
+make[1]: Leaving directory '/root/nginx-1.16.0'
+Makefile:8: recipe for target 'build' failed
+{% endnote %}
+need to install libpcre3-dev_8.x, so pcre 8.x series maybe works,but
+{% note info no-icon %}
+The older, but still widely deployed PCRE library, originally released in 1997, is at version 8.43. Its API and feature set are stable—future releases will be for bugfixes only. Any new features will be added to PCRE2, and not to the PCRE 8.x series.
+{% endnote%}
+Change pcre version(8.43) and reinstall,OK
+```sh
+make install
+# test
+/etc/sbin/nginx start
+```
+uninstall
+```sh
+sudo rm -rf /nginx-1.16.0
+sudo rm -rf /etc/nginx
 ```
 ## configure nginx
+### default
+```sh
+# etc/nginx/nginx.conf
+user  nginx;
+worker_processes  1;
+error_log  /var/log/nginx/error.log warn;
+pid        /var/run/nginx.pid;
+events {
+    worker_connections  1024;
+}
+http {
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+    access_log  /var/log/nginx/access.log  main;
+    sendfile        on;
+    #tcp_nopush     on;
+    keepalive_timeout  65;
+    #gzip  on;
+    include /etc/nginx/conf.d/*.conf;
+}
+# etc/nginx/conf.d/default.conf
+server {
+    listen       80;
+    server_name  localhost;
+
+    #charset koi8-r;
+    #access_log  /var/log/nginx/host.access.log  main;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+    #
+    #location ~ \.php$ {
+    #    proxy_pass   http://127.0.0.1;
+    #}
+
+    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+    #
+    #location ~ \.php$ {
+    #    root           html;
+    #    fastcgi_pass   127.0.0.1:9000;
+    #    fastcgi_index  index.php;
+    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+    #    include        fastcgi_params;
+    #}
+
+    # deny access to .htaccess files, if Apache's document root
+    # concurs with nginx's one
+    #
+    #location ~ /\.ht {
+    #    deny  all;
+    #}
+}
+```
 ### Setting Up a Simple Proxy Server,8080->80
 ```sh
-sudo vim /etc/nginx/nginx.conf
-# comment the http block
-# add 
-http {
-    server {
-        listen 80;
-        location / {
-            proxy_pass http://localhost:8080/;
-        }
-        location ~ \.(gif|jpg|png)$ {
-            root /data/images;
-        }
+# /etc/nginx/conf.d/test.conf
+server {
+    listen 80;
+    location / {
+        proxy_pass http://localhost:8080/;
     }
-    server {
-        listen 8080;
-        root /data/up1;
-        location / {
-        }
+    location ~ \.(gif|jpg|png)$ {
+        root /data/images;
+    }
+}
+server {
+    listen 8080;
+    root /data/up1;
+    location / {
     }
 }
 ```
@@ -254,3 +403,9 @@ sudo apt-get install mysql-server
 sudo service mysql status
 mysql -u root -p
 ```
+
+# Reference
+<small>
+[1] Martin Fjordvald.NGINX CONFIGURATION PRIMER.http://blog.martinfjordvald.com/2010/07/nginx-primer/ [EB/OL] 2010
+[2] debian.Nginx.https://wiki.debian.org/Nginx [EB/OL] 2016
+</small>
