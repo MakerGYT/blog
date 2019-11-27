@@ -3,19 +3,19 @@ title: fetch
 date: 2019-05-10 17:01:10
 tags:
 ---
-# get
+# 1 get
 before: 
 - nodejs
 - cnpm
 - create-react-app
 
-## front-end
+## 1.1 front-end
 ```sh
-create-react-app react-test
-touch src/config.js
+$ create-react-app react-test
+$ touch src/config.js
 ```
 ```js
-//  src/config.js
+// src/config.js
 module.exports = {
   basicUrl: "https://idpjtg-8080-hkyibe.dev.ide.live"
 }
@@ -69,13 +69,15 @@ class App extends Component {
 }
 export default App;
 ```
-## back-end
+## 1.2 back-end
 ```sh
-mkdir express-test && cd express-test
-cnpm init -y
-touch index.js
-cnpm i express --save
-# package.json
+$ mkdir express-test && cd express-test
+$ cnpm init -y
+$ touch index.js
+$ cnpm i express --save
+```
+```js
+// package.json
 "scripts": {
     "dev": "node ."
   },
@@ -93,21 +95,21 @@ app.get('/', function(req, res) {
 });
 app.listen(httpPort);
 ```
-## run
+## 1.3 run
 ```sh
-curl curl https://idpjtg-8080-hkyibe.dev.ide.live
+$ curl curl https://idpjtg-8080-hkyibe.dev.ide.live
 {"data":"test"} // ok
-cd react-test
-npm run start
+$ cd react-test
+$ npm run start
 # browser
 Error: Failed to fetch
 ```
-### error
-- Access to fetch at 'https://idpjtg-8080-hkyibe.dev.ide.live/' from origin 'https://idpjtg-3000-icqklp.dev.ide.live' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+### 1.3.1 error
+``Access to fetch at 'https://idpjtg-8080-hkyibe.dev.ide.live/' from origin 'https://idpjtg-3000-icqklp.dev.ide.live' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.``
 
-### check
+### 1.3.2 check
 use mock => [data](https://easy-mock.com/mock/5cd54a04bcc93766c5928798/#!method=get)
->ok
+>ok 
 
 It is proved that it is may not a front-end problem.
 ```js
@@ -123,7 +125,7 @@ reload react-test, express-test console
 It is proved that cross-site requests can be initiated normally, but the returned results are intercepted maybe by browsers.
 
 ![](https://mdn.mozillademos.org/files/14295/CORS_principle.png)
-### fix
+### 1.3.3 fix
 ```js
 // express/indx.js
 var allowCrossDomain = function (req, res, next) {
@@ -135,8 +137,8 @@ app.use(allowCrossDomain);
 >ok
 
 Q: fetch default mode is same-origin?
-# post
-## front-end
+# 2 post
+## 2.1 front-end
 ```js
 // react-test/src/App.js
 ...
@@ -205,7 +207,7 @@ render() {
 }
 ...
 ```
-## back-end
+## 2.2 back-end
 ```js
 // express-test/index.js
 const bodyParser = require('body-parser');
@@ -224,25 +226,22 @@ app.post('/', function(req, res) {
 });
 ```
 Q: body-parser is not installed?
-# fetch
-## interfaces
-## cors policy
-## fetch polyfill
-# mock
-## DXY F2E
+# 3 fetch
+## 3.1 interfaces
+## 3.2 cors policy
+## 3.3 fetch polyfill
+# 4 mock
+## 4.1 DXY F2E
 [api mocker](http://api-mocker.com)
-## Easy Mock
+## 4.2 Easy Mock
 [Easy Mock](https://easy-mock.com)
-## nuysoft Alibaba Inc.
+## 4.3 nuysoft Alibaba Inc.
 [mockjs](http://mockjs.com/)
-
 # Reference
 <small>
-[1] Mozilla.Fetch API.https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API [EB/OL] 2019
-
-[2] Mozilla.HTTP访问控制（CORS）.https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS [EB/OL] 2019
-
-[3] 赵客缦胡缨v吴钩霜雪明.ajax和axios、fetch的区别.https://www.jianshu.com/p/8bc48f8fde75 [EB/OL] 2018
+[1] Mozilla.Fetch API.https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API [EB/OL] 2019.
+[2] Mozilla.HTTP访问控制（CORS）.https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS [EB/OL] 2019.
+[3] 赵客缦胡缨v吴钩霜雪明.ajax和axios、fetch的区别.https://www.jianshu.com/p/8bc48f8fde75 [EB/OL] 2018.
 </small>
 
 

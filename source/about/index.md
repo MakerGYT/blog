@@ -3,9 +3,13 @@ title: About me
 date: 2018-12-27 10:17:14
 comments: false
 ---
-![](https://cloud-doc-img.makergyt.com/image/qrcode.jpg)
 ### 最近在听
 {% meting "2526283537" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#FC6423"%}
+### 最近在读
+- 贾平凹《秦腔》
+- 季羡林《牛棚杂忆》
+- 陈忠实《记忆》
+
 ### 更新日志
 - 2017.3 使用wordpress,由cloudleft(香港)托管，使用gaoyuting.org访问
  - 2017.9 存在恶意后门，遭遇攻击，主机商关停访问，自行删除后未能克服，故下架

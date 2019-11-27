@@ -1,5 +1,5 @@
 ---
-title: TensorFLow1.3文档中文翻译之1.0.0安装
+title: 【译】TensorFLow1.3文档中文翻译之1.0.0安装
 date: 2017-10-14 12:11:06
 tags:
 	- tensorflow

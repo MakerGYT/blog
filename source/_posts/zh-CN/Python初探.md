@@ -53,7 +53,7 @@ categories: study
 
 ## 2.1 前言
 
-   现在切入正题，首先为什么是要学习python？
+现在切入正题，首先为什么是要学习python？
 
 首先因为这是个讲求效率的时代，当然这里Python的效率在于其开发效率，可以试下用其他语言写上面的斐波那契数列。在运行效率上依然C/C++是首位，这是毋庸置疑的。然而在计算资源不再是问题的现在，开发效率显得极其重要。Python没有复杂晦涩的语法概念，它更像是为人类语言设计的，更多的面向算法实现而不是考虑底层实现机制，这与C++或者Java有很大不同。就语言本身来看，它始终基于自身不断迭代而不像其他语言不断新增各种各样的库或者包，让开发者应接不暇。当然也由于要“脱胎换骨“，不得不壮士断腕，于是形成2.7和3.x版本不兼容的”脾气“，这一点也让很多人苦恼。
 
@@ -61,7 +61,7 @@ categories: study
 ![语言排行](http://upload-images.jianshu.io/upload_images/3234038-ceab477152c9aa36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 因而，正如本文开始提到的，越来越多的开发者在感慨”人生苦短“了。
 
-   然后是Python能干什么？
+然后是Python能干什么？
 
 在此之前，听说过爬虫、图像处理，对，如果使用python编写，这将变得十分容易。在研究领域，Python可以很快的将算法付诸实现，从而让研究者有更多精力去测试并改进算法而不必把时间耗费在语言工具上，这也正是在机器学习领域python更受欢迎的原因。
 
@@ -71,7 +71,7 @@ categories: study
 主要分为两种，
 + 在windows64平台上,集成了`python3.6`的[Anaconda](https://docs.anaconda.com/anaconda/install/windows)。点击查看安装步骤，也可以参考[这个](https://jingyan.baidu.com/article/7908e85c9e4725af481ad2e2.html)不过不全面。
 **注意**：不用勾选add to environment path和register to ...,安装路径不要含中文、空格(这些都在官方文档有所说明)
-+ 在Ubuntu16.04平台上，内置的`python2.7`。在此之前需要先安装[VMware](https://jingyan.baidu.com/article/c275f6ba07e269e33d756714.html),一个虚拟机软件，便于在win平台上运行ubuntu系统。或者你也可以选择安装双系统，当然目前不推荐。**注意**：一般会遇到两个问题，[安装VMtools](https://jingyan.baidu.com/article/3065b3b6e8dedabecff8a435.html)用于与主机的文件交互，[网络无法连接](http://blog.csdn.net/jjmjeffrey/article/details/54972676)。
++ 在Ubuntu16.04平台上，内置的`python2.7`。在此之前需要先安装[VMware](https://jingyan.baidu.com/article/c275f6ba07e269e33d756714.html),一个虚拟机软件，便于在win平台上运行ubuntu系统。或者也可以选择安装双系统，~~当然目前不推荐~~。**注意**：一般会遇到两个问题，[安装VMtools](https://jingyan.baidu.com/article/3065b3b6e8dedabecff8a435.html)用于与主机的文件交互，[网络无法连接](http://blog.csdn.net/jjmjeffrey/article/details/54972676)。
 
 其实也可以在一个平台上配置两种版本的环境，不过在当前只是入门的情况下，还是隔离开学习比较好。使用Ubuntu也可以顺便学习linux的基本操作
 
