@@ -7,8 +7,6 @@ comments: false
 {% meting "2526283537" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#FC6423"%}
 ### 最近在读
 - 贾平凹《秦腔》
-- 季羡林《牛棚杂忆》
-- 陈忠实《记忆》
 
 ### 更新日志
 - 2017.3 使用wordpress,由cloudleft(香港)托管，使用gaoyuting.org访问
