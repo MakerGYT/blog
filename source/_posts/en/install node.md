@@ -69,8 +69,8 @@ echo "deb-src https://deb.nodesource.com/$VERSION $DISTRO main" | sudo tee -a /e
 sudo apt-get update
 sudo apt-get install nodejs
 ```
-# 3 源
-## 3.1 淘宝 NPM 镜像
+# 3 Source
+## 3.1 Taobao NPM mirror
 ```sh
 # install cnpm cli
 npm install -g cnpm --registry=https://registry.npm.taobao.org

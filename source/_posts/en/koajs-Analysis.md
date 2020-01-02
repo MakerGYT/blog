@@ -195,7 +195,7 @@ handleRequest(ctx, fnMiddleware) {
 ```
 These objects are already created in the constructor,why?
 #### 2.3.1.3 Call relationship
-![](https://blog-cdn.makergyt.com/application.jpg)
+![](https://cdn.blog.makergyt.com/images/study-koajs-structure.jpg)
 
 ### 2.3.2 context.js
 ```js

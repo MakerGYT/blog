@@ -116,7 +116,7 @@ Note default tag.
 
 ### PDF
 
-{% pdf https://alicdn.makergyt.com/blog/document.pdf %}
+{% pdf https://cdn.blog.makergyt.com/doc/progit.pdf %}
 
 ### mermaid
 
@@ -189,4 +189,4 @@ footnote
 content
 [^4]: footnote content with some [markdown](https://en.wikipedia.org/wiki/Markdown)
 
-{% pdf https://blog-cdn.makergyt.com/progit.pdf %}
+{% pdf https://cdn.blog.makergyt.com/doc/progit.pdf %}

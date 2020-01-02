@@ -95,12 +95,12 @@ cnpm install hexo-qiniu-sync --save
 # ./_config.yml
 qiniu:
   offline: false
-  sync: true
+  sync: false
   bucket:  blog 
   # secret_file: sec/qn.json or C:
   access_key: 
-  secret_key: -7s1GaiE82h-AKUAIqsd9X
-  dirPrefix: static
+  secret_key: 
+  # dirPrefix: static
   urlPrefix: https://blog-cdn.makergyt.com/static
   up_host: http://upload.qiniu.com
   local_dir: cdn
@@ -115,7 +115,8 @@ qiniu:
 # md reference.md
 {% qnimg book.jpg title:图片标题 alt:图片说明  extend:?imageView2/2/w/600 %}
 ```
-
+file define:
+`categories`+`title`+`type`
 ### 2.1.2 hexo-reference
 ```sh
 cnpm install hexo-reference --save

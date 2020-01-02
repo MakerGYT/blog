@@ -2,6 +2,7 @@
 title: 谈谈CSDN
 date: 2019-05-13 16:22:52
 tags:
+categories: essay
 ---
 {% note info %}
 最近CSDN被同行segmentfault CEO“旗帜鲜明的抵制”，但由于技术圈子的狭窄和无力(大部分都是打工的)，没有像之前的[版权事件](https://www.vcg.com/)调动起相干者和不相干者的情绪，现在看来最终没有掀起多大的波澜。
@@ -19,6 +20,6 @@ tags:
 
 缺乏审查，标题党越来越多，直线向百家号看齐，很多文章里面只有一条链接，但更多的是博主的转来转去，markdown被渲染的面目全非。
 
-{% qnimg csdn.png %}
+![](https://cdn.blog.makergyt.com/images/essay-csdn-recommendation.png)
 
 有理由预测，CSDN这样下去，如同兔子尾巴。在国内，很多互联网产品在使用上都是以免费的形态呈现给用户，但终究是趋利的，我们不能以传统商业中的顾客角色去要求它们满足某种期望。对其运营者而言，这便涉及到商业模式和价值观导向的问题，也即发展战略的问题。毕竟产品怎么样，用户说了算。
