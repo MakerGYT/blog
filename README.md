@@ -1,2 +1,2 @@
-# blog.makergyt.com
-2017-11 基于[typecho](http://typecho.org/),使用京东云云服务器托管
+# gaoyuting.org
+2017.3 基于[Wordpress](https://wordpress.org/),使用[cloudleft](www.cloudleft.com/)虚拟主机托管
