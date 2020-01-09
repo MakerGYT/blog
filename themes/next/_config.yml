@@ -155,7 +155,7 @@ baidu_push: false
 # External url should start with http:// or https://
 menu:
   home: / || chrome
-  about: /about/ || address-card
+  about: /about/ || sitemap
   # categories: /categories/ || th
   photos: /photos/ || camera-retro
   notebook: /notebook/ || sticky-note
@@ -1067,7 +1067,7 @@ vendors:
   # Example:
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
   # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
-  fontawesome:
+  fontawesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
 
   # Internal version: 2.10.4
   # See: https://www.algolia.com
@@ -1201,4 +1201,4 @@ passage_end_tag:
   enabled: true
 music:
   enabled: true
-  song: //music.163.com/outchain/player?type=2&id=28692687&auto=0&height=66
+  song: https://music.163.com/outchain/player?type=2&id=28692687&auto=0&height=66

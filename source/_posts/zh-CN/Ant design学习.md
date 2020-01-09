@@ -12,6 +12,8 @@ umi集成了react-router,将antd,dva作为plugin引入
 umi : Pluggable enterprise-level react application framework.
 umi-plugin-react: advanced function
 
+<!-- more -->
+
 how to define child components
 
 >“受控”与“非受控”两个概念，区别在于这个组件的状态是否可以被外部修改。一个设计得当的组件应该同时支持“受控”与“非受控”两种形式，即当开发者不控制组件属性时，组件自己管理状态，而当开发者控制组件属性时，组件该由属性控制。

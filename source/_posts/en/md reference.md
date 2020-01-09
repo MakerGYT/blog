@@ -176,8 +176,6 @@ commit
 merge newbranch
 {% endmermaid %}
 
-{% qnimg book.jpg title:图片标题 alt:图片说明  extend:?imageView2/2/w/600 %}
-
 basic footnote[^1]
 here is an inline footnote[^2](inline footnote)
 and another one[^3]

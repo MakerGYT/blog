@@ -1,8 +1,9 @@
 ---
-title: redis
+title: redis reference
 lang: en
 date: 2019-05-10 11:10:28
-tags:
+tags: redis
+categories: reference
 ---
 #  install
 ```sh
@@ -12,6 +13,8 @@ cd redis-stable
 make
 make test
 ```
+
+<!-- more -->
 ``You need tcl 8.5 or newer in order to run the Redis test``
 ```sh
 sudo apt-get update
@@ -21,6 +24,7 @@ test
 ```sh
 [exception]: Executing test client: couldn't execute "grep": not enough memory.
 ```
+
 ## start
 default port: 6379
 ```sh

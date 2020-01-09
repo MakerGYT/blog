@@ -9,6 +9,7 @@ before:
 - cnpm
 - create-react-app
 
+<!-- more -->
 ## 1.1 front-end
 ```sh
 $ create-react-app react-test

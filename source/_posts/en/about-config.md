@@ -89,34 +89,10 @@ cnpm install hexo-deployer-git --save
     # my url: blog-cn.makergyt.com
 ```
 
-### 2.1.2 hexo-qiniu-sync
-```sh
-cnpm install hexo-qiniu-sync --save
-# ./_config.yml
-qiniu:
-  offline: false
-  sync: false
-  bucket:  blog 
-  # secret_file: sec/qn.json or C:
-  access_key: 
-  secret_key: 
-  # dirPrefix: static
-  urlPrefix: https://blog-cdn.makergyt.com/static
-  up_host: http://upload.qiniu.com
-  local_dir: cdn
-  update_exist: true
-  image: 
-    folder: images
-    extend: 
-  js:
-    folder: js
-  css:
-    folder: css
-# md reference.md
-{% qnimg book.jpg title:图片标题 alt:图片说明  extend:?imageView2/2/w/600 %}
-```
+~~### 2.1.2 hexo-qiniu-sync~~
+
 file define:
-`categories`+`title`+`type`
+`categories`+`title`+`type`~~
 ### 2.1.2 hexo-reference
 ```sh
 cnpm install hexo-reference --save
