@@ -107,10 +107,19 @@ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt update && sudo apt install yarn
 ```
+# 6. Resolving EACCES permissions errors when installing packages globally
+If you see an EACCES error when you try to install a package globally, you can either:
+Reinstall npm with a node version manager (recommended)...We strongly recommend using a Node version manager to install Node.js and npm. We do not recommend using a Node installer, since the Node installation process installs npm in a directory with local permissions and can cause permissions errors when you run npm packages globally.Node version managers allow you to install and switch between multiple versions of Node.js and npm on your system so you can test your applications on multiple versions of npm to ensure they work for users on different versions.
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash # cross wall
+```
+# 7. npm & npx & nvm & nvx & nrm & nvs
+- npx: an alternative to running global commands
 # Reference
 
 <small>[1] nodesource.Node.js Binary Distributions[EB/OL].https://github.com/nodesource/distributions/blob/master/README.md .2019.</small>
 <small>[2] nodejs. How to install Node.js via binary archive on Linux?[EB/OL]. https://github.com/nodejs/help/wiki/Installation .2018.</small>
 <small>[3] taobao. 淘宝 NPM 镜像使用说明[EB/OL]. https://npm.taobao.org/ .2014-2016</small>
-<small>[4] tj. n – Interactively Manage Your Node.js Versions[EB/OL]. https://www.npmjs.com/package/n .2018.</small>    https://www.yarnpkg.com/en/docs/install#debian-stable
+<small>[4] tj. n – Interactively Manage Your Node.js Versions[EB/OL]. https://www.npmjs.com/package/n .2018.</small>
 <small>[5] Yarn.Installation[EB/OL]. https://www.yarnpkg.com/en/docs/install#debian-stable.2018.</small>
+<small>[6] npmjs.Resolving EACCES permissions errors when installing packages globally[EB/OL]. https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally.</small>

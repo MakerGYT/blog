@@ -18,4 +18,13 @@ comments: false
 - 2018.12 迁移使用hexo ，由github托管，使用makergyt.github.io访问，映射为blog.makergyt.com
  - 2019.1 发现百度不会收录github pages,考虑迁移至国内coding,但样式无法加载，暂时放弃迁移
  - 2019.4 部署至coding pages,使用memakergyt.coding.me访问，映射为blog-cn.makergyt.com，百度收录
+
+### 关于性能
+为什么首先托管在github上，
+1. 没有预算买多余的服务器，以及好的服务器
+2. 保证稳定性，避免考虑服务器到期后可能多余的迁移工作
+3. 使用issue作为评论（非必须，但稳定简单）
+4. 良好的版本控制和代码存储
+
+但是缺陷是显而易见的，访问速度极其慢
 <div class="text-center">{% btn ../en/about-config, About config of this site, arrow-right fa-fw fa-lg, Next Chapter (Label) %}</div>
