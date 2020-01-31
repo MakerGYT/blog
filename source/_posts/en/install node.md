@@ -112,9 +112,14 @@ If you see an EACCES error when you try to install a package globally, you can e
 Reinstall npm with a node version manager (recommended)...We strongly recommend using a Node version manager to install Node.js and npm. We do not recommend using a Node installer, since the Node installation process installs npm in a directory with local permissions and can cause permissions errors when you run npm packages globally.Node version managers allow you to install and switch between multiple versions of Node.js and npm on your system so you can test your applications on multiple versions of npm to ensure they work for users on different versions.
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash # cross wall
+# ~/.bashrc, ~/.profile, or ~/.zshrc
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
 # 7. npm & npx & nvm & nvx & nrm & nvs
 - npx: an alternative to running global commands
+
 # Reference
 
 <small>[1] nodesource.Node.js Binary Distributions[EB/OL].https://github.com/nodesource/distributions/blob/master/README.md .2019.</small>
