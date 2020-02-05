@@ -28,35 +28,43 @@ deb-src http://nginx.org/packages/ubuntu/ xenial nginx
 sudo apt-get update
 ```
 ``W: GPG error: http://nginx.org/packages/ubuntu xenial InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY ABF5BD827BD9BF62``
-
 ```sh
 # refer:https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $key
 sudo apt-get update # Warning again
 ```
+Correct action:
 ```sh
-wget http://nginx.org/keys/nginx_signing.key
-sudo apt-key add nginx_signing.key
-sudo apt-get update # OK
-# install
-sudo apt-get install nginx
+sudo apt install curl gnupg2 ca-certificates lsb-release
+echo "deb http://nginx.org/packages/ubuntu `lsb_release -cs` nginx" \
+    | sudo tee /etc/apt/sources.list.d/nginx.list
+curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+sudo apt-key fingerprint ABF5BD827BD9BF62
+# pub   rsa2048 2011-08-19 [SC] [expires: 2024-06-14]
+#       573B FD6B 3D8F BC64 1079  A6AB ABF5 BD82 7BD9 BF62
+# uid   [ unknown] nginx signing key <signing-key@nginx.com>
+sudo apt update
+sudo apt install nginx
 # test
-service nginx start
 service nginx status
+service nginx start # if not run
 ```
+`nginx.service: Can't open PID file /var/run/nginx.pid (yet?) after start: No such file or directory`
 Available [install_nginx.sh](https://github.com/MakerGYT/ubuntu-sh/blob/master/install_nginx.sh)
 #### 1.1.1.2 uninstall
 ```sh
 sudo service nginx stop
 sudo apt-get remove nginx
 sudo apt-get --purge remove nginx
+sudo apt-get --purge remove nginx-common
 sudo apt-get autoremove
 # test
 sudo service nginx status
 which nginx
 dpkg --get-selections|grep nginx
 ```
-### Building from Sources
+### 1.1.2 Building from Sources
+#### 1.1.2.1 try
 ```sh
 wget https://nginx.org/download/nginx-1.16.0.tar.gz
 tar -zxvf nginx-1.16.0.tar.gz
@@ -114,13 +122,13 @@ make install
 # test
 /etc/sbin/nginx start
 ```
-uninstall
+#### 1.1.2.2 uninstall
 ```sh
 sudo rm -rf /nginx-1.16.0
 sudo rm -rf /etc/nginx
 ```
-## configure nginx
-### default
+## 1.2 configure nginx
+### 1.2.1 default
 ```sh
 # etc/nginx/nginx.conf
 user  nginx;
@@ -136,6 +144,7 @@ http {
     log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
                       '$status $body_bytes_sent "$http_referer" '
                       '"$http_user_agent" "$http_x_forwarded_for"';
+
     access_log  /var/log/nginx/access.log  main;
     sendfile        on;
     #tcp_nopush     on;
@@ -143,21 +152,17 @@ http {
     #gzip  on;
     include /etc/nginx/conf.d/*.conf;
 }
-# etc/nginx/conf.d/default.conf
+# /etc/nginx/conf.d/default.conf
 server {
     listen       80;
     server_name  localhost;
-
     #charset koi8-r;
     #access_log  /var/log/nginx/host.access.log  main;
-
     location / {
         root   /usr/share/nginx/html;
         index  index.html index.htm;
     }
-
     #error_page  404              /404.html;
-
     # redirect server error pages to the static page /50x.html
     #
     error_page   500 502 503 504  /50x.html;
@@ -189,7 +194,7 @@ server {
     #}
 }
 ```
-### Setting Up a Simple Proxy Server,8080->80
+### 1.2.2 Setting Up a Simple Proxy Server,8080->80
 ```sh
 # /etc/nginx/conf.d/test.conf
 server {
@@ -218,7 +223,7 @@ sudo nginx -t
 sudo nginx -s reload 
 ```
 access content correctly through intranet IP
-### Setting Up FastCGI Proxying
+### 1.2.3 Setting Up FastCGI Proxying
 ```
 cat /etc/nginx/nginx.conf
 user  nginx;
@@ -245,8 +250,8 @@ events {
 }
 ```
 
-# php
-## install php
+# 2 php
+## 2.1 install php
 ```sh
 # 1.Obtain and unpack the PHP source:
 wget http://cn.php.net/distributions/php-7.2.13.tar.gz
@@ -309,7 +314,7 @@ Installing PEAR environment:      /usr/local/lib/php/
 Installing PDO headers:           /usr/local/include/php/ext/pdo/
 ```
 You may want to add: /usr/local/lib/php to your php.ini include_path
-## configure php
+## 2.2 configure php
 ```sh
 # 3.Obtain and move configuration files to their correct locations
 sudo cp php.ini-development /usr/local/php/php.ini
@@ -347,9 +352,9 @@ group = www-data
 ```sh
 sudo /usr/local/bin/php-fpm # OK
 ```
-## configure  nginx to support php
-```
-# 6.nginx.conf
+## 2.3 configure  nginx to support php
+```sh
+# nginx.conf
 sudo vim /etc/nginx/nginx.conf
 http {
     server {
@@ -376,7 +381,7 @@ events {
     worker_connections  1024;
 }
 ```
-# test
+## 2.4 test
 ```sh
 sudo echo "<?php phpinfo(); ?>" >> /usr/local/nginx/html/index.php
 # navigate to http://learn.lea
@@ -392,7 +397,7 @@ restart the machine:
 ``nginx start automaticlly``
 ``php-fpm need to start``
 
-# mysql
+# 3 mysql
 >version: `8.0`
 
 ```sh

@@ -15,7 +15,7 @@ make test
 ```
 
 <!-- more -->
-``You need tcl 8.5 or newer in order to run the Redis test``
+`You need tcl 8.5 or newer in order to run the Redis test`
 ```sh
 sudo apt-get update
 sudo apt-get install tcl8.5-dev
@@ -24,7 +24,11 @@ test
 ```sh
 [exception]: Executing test client: couldn't execute "grep": not enough memory.
 ```
-
+`adlist.c:32:10: fatal error: stdlib.h: No such file or directory`
+```sh
+apt-get remove gcc
+apt install build-essential
+```
 ## start
 default port: 6379
 ```sh
@@ -37,7 +41,12 @@ sudo cp src/redis-server /usr/local/bin/
 sudo cp src/redis-cli /usr/local/bin/
 redis-server
 redis-cli
-// or just 
+# or just 
 make install
+```
+## stop
+```sh
+ps -ef|grep redis
+kill -9 pid
 ```
 # Remote 

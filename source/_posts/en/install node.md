@@ -111,7 +111,9 @@ sudo apt update && sudo apt install yarn
 If you see an EACCES error when you try to install a package globally, you can either:
 Reinstall npm with a node version manager (recommended)...We strongly recommend using a Node version manager to install Node.js and npm. We do not recommend using a Node installer, since the Node installation process installs npm in a directory with local permissions and can cause permissions errors when you run npm packages globally.Node version managers allow you to install and switch between multiple versions of Node.js and npm on your system so you can test your applications on multiple versions of npm to ensure they work for users on different versions.
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash # cross wall
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash # Over the wall
+# or Mirror image in China
+curl -o- https://gitee.com/mirrors/nvm/raw/master/install.sh | bash # or wget -qO- https://gitee.com/mirrors/nvm/raw/master/install.sh | bash
 # ~/.bashrc, ~/.profile, or ~/.zshrc
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
