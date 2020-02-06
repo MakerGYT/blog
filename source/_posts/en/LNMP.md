@@ -49,7 +49,13 @@ sudo apt install nginx
 service nginx status
 service nginx start # if not run
 ```
-`nginx.service: Can't open PID file /var/run/nginx.pid (yet?) after start: No such file or directory`
+- `Skipping acquire of configured file 'main/binary-i386/Packages' as repository 'xxx' doesn't support architecture 'i386'`
+```sh
+# /etc/apt/sources.list.d/nginx.list
+deb [arch=amd64] http://nginx.org/packages/ubuntu bionic nginx
+```
+- `nginx.service: Can't open PID file /var/run/nginx.pid (yet?) after start: No such file or directory`
+
 Available [install_nginx.sh](https://github.com/MakerGYT/ubuntu-sh/blob/master/install_nginx.sh)
 #### 1.1.1.2 uninstall
 ```sh
