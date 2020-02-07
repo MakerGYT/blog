@@ -12,4 +12,3 @@ Disallow: /vendors/
 Disallow: /fancybox/
 
 Sitemap: https://blog.makergyt.com/sitemap.xml
-Sitemap: https://blog.makergyt.com/baidusitemap.xml

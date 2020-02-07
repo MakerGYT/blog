@@ -9,15 +9,11 @@ mathjax: true
 
 ### math
 
-$$x+1\over\sqrt{1-x^2} \tag{i}\label{eq_tag}$$
+$$\begin{equation}
+e=mc^2
+\end{equation}\label{eq1}$$
 
 <!-- more -->
-
-$$\begin{align}
--4 + 5x &= 2+y \nonumber  \\
- w+2 &= -1+w \\
- ab &= cb
-\end{align}$$
 
 $$\begin{equation}
 \begin{aligned}
@@ -26,10 +22,12 @@ a &= b + c \\
   &= h + i
 \end{aligned}
 \end{equation}\label{eq2}$$
-
-$$\begin{equation}
-e=mc^2
-\end{equation}\label{eq1}$$
+$$\begin{align}
+-4 + 5x &= 2+y \nonumber  \\
+ w+2 &= -1+w \\
+ ab &= cb
+\end{align}$$
+$$x+1\over\sqrt{1-x^2} \tag{i}\label{eq_tag}$$
 
 ### reference
 

@@ -4,6 +4,7 @@ date: 2020/1/30 11:16:25
 categories: reference
 tags: http
 comments: false
+description: Restful Interface response design
 ---
 HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes:
 1. Informational responses (100–199),
@@ -12,7 +13,6 @@ HTTP response status codes indicate whether a specific HTTP request has been suc
 4. Client errors (400–499),
 5. and Server errors (500–599).
 
-<!-- more -->
 # 1 Information responses
 - `100 Continue`
 This interim response indicates that everything so far is OK and that the client should continue the request, or ignore the response if the request is already finished.
@@ -154,4 +154,4 @@ Further extensions to the request are required for the server to fulfil it.
 The 511 status code indicates that the client needs to authenticate to gain network access.
 
 # Reference 
-<small>[1] MDN.HTTP response status codes[EB/OL].https://developer.mozilla.org/en-US/docs/Web/HTTP/Status.2019</small>
+<small>[1] MDN.HTTP response status codes[EB/OL].https://developer.mozilla.org/en-US/docs/Web/HTTP/Status. 2019.</small>

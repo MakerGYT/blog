@@ -2,18 +2,21 @@
 title: fetch
 date: 2019-05-10 17:01:10
 tags:
+  - node
+  - react
+  - api
+description: Design a simple front-end and back-end response mechanism
 ---
-# 1 get
-before: 
+# 0 Prerequisite
 - nodejs
 - cnpm
 - create-react-app
 
-<!-- more -->
+# 1 get
 ## 1.1 front-end
 ```sh
-$ create-react-app react-test
-$ touch src/config.js
+create-react-app react-test
+touch src/config.js
 ```
 ```js
 // src/config.js
@@ -239,12 +242,6 @@ Q: body-parser is not installed?
 ## 4.3 nuysoft Alibaba Inc.
 [mockjs](http://mockjs.com/)
 # Reference
-<small>
-[1] Mozilla.Fetch API.https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API [EB/OL] 2019.
-[2] Mozilla.HTTP访问控制（CORS）.https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS [EB/OL] 2019.
-[3] 赵客缦胡缨v吴钩霜雪明.ajax和axios、fetch的区别.https://www.jianshu.com/p/8bc48f8fde75 [EB/OL] 2018.
-</small>
-
-
-
-
+<small>[1] Mozilla.Fetch API[EB/OL].https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API, 2019.</small>
+<small>[2] Mozilla.HTTP访问控制（CORS）[EB/OL].https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Access_control_CORS, 2019.</small>
+<small>[3] 赵客缦胡缨v吴钩霜雪明.ajax和axios、fetch的区别[EB/OL].https://www.jianshu.com/p/8bc48f8fde75, 2018.</small>

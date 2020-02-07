@@ -1,9 +1,10 @@
 ---
-title: redis reference
+title: Redis reference
 lang: en
 date: 2019-05-10 11:10:28
 tags: redis
 categories: reference
+description: Common operations of Redis
 ---
 #  install
 ```sh
@@ -13,8 +14,6 @@ cd redis-stable
 make
 make test
 ```
-
-<!-- more -->
 `You need tcl 8.5 or newer in order to run the Redis test`
 ```sh
 sudo apt-get update

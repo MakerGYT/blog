@@ -1,8 +1,6 @@
 *About the configuration of this website*
 # 1 Init
-<!-- more -->
 ## 1.1 Download
-
 ### 1.1.1 hexo
 
 ```sh
@@ -84,33 +82,10 @@ cnpm install hexo-deployer-git --save
     # my url: blog-cn.makergyt.com
 ```
 
-### 2.1.2 hexo-qiniu-sync
-```sh
-cnpm install hexo-qiniu-sync --save
-# ./_config.yml
-qiniu:
-  offline: false
-  sync: true
-  bucket:  blog 
-  # secret_file: sec/qn.json or C:
-  access_key: 
-  secret_key: -7s1GaiE82h-AKUAIqsd9X
-  dirPrefix: static
-  urlPrefix: https://blog-cdn.makergyt.com/static
-  up_host: http://upload.qiniu.com
-  local_dir: cdn
-  update_exist: true
-  image: 
-    folder: images
-    extend: 
-  js:
-    folder: js
-  css:
-    folder: css
-# md reference.md
-{% qnimg book.jpg title:图片标题 alt:图片说明  extend:?imageView2/2/w/600 %}
-```
+~~### 2.1.2 hexo-qiniu-sync~~
 
+file define:
+`categories`+`title`+`type`~~
 ### 2.1.2 hexo-reference
 ```sh
 cnpm install hexo-reference --save
@@ -287,25 +262,16 @@ fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
 fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
 ```
 
-### 2.2.4 Add end
-
+### 2.2.4 Languages
 ```sh
-vim /themes/next/layout/_macro/passage-end-tag.swig
-<div>
-    {% if not is_index %}
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------end-------------</div>
-    {% endif %}
-</div>
-vim /themes/next/layout/_macro/post.swig
-# line 333
-<div>
-  {% if not is_index %}
-    {% include 'passage-end-tag.swig' %}
-  {% endif %}
-</div>
-# next/_config.yml
-passage_end_tag:
-  enabled: true
+# /themes/next/languages/en.yml
+menu: 
+  photos: Photos
+  notebook: Notebook
+# /themes/next/languages/zh-CN.yml
+menu:
+  photos: 影像
+  notebook: 笔记
 ```
 ### 2.2.5 encrypt
 ```sh
@@ -318,15 +284,14 @@ encrypt:
 ### 2.2.6 music
 #### 2.2.6.1 sidebar
 ```sh
-vim /themes/next/layout/_macro/siderbar.swig
-# siderbar.swig line 168
+# /themes/next/layout/_partials_/siderbar/site-overview.swig
 {% if theme.music.enabled %}
   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="{{ theme.music.song }}"></iframe>
 {% endif %}
 # next/_config.yml
 music: 
   enabled: true
-  song: //music.163.com/outchain/player?type=2&id=28692687&auto=0&height=66
+  song: https://music.163.com/outchain/player?type=2&id=28692687&auto=0&height=66
 ```
 #### 2.2.6.2 page
 ```sh
@@ -337,6 +302,3 @@ aplayer:
 # ./about/index.md
 {% meting "2526283537" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#FC6423"%}
 ```
-# Reference
-
-<small>[1] NexT.Gemini.Documentation[EB/OL].https://theme-next.org/docs/ .2019.</small>
