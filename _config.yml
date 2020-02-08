@@ -6,7 +6,7 @@
 title: MakerGYT
 subtitle: Technology returns to art
 description: 
-keywords: blog makergyt
+keywords: blog makergyt 高宇挺
 author: Gao Yuting
 language:
   - zh-CN
@@ -109,7 +109,9 @@ deploy:
   - type: git
     repo: git@e.coding.net:makergyt/blog.git
     branch: master
-
+  - type: git
+    repo: git@gitee.com:makergyt/blog.git
+    branch: master
 symbols_count_time:
   symbols: true
   time: true
