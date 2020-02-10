@@ -302,3 +302,10 @@ aplayer:
 # ./about/index.md
 {% meting "2526283537" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#FC6423"%}
 ```
+### 2.2.7 Valine
+#### 2.2.7.1 部署
+#### 2.2.7.2 设置
+#### 2.2.7.3 定时任务
+https://github.com/zhaojun1998/Valine-Admin
+https://github.com/DesertsP/Valine-Admin
+https://deserts.io/valine-admin-document/#%E9%98%B2%E6%AD%A2%E4%BA%91%E5%BC%95%E6%93%8E%E4%BC%91%E7%9C%A0

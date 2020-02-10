@@ -349,7 +349,7 @@ text_align:
   mobile: justify
 
 # Reduce padding / margin indents on devices with narrow width.
-mobile_layout_economy: false
+mobile_layout_economy: true
 
 # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
 android_chrome_color: "#222"
@@ -629,10 +629,10 @@ valine:
   enable: true
   appid: 5vQNdxlHoGF0ULpA8n11nOXU-MdYXbMMI
   appkey: GVl0KhJLtCbE2sGdN6hI5AnF
-  notify: true # Mail notifier
+  notify: false # Mail notifier
   verify: false # Verification code
   placeholder: Generous with your criticism # Comment box placeholder
-  avatar: mm # Gravatar style
+  avatar: wavatar # Gravatar style
   guest_info: mail # Custom comment header
   pageSize: 10 # Pagination size
   language: # Language, available values: en, zh-cn
@@ -706,14 +706,14 @@ cnzz_siteid:
 # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
 # Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
-  enable: false
+  enable: true
   app_id: 5vQNdxlHoGF0ULpA8n11nOXU-MdYXbMMI
   app_key: GVl0KhJLtCbE2sGdN6hI5AnF
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: true
-  betterPerformance: false
+  security: false
+  betterPerformance: true
 
 # Another tool to show number of visitors to each article.
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
