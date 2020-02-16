@@ -1,3 +1,8 @@
+通过github pages搭建博客最简单的便是直接存放md文件，便可自动解析，但是
+- 支持的语法有限，不支持的会提交失败
+- 样式固定
+- 无法生成目录
+
 *About the configuration of this website*
 # 1 Init
 ## 1.1 Download
