@@ -7,6 +7,7 @@ tags:
  - koa
 categories:
  - study
+description: Analysis source code
 ---
 # 1. start
 ## 1.1 simple http server
@@ -17,9 +18,6 @@ http.createServer(function (req, res) {
   res.end('hello world');
 }).listen(3000);
 ```
-
-<!-- more -->
-
 ## 1.2 express
 ```js
 // app.js
@@ -248,8 +246,6 @@ console.log(gen.next()); // done: false
 console.log(gen.next()); // done: true
 ```
 # Reference
-<small>
-[1] koajs.Guide. https://github.com/koajs/koa/blob/master/docs/guide.md [EB/OL] 2018
-[2] koJames Moore.Koajs QuickStart Guide. https://www.knowthen.com/episode-3-koajs-quickstart-guide [EB/OL] 2014
-[3] 贾顺名.koa源码阅读[0]. https://segmentfault.com/a/1190000015724787 [EB/OL] 2018
-</small>
+<small>[1] koajs.Guide. https://github.com/koajs/koa/blob/master/docs/guide.md [EB/OL] 2018.</small>
+<small>[2] koJames Moore.Koajs QuickStart Guide. https://www.knowthen.com/episode-3-koajs-quickstart-guide [EB/OL] 2014.</small>
+<small>[3] 贾顺名.koa源码阅读[0]. https://segmentfault.com/a/1190000015724787 [EB/OL] 2018.</small>
