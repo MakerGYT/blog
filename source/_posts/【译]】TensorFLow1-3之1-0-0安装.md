@@ -4,6 +4,7 @@ date: 2017-10-14 12:11:06
 tags:
 	- tensorflow
 categories: translate
+description: 
 ---
 
 {% note info %}
@@ -11,8 +12,6 @@ categories: translate
 {% endnote %}
 
 下面的引导解释了如何安装让你可以使用Python写程序的一个TensorFlow的版本
-
-<!-- more -->
 # 1 在ubuntu上安装
 这份引导解释了如何在Ubuntu上安装TensorFlow。这些说明可能在其它Linux版本上也能工作，但是我们目前仅仅在Ubuntu14.04或者之上的版本上（我们也只支持）测试了它们。
 # 2 选择安装哪个Tesorflow版本

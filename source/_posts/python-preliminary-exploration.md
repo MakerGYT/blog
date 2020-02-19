@@ -4,16 +4,13 @@ date: 2017-10-21 07:06:36
 tags:
   - python
 categories: study
+deceription: Preliminary learning record
 ---
 
 {% cq %}Life is short,I use Python!{% endcq %}
 
 # 1 学习准备
 ## 1.1 环境
-
-<!-- more -->
-
-
 + 学习环境：[Anaconda 5.0.0](https://repo.continuum.io/archive/Anaconda3-5.0.0.1-Linux-x86_64.sh)
 + 编辑器：[sublime text 3143](https://www.sublimetext.com/)
 + 虚拟机：[VMwarePro 12](http://sw.bos.baidu.com/sw-search-sp/software/aff3469fe5f99/VMware-workstation-full-12.5.7.20721.exe)

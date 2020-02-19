@@ -5,6 +5,7 @@ categories: reference
 tags: markdown
 comments: false
 mathjax: true
+description: useful markdown reference
 ---
 
 ### math
@@ -12,8 +13,6 @@ mathjax: true
 $$\begin{equation}
 e=mc^2
 \end{equation}\label{eq1}$$
-
-<!-- more -->
 
 $$\begin{equation}
 \begin{aligned}

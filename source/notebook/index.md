@@ -24,3 +24,5 @@ Todo
 - description
 - cover
 - title -filename
+
+Rachel Thomas.Advice for Better Blog Posts.https://www.fast.ai/2019/05/13/blogging-advice/ 2019

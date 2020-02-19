@@ -3,6 +3,11 @@
 - 样式固定
 - 无法生成目录
 
+需求
+- 简洁，样式依赖少
+- 可配置
+- 支持通用md语法，包含数学公式
+
 *About the configuration of this website*
 # 1 Init
 ## 1.1 Download
