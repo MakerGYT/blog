@@ -132,7 +132,7 @@ aplayer:
 restful:
   # site 可配置为数组选择性生成某些属性
   # site: ['title', 'subtitle', 'description', 'author', 'since', email', 'favicon', 'avatar']
-  site: ['title', 'author']       # hexo.config mix theme.config
+  site: ['title', 'subtitle', 'author','since', email', 'favicon', 'avatar']       # hexo.config mix theme.config
   posts_size: 10    # 文章列表分页，0 表示不分页
   posts_props:      # 文章列表项的需要生成的属性
     title: true
