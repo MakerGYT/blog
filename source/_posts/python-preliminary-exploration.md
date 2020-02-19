@@ -55,7 +55,7 @@ deceription: Preliminary learning record
 首先因为这是个讲求效率的时代，当然这里Python的效率在于其开发效率，可以试下用其他语言写上面的斐波那契数列。在运行效率上依然C/C++是首位，这是毋庸置疑的。然而在计算资源不再是问题的现在，开发效率显得极其重要。Python没有复杂晦涩的语法概念，它更像是为人类语言设计的，更多的面向算法实现而不是考虑底层实现机制，这与C++或者Java有很大不同。就语言本身来看，它始终基于自身不断迭代而不像其他语言不断新增各种各样的库或者包，让开发者应接不暇。当然也由于要“脱胎换骨“，不得不壮士断腕，于是形成2.7和3.x版本不兼容的”脾气“，这一点也让很多人苦恼。
 
 其次，Python现在太受欢迎了。在今年10月10日召开的[Github Universe](https://octoverse.github.com/)大会上，根据发布的Github Octoverse报告显示，Python已代替Java从去年的第三突进到了第二（第一是js），新增了40%的Pull。不是我们追风，而是在很多开源项目中，越来越多的开发者选择使用Python，尤其是一些大公司(联盟)主导的开源项目，例如被fork最多的TensorFlow（谷歌开发的深度学习平台），开发者不可避免的要去使用进而也就必须要学习。这是一个提高语言热度的良性循环。
-![语言排行](http://upload-images.jianshu.io/upload_images/3234038-ceab477152c9aa36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![语言排行](https://upload-images.jianshu.io/upload_images/3234038-ceab477152c9aa36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 因而，正如本文开始提到的，越来越多的开发者在感慨”人生苦短“了。
 
 然后是Python能干什么？
@@ -111,7 +111,7 @@ deceription: Preliminary learning record
 + 编辑器：sublime text3143
 + 效果如图
 
-![贪吃蛇](http://upload-images.jianshu.io/upload_images/3234038-53f09a7f69439dc5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![贪吃蛇](https://upload-images.jianshu.io/upload_images/3234038-53f09a7f69439dc5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 + 操作方法：
   上下左右键或wsad键控制

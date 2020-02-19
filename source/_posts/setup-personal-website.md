@@ -21,22 +21,22 @@ description: Preliminary learning to establish personal website
 1. 先拥有，确切的说是租用一台云服务器(或者虚拟主机)，网络上有很多服务商，五花八门，国内的有腾讯云，百度云(不是百度网盘！)，国外的有godady，区别是国外的不需要备案，但是速度可能会慢，国内的相反。这里推荐[阿里云](https://www.aliyun.com/minisite/goods?userCode=89lfnf3q)（点击获取代金券），还有[学生优惠](https://promotion.aliyun.com/ntms/act/campus2018.html)，并且持续，关键是服务好。你可以选择时长，环境系统就选``centos7``（linux的一个发行版），不要用winserver,linux操作基础的都可以百度到,地域目前无所谓,时长看自身情况。
 
 2. 完成学生认证后，是直接获取支付宝认证信息，一步完成，就能使用这种优惠，购买时记得选择设置密码而先不是密钥，牢记你的密码。然后你进入管理控制台，就能看到你的服务器信息。
-![点击左侧云服务器ECS实例，进入操作。](http://upload-images.jianshu.io/upload_images/3234038-89e0ec0aeb204589.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![启动你服务器，运行中](http://upload-images.jianshu.io/upload_images/3234038-c92de9e9d0f7238c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![点击左侧云服务器ECS实例，进入操作。](https://upload-images.jianshu.io/upload_images/3234038-89e0ec0aeb204589.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![启动你服务器，运行中](https://upload-images.jianshu.io/upload_images/3234038-c92de9e9d0f7238c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 3. 配置安全组,左侧安全组->配置规则->公网入方向->快速创建规则,端口就先全开了，自定义端口因为我们这里推荐linux系统，填22/22（winserver填3389/3389），授权对象填``0.0.0.0/0``，表示允许任何地方连接你的服务器，先这样设置（一般没人闲的黑学生机）。
-然后就开始ssh配置，这里使用阿里云的[一键部署web环境包](http://pan.baidu.com/s/1geUK7wJ)（密码：h1ac），包含php环境,包含了官方参考文档。
+然后就开始ssh配置，这里使用阿里云的[一键部署web环境包](https://pan.baidu.com/s/1geUK7wJ)（密码：h1ac），包含php环境,包含了官方参考文档。
 
 ### 2.1.2 安装
 #### 2.1.2.1 材料工具
-[xshell](http://www.netsarang.com/download/down_xfp.html)(一个与linux通信的软件)和[xftp](http://www.netsarang.com/download/down_xfp.html)(一个与服务器进行文件操作的软件)，然后其他的操作文档写的很详细，也可以参照[最新官网文档](http://source.docs.cloudcare.cn/support/tool/web/web_1/)。
+[xshell](https://www.netsarang.com/download/down_xfp.html)(一个与linux通信的软件)和[xftp](https://www.netsarang.com/download/down_xfp.html)(一个与服务器进行文件操作的软件)，然后其他的操作文档写的很详细，也可以参照[最新官网文档](https://source.docs.cloudcare.cn/support/tool/web/web_1/)。
 
 #### 2.1.2.2 开始
 {% note info %}
 web服务器选择Apache就行，因为桌面调试一般也是这样的，免去兼容的操作。Nginx虽然性能好，总有一些新操作，对开发形成难度，建议以后再使用。其他的版本根据你桌面使用的环境，就高不就低。我们的原则是快速入门配置，搭好工具把时间留给学习开发，不要被这些门槛绊住。那些命令行操作慢慢就熟悉了，其实后面使用时只需要知道怎么连接，怎么上传文件即可。
 {% endnote %}
 #### 2.1.2.3 配置web服务器
-如果你是安装了php环境，它会默认安装phpwind(一个开源论坛)和phpmyadmin（一个可以在线访问数据库的工具，留着）,因为访问服务器外网IP时，它是指向phpwind的，所以可以先卸载掉这个东西，直接指向到你的网站根目录alidata/www/,这样以后就很方便的能访问到下面的不同文件夹内容。这里的操作就需要[参考官网文档](http://source.docs.cloudcare.cn/support/tool/web/web_1/)了，也一样很详细。，在修改conf那一步，可参考这里已经测试过的[配置文件](http://pan.baidu.com/s/1skXirtr)（密码a3f1）替换掉``phpwind.conf``
+如果你是安装了php环境，它会默认安装phpwind(一个开源论坛)和phpmyadmin（一个可以在线访问数据库的工具，留着）,因为访问服务器外网IP时，它是指向phpwind的，所以可以先卸载掉这个东西，直接指向到你的网站根目录alidata/www/,这样以后就很方便的能访问到下面的不同文件夹内容。这里的操作就需要[参考官网文档](http://source.docs.cloudcare.cn/support/tool/web/web_1/)了，也一样很详细。，在修改conf那一步，可参考这里已经测试过的[配置文件](https://pan.baidu.com/s/1skXirtr)（密码a3f1）替换掉``phpwind.conf``
 ```js
 <DirectoryMatch "/alidata/www/(attachment|html|data)">
 <Files ~ ".php">
@@ -62,7 +62,7 @@ Deny from all
 ### 2.1.3 测试
 好了，现在可以上传几个文件进行测试，浏览器键入IP时如果下面没有index的引导文件，是这样直接显示的，可以写一个简单的index.html上传看下效果，然后使用手机浏览器，QQ/微信内部打开（发个链接给别人，会自动识别）再访问下，保证正常访问到就说明基本的配置已经成功了。由于微信的安全保护，如果是IP或者没有被他收录的域名，是会跳出提示框，不过也不影响继续能访问到。解决这个的方法就是备案，https认证等等一系列证明网站是良好文明的。
 
-![](http://upload-images.jianshu.io/upload_images/3234038-a6dae4a27308a323.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/3234038-a6dae4a27308a323.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ## 2.2 github.io
@@ -72,14 +72,14 @@ Deny from all
 
 ### 2.2.1 开始
 
-![1.Create a new repository](http://upload-images.jianshu.io/upload_images/3234038-2341fe768acb5fab.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![1.Create a new repository](https://upload-images.jianshu.io/upload_images/3234038-2341fe768acb5fab.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 安装软件，复制.git路径
-![2.克隆github上的仓库到本地](http://upload-images.jianshu.io/upload_images/3234038-94900541e70371a6.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![2.克隆github上的仓库到本地](https://upload-images.jianshu.io/upload_images/3234038-94900541e70371a6.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![3.项目内容放到该路径下](http://upload-images.jianshu.io/upload_images/3234038-72eb180da889081c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![3.项目内容放到该路径下](https://upload-images.jianshu.io/upload_images/3234038-72eb180da889081c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![4.每次改动后，备注修改内容，然后就可以pull origin](http://upload-images.jianshu.io/upload_images/3234038-372aaf03ea4ece35.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![4.每次改动后，备注修改内容，然后就可以pull origin](https://upload-images.jianshu.io/upload_images/3234038-372aaf03ea4ece35.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 2.2.2 测试
 现在可以试着访问github.io了，``用户名.github.io``，因为github托管在国外，可能会比较慢。上述两种建站方式，建议前端开发静态页面可以先使用github.io。

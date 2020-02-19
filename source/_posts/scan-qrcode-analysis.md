@@ -2,6 +2,9 @@
 title: 扫描二维码分析
 date: 2019-05-11 09:36:17
 tags:
+  - wechat
+  - qrcode
+  - oauth
 categories: study
 description: 实现扫码登录
 ---
@@ -69,7 +72,7 @@ Content-Type: image/jpg
 }
 ```
 ### 3.1.3 二维码文本内容识别：
->http://mp.weixin.qq.com/wap/loginauthqrcode?action=scan&qrticket=be0271075c87f07664f983b41a1afa
+>https://mp.weixin.qq.com/wap/loginauthqrcode?action=scan&qrticket=be0271075c87f07664f983b41a1afa
 
 直接浏览器打开不报错，不显示任何内容，猜测做了浏览器环境检测
 可以理解为随后微信调用内置浏览器向此url发送get请求，没有测试使用其他账户扫码的结果，猜测会报失败，那么不同的用户扫码扫到相同结果，但是需要向服务端发送用户信息，用户信息如何发送呢？
@@ -206,21 +209,21 @@ window.code = 400;
 #### 3.3.1.1 产生二维码
 {% tabs First unique name %}
 <!-- tab Request-->
-GET http://www.goeasy.io/en/demo/qrcodelogin/qrcode
+GET https://www.goeasy.io/en/demo/qrcodelogin/qrcode
 {% code %}
 {
-  "qrCodeUrl": "http://hangzhou.goeasy.io/en/demo/qrcodelogin/mobileconfirm?key=1b8a6c12-e696-4b7f-b3e2-0d1ce1b72eb2"
+  "qrCodeUrl": "https://hangzhou.goeasy.io/en/demo/qrcodelogin/mobileconfirm?key=1b8a6c12-e696-4b7f-b3e2-0d1ce1b72eb2"
 }
 {% endcode %}
 <!-- endtab -->
 <!-- tab Response-->
-![](http://www.goeasy.io/en/demo/qrcodelogin/qrcode?qrCodeUrl=http%3A%2F%2Fhangzhou.goeasy.io%2Fen%2Fdemo%2Fqrcodelogin%2Fmobileconfirm%3Fkey%3D97f39297-144f-4485-9662-a163d7af42e2)
+![](https://www.goeasy.io/en/demo/qrcodelogin/qrcode?qrCodeUrl=http%3A%2F%2Fhangzhou.goeasy.io%2Fen%2Fdemo%2Fqrcodelogin%2Fmobileconfirm%3Fkey%3D97f39297-144f-4485-9662-a163d7af42e2)
 <!-- endtab -->
 {% endtabs %}
 经测试，此接口只是产生二维码，没有任何校验(传参)
 qrCodeUrl为二维码内容，注意到key，这个二维码会将用户引导至该url,内容完全由浏览器生成
 ```js
-1. GET http://3hangzhou.goeasy.io/socket.io/
+1. GET https://3hangzhou.goeasy.io/socket.io/
 {
   "EIO":3,
   "transport":"polling",
