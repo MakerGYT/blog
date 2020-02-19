@@ -108,3 +108,10 @@ git fetch
 git config --global http.proxy
 git config --global --unset http.proxy
 ```
+### import to another git site
+```sh
+git clone urlPrevious --bare
+git remote add name urlNow
+git push urlNow --all
+git push urlNow --tags
+```

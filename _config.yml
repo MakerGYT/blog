@@ -109,9 +109,6 @@ deploy:
     repo: git@e.coding.net:makergyt/blog.git
     branch: master
   - type: git
-    repo: git@gitee.com:makergyt/makergyt.git
-    branch: master
-  - type: git
     repo: git@github.com:MakerGYT/makergyt.github.io.git
     branch: master
 symbols_count_time:
