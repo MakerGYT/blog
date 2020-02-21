@@ -4,6 +4,7 @@ date: 2019-01-08 17:49:57
 tags: 
  - linux
 categories: record
+description: 仅作记录
 ---
 >本地系统环境：ubuntu 16.04
 软件环境：vagrant 2.2.2,vitual box 6.0
