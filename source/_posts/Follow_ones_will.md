@@ -3,6 +3,7 @@ title: 从心所欲，无欲则刚
 date: 2017-07-24 14:28:49
 tags:
 	- 随想
+description: Follow one's will, no desire is just
 ---
 
 > 并不能决定生活的走向，只是让一切显得价值观正确。

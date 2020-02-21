@@ -2,8 +2,10 @@
 title: 第三方平台API(以易班为例)的使用记录
 date: 2017-06-16 04:14:42
 tags: 
-
+  - api
+  - oauth
 categories: record
+description: 初步了解oauth流程
 ---
 # 1. 前言
 服务商提供给第三方网站的API使用原理基本相似，使用说明都可以在相应开发平台查看wiki文档。以[易班开放平台](https://open.yiban.cn)为例:
@@ -12,7 +14,6 @@ categories: record
 
 当然，易班开放平台也给出了[授权概述](https://open.yiban.cn/wiki/index.php?page=%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E)
 
-<!-- more -->
 # 2. 开始
 
 将以网站接入SDK为例，javaSDK的使用可以[参考](http://blog.csdn.net/u010513756/article/details/50535657)（这应该是目前能百度到的唯一的文章）

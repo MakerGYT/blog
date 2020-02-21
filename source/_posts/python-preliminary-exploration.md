@@ -4,7 +4,7 @@ date: 2017-10-21 07:06:36
 tags:
   - python
 categories: study
-deceription: Preliminary learning record
+description: Preliminary learning record
 ---
 
 {% cq %}Life is short,I use Python!{% endcq %}

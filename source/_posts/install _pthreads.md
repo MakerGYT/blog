@@ -4,6 +4,7 @@ date: 2017-11-16 19:37:04
 tags:
   - php
 categories: record
+description: 仅作记录
 ---
 # 1 当前环境
 + WampServer Version 3.1.0 64bit
@@ -12,19 +13,15 @@ categories: record
 + [pthreads-2.0.9-5.6-ts-vc11-x64](http://windows.php.net/downloads/pecl/releases/pthreads/2.0.9/)
 5.6对应php version,vc11代表是Visual Studio 2010 compiler编译器编译的(暂无需考虑)，x64代表wamp平台。
 
-<!-- more -->
 # 2 安装
 只用到下载包内的**pthreadVC2.dll**和**php_pthreads.dll**
-## 2.1 修改php.ini
-```js
-// php.ini
+```sh
+# php.ini
 extension=php_pthreads.dll //加在最后一行
+cp pthreadVC2.dll *%wamp%/bin/php/%php5.6.31%*和*%wamp%/bin/apache/%apache2.4.27*
+cp php_pthreads.dll %wamp%/bin/php/bin/php/%php5.6.31%/ext
 ```
-## 2.2 复制pthreadVC2.dll到*%wamp%\bin\php\\%php5.6.31%*和*%wamp%\bin\apache\%apache2.4.27*
-%wamp%为WampServer安装路径，%php5.6.31%为对应的php版本路径,%apache2.4.27%为对应的apache版本路径
-## 2.3 复制php_pthreads.dll到`%wamp%\bin\php\\bin\php\%php5.6.31%\ext`,
-%wamp%为WampServer安装路径，%php5.6.31%为对应的php版本路径。
-## 2.4 重启wamp所有服务。
+重启wamp所有服务。
 
 # 3 测试
 

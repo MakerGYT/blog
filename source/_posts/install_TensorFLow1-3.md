@@ -4,7 +4,7 @@ date: 2017-10-14 12:11:06
 tags:
 	- tensorflow
 categories: translate
-description: 
+description: 译文
 ---
 
 {% note info %}

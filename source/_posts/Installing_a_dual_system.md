@@ -4,11 +4,11 @@ date: 2018-12-24 17:15:19
 tags:
 	- linux
 categories: record
+description: 仅作记录
 ---
 # 1 当前环境
 
 联想lenovo G50:4G+4G(自行扩展)内存，512G机械硬盘，128G SSD 64位i5CPU
-<!-- more -->
 # 2 使用工具：
 
 - 系统盘刻录：[rufus 3.2](http://rufus.akeo.ie/)(类似刻录工具有ultraiso，老毛桃、大白菜之类装机工具虽然集成度高，但比较笨重且不稳定，不便于引导启动系统)

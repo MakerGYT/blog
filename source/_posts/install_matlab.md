@@ -4,6 +4,7 @@ date: 2017-11-03 13:55:21
 tags:
 	- matlab
 categories: config
+description: 仅做参考
 ---
 
 {% cq %}无论是分析数据、开发算法还是创建模型，
@@ -14,7 +15,6 @@ MATLAB 都是针对您的思维方式和工作内容而设计的。{% endcq %}
 + 系统：windows 10pro 1703
 + 版本：matlab R2017b win64
 
-<!-- more -->
 ## 1.2 基础准备
 + 安装虚拟光驱工具，如[2345好压](http://dl.2345.com/haozip/haozip_v5.9.5.exe)附带这一功能
 + 软件iso镜像文件和破解文件，关注“MakerGYT”公众号回复matlab-win

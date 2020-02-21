@@ -21,7 +21,9 @@ description: Preliminary learning to establish personal website
 1. 先拥有，确切的说是租用一台云服务器(或者虚拟主机)，网络上有很多服务商，五花八门，国内的有腾讯云，百度云(不是百度网盘！)，国外的有godady，区别是国外的不需要备案，但是速度可能会慢，国内的相反。这里推荐[阿里云](https://www.aliyun.com/minisite/goods?userCode=89lfnf3q)（点击获取代金券），还有[学生优惠](https://promotion.aliyun.com/ntms/act/campus2018.html)，并且持续，关键是服务好。你可以选择时长，环境系统就选``centos7``（linux的一个发行版），不要用winserver,linux操作基础的都可以百度到,地域目前无所谓,时长看自身情况。
 
 2. 完成学生认证后，是直接获取支付宝认证信息，一步完成，就能使用这种优惠，购买时记得选择设置密码而先不是密钥，牢记你的密码。然后你进入管理控制台，就能看到你的服务器信息。
+
 ![点击左侧云服务器ECS实例，进入操作。](https://upload-images.jianshu.io/upload_images/3234038-89e0ec0aeb204589.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ![启动你服务器，运行中](https://upload-images.jianshu.io/upload_images/3234038-c92de9e9d0f7238c.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 3. 配置安全组,左侧安全组->配置规则->公网入方向->快速创建规则,端口就先全开了，自定义端口因为我们这里推荐linux系统，填22/22（winserver填3389/3389），授权对象填``0.0.0.0/0``，表示允许任何地方连接你的服务器，先这样设置（一般没人闲的黑学生机）。

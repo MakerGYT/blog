@@ -7,3 +7,5 @@ package-lock.json
 public/
 .deploy*/
 .vscode/
+.netlify/
+.env*

@@ -4,12 +4,13 @@ date: 2018-05-08 21:43:18
 tags:
   - Node.js
 categories: translate
+description: 译文
 ---
 {% note info no-icon %}
 原文:https://noeticforce.com/best-nodejs-frameworks-for-web-and-app-development
 作者:Noetic Sunil
 {% endnote %}
-<!-- more -->
+
 在浏览器以外运行JavaScript对于JavaScript爱好者来说非常神奇，同时也肯定是Web应用程序开发界最受欢迎的进步之一。全球各地的开发者全力接纳了Node.js。
 
 对于新手来说，Node.js是允许在浏览器之外服务器上运行JavaScript代码的一种JavaScript。它基于谷歌Chrome的V8虚拟引擎建立的，这一引擎用于在Chrome浏览器中支持JavaScript。

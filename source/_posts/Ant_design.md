@@ -5,14 +5,13 @@ tags:
   - react
 
 categories: study
+description: 仅作记录
 ---
 react => umi
 umi集成了react-router,将antd,dva作为plugin引入
 >组件是中性的，任何一种应用架构都可以采用。因此，React 可以用于 MVC 架构，也可以用于 MVVM 架构，或者别的架构。
 umi : Pluggable enterprise-level react application framework.
 umi-plugin-react: advanced function
-
-<!-- more -->
 
 how to define child components
 

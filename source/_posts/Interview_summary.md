@@ -3,12 +3,13 @@ title: 面试总结
 date: 2019-04-05 08:20:11
 tags: 
   - 面试
+description: 前事不忘后事之师
 ---
 # 1. 阿里巴巴
 {% note info no-icon %}
 岗位:前端工程师（实习）
 {% endnote %}
-<!-- more -->
+
 1. CSS的display属性
 2. Bootstrap的栅格化布局，响应式原理 
 3. Javascript闭包

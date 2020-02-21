@@ -5,12 +5,11 @@ tags:
 - wechat
 
 cagetories: record 
+description: 通过云函数发起外部网络请求，省去校验域名
 ---
 {% note info no-icon %}
 在小程序开发中，遇到一些未在国内备案的域名无法加到管理后台的情况，突破这个限制，想到了用云开发做接口转发
 {% endnote%}
-
-<!-- more -->
 
 官方提示：
 {% note info %}
@@ -102,5 +101,5 @@ exports.main = async (event, context) => {
 成功返回预期结果,但异常类型未知
 # Reference
 <small>
-[1] 微信小程序团队.小程序开发-云开发[EB/OL].[https://dwz.cn/YfXcrBcN](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/npm.html) .2019.
+[1] 微信小程序团队.小程序开发-云开发[EB/OL].https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/npm.html. 2019.
 </small>
