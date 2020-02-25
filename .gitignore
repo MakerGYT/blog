@@ -9,4 +9,4 @@ public/
 .vscode/
 .netlify/
 .env*
-.serverless/
+.serverless
