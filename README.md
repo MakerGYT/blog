@@ -6,7 +6,8 @@
 需求
 - 简洁，样式依赖少
 - 可配置
-- 支持通用md语法，包含数学公式
+- 支持通用md语法，包含数学公式，保持独立性
+- 响应式设计
 
 *About the configuration of this website*
 # 1 Init

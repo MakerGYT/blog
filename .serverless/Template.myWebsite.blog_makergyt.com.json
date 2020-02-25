@@ -5,7 +5,5 @@
   "inputCache": {
     "base": "{\"host\":\"blog.makergyt.com\",\"hostType\":\"cos\",\"serviceType\":\"web\",\"fwdHost\":\"blog-1256701454.cos-website.ap-shanghai.myqcloud.com\",\"origin\":\"blog-1256701454.cos-website.ap-shanghai.myqcloud.com\",\"fromClientRemark\":\"tencent-website\",\"projectId\":0}",
     "https": "{\"certId\":\"b6onl5O5\",\"http2\":\"off\",\"httpsType\":4,\"forceSwitch\":-2}"
-  },
-  "hostId": 1766294,
-  "created": true
+  }
 }
