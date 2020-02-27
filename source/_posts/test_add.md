@@ -127,8 +127,3 @@ $$
 <span style="display:block;text-align:center;color:orangered;">橙色居中</span>
 
 [^1]: Jeremy Howard.Your own hosted blog[EB/OL].https://www.fast.ai/2020/01/16/fast_template/ .2020.
-
-## 9.2 Reference
-<small>
-[1] Github.Websites for you and your projects.[EB/OL].https://pages.github.com .2017
-</small>
