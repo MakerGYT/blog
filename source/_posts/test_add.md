@@ -132,8 +132,3 @@ $$
 <small>
 [1] Github.Websites for you and your projects.[EB/OL].https://pages.github.com .2017
 </small>
-
-## 9.3 注释
-[tags]: <> (['node','js','java',])
-
-[description]: # (This may be the most platform independent comment)
