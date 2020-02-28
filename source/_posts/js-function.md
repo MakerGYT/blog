@@ -48,3 +48,28 @@ array.indexOf(string)
 // 获取对象元素在数组内的索引
 array.findIndex(element => element.id === obj.id)
 ```
+
+> js截取两字符串之间的内容
+
+```js
+function subStringOne(text, begin, end) {
+  var regex;
+  if (end == '\\n')
+      regex = RegExp(begin + '(.+)?');
+  else
+      regex = RegExp(begin + '([.\\s\\S]+?)' + end);
+  try {
+    console.log(regex)
+      return regex.exec(text)[1].trim()
+  } catch (err) {
+      return null;
+  }
+};
+```
+```js
+var subFirstStr=data.substring(data.indexOf(first)+first.length,data.length);
+var subSecondStr=subFirstStr.substring(0,subFirstStr.indexOf(end));
+```
+```js
+data.match(/before(.+?)end/)[1]
+```
