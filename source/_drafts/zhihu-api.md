@@ -1,7 +1,10 @@
 ---
-title: zhihu-api
+title: 知乎api搜集
 date: 2020-02-17 18:30:27
-tags:
+tags:  
+  - restful
+  - zhihu
+  - api
 description: 知乎的api
 ---
 #### 获取用户信息
