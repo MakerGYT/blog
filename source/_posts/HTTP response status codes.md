@@ -72,7 +72,7 @@ This means that the resource is now permanently located at another URI, specifie
 # 4 Client error responses
 - `400 Bad Request`
 The server could not understand the request due to invalid syntax.
-401 Unauthorized
+- `401 Unauthorized`
 Although the HTTP standard specifies "unauthorized", semantically this response means "unauthenticated". That is, the client must authenticate itself to get the requested response.
 - `402 Payment Required `
 This response code is reserved for future use. The initial aim for creating this code was using it for digital payment systems, however this status code is used very rarely and no standard convention exists.
