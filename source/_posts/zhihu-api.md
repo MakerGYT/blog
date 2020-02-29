@@ -7,6 +7,7 @@ tags:
   - api
 description: 知乎的api
 ---
+![](https://segmentfault.com/img/remote/1460000018418656?w=960&h=260)
 #### 获取用户信息
 >https://www.zhihu.com/api/v4/members/makergyt
 
