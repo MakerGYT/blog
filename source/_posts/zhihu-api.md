@@ -5,7 +5,7 @@ tags:
   - restful
   - zhihu
   - api
-description: 知乎的api
+description: 知乎api
 ---
 ![](https://segmentfault.com/img/remote/1460000018418656?w=960&h=260)
 
