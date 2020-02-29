@@ -2,10 +2,12 @@
 title: Redis reference
 lang: en
 date: 2019-05-10 11:10:28
-tags: redis
+tags: 
+  - redis
 categories: reference
 description: Common operations of Redis
 ---
+![](https://pic4.zhimg.com/v2-351aeb477a4884c5761d958f5a791bb3_1200x500.jpg)
 #  install
 ```sh
 wget http://download.redis.io/redis-stable.tar.gz

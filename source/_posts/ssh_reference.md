@@ -1,17 +1,17 @@
 ---
 title: ssh reference
 date: 2019-01-06 11:16:25
-tags: ssh
+tags: 
+  - ssh
 categories: reference
+description: only for reference
 comments: false
 ---
+![](https://images.ctfassets.net/0lvk5dbamxpi/2NExcuuBfxfYr8OSrjRlgI/2b0c515652fc9082fa958452bcf943ec/Artboard_21_150x-8.png?w=3000&h=1500&q=50)
 # 1 key
 ```
 ssh -i xxx.pem root@ip
 ```
-
-<!-- more -->
-
 # 2 SSH keys
 ## 2.1 Root Account Uses SSH Key Authentication
 ```sh

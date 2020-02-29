@@ -8,11 +8,12 @@ tags:
 description: 知乎的api
 ---
 ![](https://segmentfault.com/img/remote/1460000018418656?w=960&h=260)
+
 #### 获取用户信息
->https://www.zhihu.com/api/v4/members/makergyt
+>GET https://www.zhihu.com/api/v4/members/makergyt
 
 #### 获取专栏信息
->https://zhuanlan.zhihu.com/api/columns/tensorlayer
+>GET https://zhuanlan.zhihu.com/api/columns/tensorlayer
 
 #### 获取专栏文章列表
->https://zhuanlan.zhihu.com/api/columns/tensorlayer/articles?limit=10&offset=0
+>GET https://zhuanlan.zhihu.com/api/columns/tensorlayer/articles?limit=10&offset=0
