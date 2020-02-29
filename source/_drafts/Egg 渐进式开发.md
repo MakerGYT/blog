@@ -5,6 +5,7 @@ tags:
  - egg
  - node
 categories: learn
+description: 仅做记录
 ---
 1. 工程内调用
 2. 插件
