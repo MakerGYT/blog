@@ -1,4 +1,4 @@
-os: linux
+sudo: false
 language: node_js
 node_js:
   - 10 # use nodejs v10 LTS
@@ -10,9 +10,9 @@ script:
   - hexo generate # generate static files
 deploy:
   provider: pages
-  cleanup: true
-  token: $GH_TOKEN
-  keep_history: true
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
   on:
     branch: master
   local-dir: public
