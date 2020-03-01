@@ -8,7 +8,7 @@ tags:
 description: test markdown
 mathjax: true
 ---
-![封面](https://cdn.blog.makergyt.com/images/news-week_bulletin-cover.png)
+![](https://cdn.blog.makergyt.com/images/news-week_bulletin-cover.png)
 
 # 1 一级标题
 ## 1.2 二级标题
