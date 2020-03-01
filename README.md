@@ -1,4 +1,8 @@
-[![Build Status](https://travis-ci.com/MakerGYT/makergyt.github.io.svg?branch=master)](https://travis-ci.com/MakerGYT/makergyt.github.io)
+[![Build Status](https://travis-ci.com/MakerGYT/blog.svg?branch=master)](https://travis-ci.com/MakerGYT/blog)
+
+若以<name>.github.io访问，需要设置repos名为<name>.github.io,即个人主页面,User pages must be built from the master branch.
+若以<name>.github.io/<project>访问，支持选择branch: gh-pages,master,master /docs, 但是hexo会无样式，需要配置root为'/<project>',若配置了自定义域名到<name>.github.io,则不需要  
+
 
 通过github pages搭建博客最简单的便是直接存放md文件，便可自动解析，但是
 - 支持的语法有限，不支持的会提交失败

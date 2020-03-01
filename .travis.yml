@@ -10,7 +10,7 @@ script:
   - hexo generate # generate static files
 deploy:
   provider: pages
-  skip_cleanup: true
+  cleanup: false
   token: $GH_TOKEN
   keep_history: true
   local_dir: public
