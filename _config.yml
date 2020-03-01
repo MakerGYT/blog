@@ -106,7 +106,7 @@ encrypt:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   # - type: git
-  #   repo: git@github.com:MakerGYT/makergyt.github.io.git
+  #   repo: git@github.com:MakerGYT/blog.git
   #   branch: gh-pages
 symbols_count_time:
   symbols: true
