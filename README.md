@@ -1,4 +1,12 @@
 [![Build Status](https://travis-ci.com/MakerGYT/blog.svg?branch=master)](https://travis-ci.com/MakerGYT/blog)
+warning: deprecated key `skip_cleanup` deploy (not supported in dpl v2, use cleanup), 但是修改后
+```sh
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	package-lock.json
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
 
 若以<name>.github.io访问，需要设置repos名为<name>.github.io,即个人主页面,User pages must be built from the master branch.
 若以<name>.github.io/<project>访问，支持选择branch: gh-pages,master,master /docs, 但是hexo会无样式，需要配置root为'/<project>',若配置了自定义域名到<name>.github.io,则不需要  
