@@ -1,32 +1,8 @@
-# my blog
 ---
-[![Build Status](https://travis-ci.com/MakerGYT/blog.svg?branch=master)](https://travis-ci.com/MakerGYT/blog)
-
-warning: deprecated key `skip_cleanup` deploy (not supported in dpl v2, use cleanup), 但是修改后
-```sh
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	package-lock.json
-nothing added to commit but untracked files present (use "git add" to track)
-```
-
-
-若以`<name>.github.io`访问，需要设置repos名为`<name>.github.io`,即个人主页面,User pages must be built from the master branch.
-若以`<name>.github.io/<project>`访问，支持选择branch: gh-pages,master,master /docs, 但是hexo会无样式，需要配置url和root为`/<project>/`,若配置了自定义域名到`<name>.github.io`,则不需要, 但是需要在source下写一个CNAME文件，写入自定义域名（每次重新部署后管理页会清空）  
-
-
-通过github pages搭建博客最简单的便是直接存放md文件，便可自动解析，但是
-- 支持的语法有限，不支持的会提交失败
-- 样式固定
-- 无法生成目录
-
-需求
-- 简洁，样式依赖少
-- 可配置
-- 支持通用md语法，包含数学公式，保持独立性
-- 响应式设计
-
-*About the configuration of this website*
+title: About the configuration of this website
+date: 2019-12-27 10:17:14
+comments: false
+---
 # 1 Init
 ## 1.1 Download
 
@@ -39,21 +15,21 @@ cnpm install
 # package.json
 {
   "name": "hexo-site",
-  "version": "0.0.0",
+  "version": "0.3.1",
   "private": true,
   "hexo": {
-    "version": ""
+    "version": "4.2.0"
   },
   "dependencies": {
-    "hexo": "^3.8.0",
-    "hexo-generator-archive": "^0.1.5",
-    "hexo-generator-category": "^0.1.3",
-    "hexo-generator-index": "^0.2.1",
-    "hexo-generator-tag": "^0.2.0",
-    "hexo-renderer-ejs": "^0.3.1",
-    "hexo-renderer-stylus": "^0.3.3",
-    "hexo-renderer-marked": "^0.3.2",
-    "hexo-server": "^0.3.3"
+    "hexo": "^4.2.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-server": "^1.0.0",
   }
 }
 ```
@@ -72,47 +48,18 @@ git clone https://github.com/theme-next/hexo-theme-next themes/next
 ```yml
 # ./_config.yml
 # Site
+title: MakerGYT
+subtitle: Technology returns to art
+description: 
+keywords: blog makergyt
 author: Gao Yuting
 language:
-  - zh-CN
   - en
   
 timezone: Asia/Shanghai
 # URL
 url: https://blog.makergyt.com
-permalink: :lang/:title/
-permalink_defaults:
-  lang: zh-CN
-root: /
-# Deployment
-deploy:
-  - type: git
-    repo: git@github.com:MakerGYT/makergyt.github.io.git
-    branch: master
-  - type: git
-    repo: git@git.dev.tencent.com:memakergytcom/blog.git
-    branch: master
-# Writing
-new_post_name: :lang/:title.md
 ```
-
-### 2.1.1 deployment
-
-```sh
-cnpm install hexo-deployer-git --save
-# deploy on coding pages `Error`: no styles
-# next/_config.yml
-- type: git
-    - repo: git@git.dev.tencent.com:memakergytcom/blog.git
-    + repo: git@git.dev.tencent.com:memakergytcom/memakergytcom.git
-    # The authorities did not say,project name must be user name when coding pages is used (similar to github pages).This is a bug:
-    - url:memakergytcom.coding.me/blog
-    + url:memakergytcom.coding.me
-    # my url: blog-cn.makergyt.com
-```
-
-~~### 2.1.2 hexo-qiniu-sync~~
-
 file define:
 `categories`+`title`+`type`~~
 ### 2.1.2 hexo-reference
@@ -289,18 +236,6 @@ local_search:
 fancybox: true
 fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
 fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
-```
-
-### 2.2.4 Languages
-```sh
-# /themes/next/languages/en.yml
-menu: 
-  photos: Photos
-  notebook: Notebook
-# /themes/next/languages/zh-CN.yml
-menu:
-  photos: 影像
-  notebook: 笔记
 ```
 ### 2.2.5 encrypt
 ```sh
