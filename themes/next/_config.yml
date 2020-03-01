@@ -128,7 +128,7 @@ menu:
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
-  photos: /photos/ || camera-retro
+  # photos: /photos/ || camera-retro
   notebook: /notebook/ || sticky-note
 
 # Enable / Disable menu icons / item badges.
