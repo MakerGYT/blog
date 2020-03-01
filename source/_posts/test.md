@@ -6,7 +6,6 @@ tags:
   - markdown
   - webhook
 description: test markdown
-mathjax: true
 ---
 ![](https://cdn.blog.makergyt.com/images/news-week_bulletin-cover.png)
 

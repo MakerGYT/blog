@@ -94,7 +94,6 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 Plugins:
-  - hexo-reference
 ## Themes: https://hexo.io/themes/
 theme: next
 # Include/Exclude Files/Folders
@@ -106,11 +105,8 @@ encrypt:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: git@e.coding.net:makergyt/blog.git
-    branch: master
-  - type: git
     repo: git@github.com:MakerGYT/makergyt.github.io.git
-    branch: master
+    branch: gh-pages
 symbols_count_time:
   symbols: true
   time: true
@@ -127,31 +123,4 @@ sitemap:
   rel: false
 aplayer:
   meting: true
-
-# Generate restful json data
-restful:
-  # site 可配置为数组选择性生成某些属性
-  # site: ['title', 'subtitle', 'description', 'author', 'since', email', 'favicon', 'avatar']
-  site: ['title', 'subtitle', 'author','since', email', 'favicon', 'avatar']       # hexo.config mix theme.config
-  posts_size: 10    # 文章列表分页，0 表示不分页
-  posts_props:      # 文章列表项的需要生成的属性
-    title: true
-    slug: true
-    date: true
-    updated: true
-    comments: true
-    path: true
-    excerpt: true
-    cover: true      # 封面图，取文章第一张图片
-    content: false
-    keywords: false
-    categories: true
-    tags: true
-  categories: true         # 分类数据
-  use_category_slug: false # Use slug for filename of category data
-  tags: true               # 标签数据
-  use_tag_slug: false      # Use slug for filename of tag data
-  post: true               # 文章数据
-  pages: false             # 额外的 Hexo 页面数据, 如 About
-  
 all_minifier: true

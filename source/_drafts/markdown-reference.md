@@ -4,7 +4,6 @@ date: 2019/3/31 20:46:25
 categories: reference
 tags: markdown
 comments: false
-mathjax: true
 description: useful markdown reference
 ---
 
