@@ -21,4 +21,4 @@ comments: false
   - 2020.1 部署至新coding pages,使用https://y2ukau.coding-pages.com访问，映射为blog.makergyt.com，放弃github pages(所在地区联通无法访问github,且github现在受到美国出口法律约束，前景不明朗),但移动网络无法访问。
   - 2020.2 coding pages不稳定，已经两次出现故障，考虑使用基于[腾讯云](https://cloud.tencent.com/act/cps/redirect?fromSource=gwzcw.3199892.3199892.3199892&redirect=10488&cps_key=6a50f2d29d55a705a67c12a6372d27fd&from=activity)的serverless
 
-☞ [About config of this site](config.html)
+☞ [About config of this site](https://github.com/makergyt/makergyt.github.io)

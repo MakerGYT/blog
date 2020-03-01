@@ -3,6 +3,7 @@ title: git reference
 date: 2019-01-06 11:22:38
 tags: git
 categories: reference
+description: only for reference
 ---
 
 ## upload
@@ -15,9 +16,6 @@ git commit -m "message"
 git remote add origin https://github.com/user/repo.git
 git push -u origin master
 ```
-
-<!-- more -->
-
 ## connect github with no password
 ```bash
 git config --global user.name "makergyt"

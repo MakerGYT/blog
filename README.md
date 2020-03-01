@@ -12,6 +12,7 @@
 *About the configuration of this website*
 # 1 Init
 ## 1.1 Download
+
 ### 1.1.1 hexo
 
 ```sh
@@ -320,3 +321,5 @@ aplayer:
 https://github.com/zhaojun1998/Valine-Admin
 https://github.com/DesertsP/Valine-Admin
 https://deserts.io/valine-admin-document/#%E9%98%B2%E6%AD%A2%E4%BA%91%E5%BC%95%E6%93%8E%E4%BC%91%E7%9C%A0
+# Reference
+<small>[1] NexT.Gemini.Documentation[EB/OL].https://theme-next.org/docs/ .2019.</small>
