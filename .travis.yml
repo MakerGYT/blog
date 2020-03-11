@@ -9,7 +9,9 @@ branches:
 
 script:
   - hexo generate # generate static files
-
+  - pip install coscmd
+  - coscmd config -a $TENCENT_SECRET_ID -s $TENCENT_SECRET_KEY -b $TENCENT_BUCKET -r $TENCENT_REGION
+  - coscmd upload -r public/ /
 deploy:
   provider: pages
   skip_cleanup: true
