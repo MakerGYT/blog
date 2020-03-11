@@ -2,51 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.makergyt.com/test/</loc>
-    
-    <lastmod>2020-03-01T13:55:03.356Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.makergyt.com/about/config</loc>
-    
-    <lastmod>2020-03-01T13:55:03.356Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.makergyt.com/about/</loc>
-    
-    <lastmod>2020-03-01T13:55:03.356Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://blog.makergyt.com/categories/</loc>
-    
-    <lastmod>2020-03-01T13:55:03.356Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.makergyt.com/notebook/</loc>
     
-    <lastmod>2020-03-01T13:55:03.356Z</lastmod>
+    <lastmod>2020-03-11T07:08:18.591Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.makergyt.com/tags/</loc>
     
-    <lastmod>2020-03-01T13:55:03.356Z</lastmod>
+    <lastmod>2020-03-11T07:08:18.591Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.makergyt.com/test/</loc>
+    
+    <lastmod>2020-03-11T07:08:18.587Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://blog.makergyt.com/404/</loc>
     
-    <lastmod>2020-03-01T13:55:03.352Z</lastmod>
+    <lastmod>2020-03-11T07:08:18.587Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.makergyt.com/about/config</loc>
+    
+    <lastmod>2020-03-11T07:08:18.587Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.makergyt.com/about/</loc>
+    
+    <lastmod>2020-03-11T07:08:18.587Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.makergyt.com/categories/</loc>
+    
+    <lastmod>2020-03-11T07:08:18.587Z</lastmod>
     
   </url>
   
