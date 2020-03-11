@@ -6,10 +6,8 @@ tags:
 categories: book
 description: 一个积极的悲观主义者
 ---
-
-> 当我虚构的人物越来越真实时，我忍不住会去怀疑自己真正的现实是否在被虚构
-
 ![](https://cdn.blog.makergyt.com/images/book-Cries_in_the_Drizzle-cover.jpg)
+> 当我虚构的人物越来越真实时，我忍不住会去怀疑自己真正的现实是否在被虚构
 
 主流价值观教育我们，人是无法选择自己的出身过去的，但可以努力创造和改变自己的未来，然而余华说
 
