@@ -1,4 +1,3 @@
-sudo: true
 os: linux
 language: node_js
 node_js:
@@ -10,7 +9,6 @@ branches:
 
 script:
   - hexo generate # generate static files
-  - pip install pip==9.0.0
   - pip install coscmd --user
   - coscmd config -a $TENCENT_SECRET_ID -s $TENCENT_SECRET_KEY -b $TENCENT_BUCKET -r $TENCENT_REGION
   - coscmd upload -r public/ /
