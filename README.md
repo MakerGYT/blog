@@ -1,7 +1,6 @@
 # my blog
 ---
-[![Build Status](https://travis-ci.com/MakerGYT/blog.svg?branch=master)](https://travis-ci.com/MakerGYT/blog)
-[![构建状态](https://makergyt.coding.net/badges/blog/job/187329/master/build.svg)](https://makergyt.coding.net/p/blog/ci/job)
+[![Build Status](https://makergyt.coding.net/badges/blog/job/187329/master/build.svg)](https://makergyt.coding.net/p/blog/ci/job)
 warning: deprecated key `skip_cleanup` deploy (not supported in dpl v2, use cleanup), 但是修改后
 ```sh
 Untracked files:

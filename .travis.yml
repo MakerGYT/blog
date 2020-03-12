@@ -9,6 +9,12 @@ branches:
 
 script:
   - npm run build
-  - pip install coscmd --user
-  - coscmd config -a $TENCENT_SECRET_ID -s $TENCENT_SECRET_KEY -b $TENCENT_BUCKET -r $TENCENT_REGION
-  - coscmd upload -r public/ /
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  token: $GH_TOKEN
+  keep_history: true
+  local_dir: public
+  on:
+    branch: master
