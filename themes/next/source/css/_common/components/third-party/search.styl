@@ -12,7 +12,7 @@
 
 .search-popup {
   background: white;
-  border-radius: 5px;
+  border-radius: $border-radius-base;
   display: none;
   height: 80%;
   left: 50%;
@@ -170,8 +170,8 @@ if (hexo-config('local_search.enable')) {
     }
 
     .search-keyword {
-      border-bottom: 1px dashed $red;
-      color: $red;
+      border-bottom: 1px dashed $primary-color;
+      color: $primary-color;
       font-weight: bold;
     }
 
@@ -183,7 +183,7 @@ if (hexo-config('local_search.enable')) {
     }
 
     #no-result {
-      color: $grey-light;
+      color: $gray-lighter;
       margin: auto;
     }
   }

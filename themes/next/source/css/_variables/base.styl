@@ -15,25 +15,26 @@ $grey-dark    = #999;
 $grey-dim     = #666;
 $black-light  = #555;
 $black-dim    = #333;
-$black-deep   = #222;
+$black-deep   = #000;
 $red          = #ff2a2a;
 $blue-bright  = #87daff;
 $blue         = #0684bd;
 $blue-deep    = #262a30;
 $orange       = #fc6423;
-
+$primary-color= #1890ff;
+$border-radius-base = 4px;
 
 // Scaffolding
 // Settings for some of the most global styles.
 // --------------------------------------------------
 // Global text color on <body>
-$text-color                   = $black-light;
+$text-color                   = rgba(0, 0, 0, 0.65);
 
 // Global link color.
-$link-color                   = $black-light;
-$link-hover-color             = $black-deep;
-$link-decoration-color        = $grey-dark;
-$link-decoration-hover-color  = $black-deep;
+$link-color                   = $black-dim;
+$link-hover-color             = $primary-color;
+$link-decoration-color        = $primary-color;
+$link-decoration-hover-color  = $primary-color;
 
 // Global border color.
 $border-color                 = $grey-light;
@@ -42,7 +43,7 @@ $border-color                 = $grey-light;
 $body-bg-color                = white;
 
 // Selection
-$selection-bg                 = $blue-deep;
+$selection-bg                 = $primary-color;
 $selection-color              = white;
 
 
@@ -117,22 +118,22 @@ $zindex-5       = 1500;
 // Table
 // --------------------------------------------------
 $table-width                    = 100%;
-$table-border-color             = $gray-lighter;
+$table-border-color             = $black-deep;
 $table-font-size                = $font-size-small;
-$table-content-alignment        = left;
+$table-content-alignment        = center;
 $table-content-vertical         = middle;
 $table-th-font-weight           = 700;
 $table-cell-padding             = 8px;
-$table-cell-border-right-color  = $gainsboro;
+$table-cell-border-right-color  = white;
 $table-cell-border-bottom-color = $gray-lighter;
-$table-row-odd-bg-color         = #f9f9f9;
+$table-row-odd-bg-color         = white;
 $table-row-hover-bg-color       = $whitesmoke;
 
 
 // Code & Code Blocks
 // --------------------------------------------------
 $code-font-family               = $font-family-monospace;
-$code-border-radius             = 3px;
+$code-border-radius             = $border-radius-base;
 $code-foreground                = $black-light;
 $code-background                = $gainsboro;
 
@@ -141,15 +142,15 @@ $code-background                = $gainsboro;
 // --------------------------------------------------
 $btn-font-weight                = normal;
 
-$btn-default-radius             = 0;
-$btn-default-bg                 = $black-deep;
+$btn-default-radius             = $border-radius-base;
+$btn-default-bg                 = $primary-color;
 $btn-default-color              = white;
 $btn-default-font-size          = $font-size-small;
 $btn-default-border-width       = 2px;
-$btn-default-border-color       = $black-deep;
+$btn-default-border-color       = $primary-color;
 $btn-default-hover-bg           = white;
-$btn-default-hover-color        = $black-deep;
-$btn-default-hover-border-color = $black-deep;
+$btn-default-hover-color        = $primary-color;
+$btn-default-hover-border-color = $primary-color;
 
 
 // Pagination
@@ -162,7 +163,7 @@ $pagination-link-border         = $gainsboro;
 
 $pagination-link-hover-bg       = transparent;
 $pagination-link-hover-color    = $link-color;
-$pagination-link-hover-border   = $black-deep;
+$pagination-link-hover-border   = $primary-color;
 
 $pagination-active-bg           = $grey-light;
 $pagination-active-color        = white;
@@ -182,8 +183,8 @@ $content-mobile-padding         = 8px;
 
 // Headband
 // --------------------------------------------------
-$headband-height                = 3px;
-$headband-bg                    = $black-deep;
+$headband-height                = 0px;
+$headband-bg                    = white;
 
 
 // Section Header
@@ -194,8 +195,8 @@ $head-bg                        = transparent;
 // Site Meta
 $site-meta-text-align           = center;
 $brand-color                    = white;
-$brand-hover-color              = white;
-$brand-bg                       = $black-deep;
+$brand-hover-color              = $primary-color;
+$brand-bg                       = $primary-color;
 
 $font-size-title                = (hexo-config('font.enable') and hexo-config('font.title.size') is a 'unit') ? unit(hexo-config('font.title.size'), em) : $font-size-largest;
 $font-size-subtitle             = $font-size-smaller;
@@ -242,9 +243,9 @@ $site-state-item-name-font-size       = $font-size-small;
 $site-state-item-name-color           = inherit;
 $site-state-item-border-color         = $black-dim;
 
-$toc-link-color                       = $grey-dark;
+$toc-link-color                       = $primary-color;
 $toc-link-border-color                = $black-light;
-$toc-link-hover-color                 = $grey-light;
+$toc-link-hover-color                 = $primary-color;
 $toc-link-hover-border-color          = $grey-light;
 $toc-link-active-color                = $sidebar-highlight;
 $toc-link-active-border-color         = $sidebar-highlight;
@@ -263,8 +264,8 @@ $b2t-position-right           = 30px;
 $b2t-position-right-mobile    = 20px;
 $b2t-font-size                = 12px;
 $b2t-color                    = white;
-$b2t-bg-color                 = $black-deep;
-$b2t-sidebar-bg-color         = $black-deep;
+$b2t-bg-color                 = $primary-color;
+$b2t-sidebar-bg-color         = $primary-color;
 
 //  .post-expand .post-eof
 //  In Muse scheme, margin above and below the post separator
@@ -321,7 +322,7 @@ $note-modern-info-text      = #31708f;
 $note-modern-info-hover     = darken(spin($note-modern-info-text, -10), 32%);
 
 // Success
-$note-success-border        = #5cb85c;
+$note-success-border        = #52c41a;
 $note-success-bg            = lighten(spin($note-success-border, 10), 90% + $lbg);
 $note-success-text          = $note-success-border;
 $note-success-icon          = "\f058";
@@ -332,7 +333,7 @@ $note-modern-success-text   = #3c763d;
 $note-modern-success-hover  = darken(spin($note-modern-success-text, -10), 27%);
 
 // Warning
-$note-warning-border        = #f0ad4e;
+$note-warning-border        = #faad14;
 $note-warning-bg            = lighten(spin($note-warning-border, 10), 88% + $lbg);
 $note-warning-text          = $note-warning-border;
 $note-warning-icon          = "\f06a";
@@ -343,7 +344,7 @@ $note-modern-warning-text   = #8a6d3b;
 $note-modern-warning-hover  = darken(spin($note-modern-warning-text, -10), 18%);
 
 // Danger
-$note-danger-border         = #d9534f;
+$note-danger-border         = #f5222d;
 $note-danger-bg             = lighten(spin($note-danger-border, -10), 92% + $lbg);
 $note-danger-text           = $note-danger-border;
 $note-danger-icon           = "\f056";

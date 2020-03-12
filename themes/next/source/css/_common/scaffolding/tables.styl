@@ -8,6 +8,8 @@ table {
   font-size: $table-font-size;
   margin: 0 0 20px 0;
   width: $table-width;
+  border-top: 2px solid $black-deep;
+  border-bottom: 2px solid $black-deep;
 }
 
 tbody tr {
@@ -19,24 +21,20 @@ tbody tr {
     background: $table-row-hover-bg-color;
   }
 }
-
+thead {
+  border-bottom: 1px solid $grey-dark;
+}
 caption, th, td {
   font-weight: normal;
   padding: $table-cell-padding;
   text-align: $table-content-alignment;
   vertical-align: $table-content-vertical;
 }
-
-th, td {
-  border: 1px solid $table-border-color;
-  border-bottom: 3px solid $table-cell-border-bottom-color;
+td pre {
+  text-align: left;
 }
 
 th {
   font-weight: $table-th-font-weight;
   padding-bottom: 10px;
-}
-
-td {
-  border-bottom-width: 1px;
 }

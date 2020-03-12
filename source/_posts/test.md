@@ -59,7 +59,8 @@ Markdown Nice 这么好用，简直是{喜大普奔|hē hē hē hē}呀！
 ## 5.1 链接
 公众号文章链接[标题](https://mp.weixin.qq.com/s/s5IhxV2ooX3JN_X416nidA)
 
-外部链接[博客](https://blog.makergyt.com)
+外部链接[博客](https://cdn.blog.makergyt.com)
+
 ## 5.2 图片
 ![这里写图片描述](https://cdn.blog.makergyt.com/images/book-Cries_in_the_Drizzle-cover.jpg)
 支持 jpg、png、gif、svg 等图片格式，**其中 svg 文件仅可在微信公众平台中使用**，svg 文件示例如下：
@@ -68,14 +69,11 @@ Markdown Nice 这么好用，简直是{喜大普奔|hē hē hē hē}呀！
 ## 5.3 脚注
 [全栈工程师](是指掌握多种技能，并能利用多种技能独立完成产品的人。 "什么是全栈工程师")在业务开发流程中起到了至关重要的作用。
 
-## 5.4 引用
-Here's a footnote [^1]. Here's a horizontal rule:
-
 # 6 表格
 可以使用冒号来定义表格的对齐方式，如下：
 
 | 姓名   | 年龄 |     工作 |
-| :----- | :--: | -------: |
+| -----: | :--: | -------: |
 | 小可爱 |  18  | 吃可爱多 |
 | 小小勇敢 |  20  | 爬棵勇敢树 |
 | 小小小机智 |  22  | 看一本机智书 |
@@ -129,7 +127,7 @@ $$
 <span style="display:block;text-align:right;color:orangered;">橙色居右</span>
 <span style="display:block;text-align:center;color:orangered;">橙色居中</span>
 
-[^1]: Jeremy Howard.Your own hosted blog[EB/OL].https://www.fast.ai/2020/01/16/fast_template/ .2020.
+
 
 ## 9.2 Reference
 <small>
@@ -140,3 +138,41 @@ $$
 [tags]: <> (['node','js','java',])
 
 [description]: # (This may be the most platform independent comment)
+
+## 9.4 note
+### note
+
+{% note default %}
+#### Default Header
+Welcome to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note primary %}
+#### Primary Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note info %}
+### Info Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note warning %}
+#### Warning Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note danger %}
+#### Danger Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}
+
+{% note info no-icon %}
+#### No icon note
+Note **without** icon: `note info no-icon`
+{% endnote %}
+
+{% note success %}
+#### Success Header
+**Welcome** to [Hexo!](https://hexo.io)
+{% endnote %}

@@ -7,22 +7,22 @@
   button {
     background: $red;
     border: 0;
-    border-radius: 5px;
+    border-radius: $border-radius-base;
     color: white;
     cursor: pointer;
     line-height: 2;
     outline: 0;
-    padding: 0 15px;
+    padding: 0 30px;
     vertical-align: text-top;
 
     &:hover {
-      background: lighten($red, 20%);
+      background: lighten(#d48806, 20%);
     }
   }
 }
 
 #qr {
-  padding-top: 20px;
+  padding-top: 10px;
 
   a {
     border: 0;
@@ -32,7 +32,7 @@
     display: inline-block;
     margin: .8em 2em 0 2em;
     max-width: 100%;
-    width: 180px;
+    width: 220px;
   }
 
   p {
