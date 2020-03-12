@@ -6,7 +6,7 @@ tags:
   - markdown
   - webhook
 description: test markdown
-mathjax: true
+categories: test
 ---
 ![封面](https://cdn.blog.makergyt.com/images/news-week_bulletin-cover.png)
 # 1 一级标题

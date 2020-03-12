@@ -86,8 +86,8 @@ symbol:
   colon: ": "
 
 reward:
-  donate: Donate
-  wechatpay: WeChat Pay
+  donate: 👍 Like the Author
+  wechatpay: WeChat Scan
   alipay: Alipay
   paypal: PayPal
   bitcoin: Bitcoin
