@@ -63,10 +63,9 @@ mathjax: true
 [younghz的Markdown库1][1]
 [younghz的Markdown库2][2]
 
-[1]:https:://github.com/younghz/Markdown
-[2]:https:://github.com/younghz/Markdown
+[1]:https://github.com/younghz/Markdown
+[2]:https://github.com/younghz/Markdown
 
-![图5-1 i_am_svg_20191024083453.svg](https://my-wechat.mdnice.com/mdnice/i_am_svg_20191024083453.svg)
 ## 5.2 脚注
 全栈工程师[^1]在业务开发流程中起到了至关重要的作用。
 
