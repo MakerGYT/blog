@@ -1,28 +1,20 @@
 .site-brand-container {
-  position: relative;
+  background: $primary-color;
+
+  +tablet-mobile() {
+    box-shadow: $box-shadow-base;
+  }
 }
 
 .site-meta {
-  background: $primary-color;
-  color: white;
   padding: 20px 0;
-
-  +tablet-mobile() {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  }
 }
 
 .brand {
-  background: none;
   padding: 0;
-
-  &:hover {
-    color: white;
-  }
 }
 
 .site-subtitle {
-  font-weight: initial;
   margin: 10px 10px 0;
 }
 

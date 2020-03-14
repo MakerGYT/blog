@@ -109,6 +109,9 @@ creative_commons:
 scheme: Pisces
 #scheme: Gemini
 
+# Dark Mode
+darkmode: false
+
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -276,14 +279,15 @@ reward_settings:
 reward:
   wechatpay: /images/wechatpay.png
   #alipay: /images/alipay.png
+  #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
 # Subscribe through Telegram Channel, Twitter, etc.
-# Usage: `Key: permalink || icon (Font Awesome)
+# Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
   #Twitter: https://twitter.com/username || twitter
   #Telegram: https://t.me/channel_name || telegram
-  #Wechat: /images/wechat_channel.jpg || wechat
+  #WeChat: /images/wechat_channel.jpg || wechat
   #RSS: /atom.xml || rss
 
 # Related popular posts
@@ -420,7 +424,7 @@ github_banner:
 font:
   enable: true
 
-  # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
+  # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
   host: https://fonts.geekzu.org/
 
   # Font options:
@@ -517,7 +521,7 @@ math:
 
   # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
   mathjax:
-    enable: false
+    enable: true
     # See: https://mhchem.github.io/MathJax-mhchem/
     mhchem: false
 
@@ -830,7 +834,7 @@ pdf:
 mermaid:
   enable: true
   # Available themes: default | dark | forest | neutral
-  theme: forest
+  theme: dark
 
 
 # ---------------------------------------------------------------
@@ -919,12 +923,8 @@ vendors:
   fontawesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
 
   # MathJax
-  # mathjax: //cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-  # mathjax: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
-  # mhchem: //cdn.jsdelivr.net/npm/mathjax-mhchem@3
-  # mhchem: //cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0
-  mathjax: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
-  mhchem: https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0
+  # mathjax: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
   # KaTeX
   # katex: //cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css
