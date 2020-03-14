@@ -136,20 +136,20 @@ $$
 $$
   \begin{equation} \label{eq2}
   \begin{aligned}
-  a &= b + c \\
+  a &= b + c  \\
     &= d + e + f + g \\
-    &= h + i
+    &= h + i \\
   \end{aligned}
   \end{equation}
 $$
 
-### 8.2.2 方程不显示: 
+### 8.2.2 方程未断行不支持多行编号: 
 
 $$
   \begin{align}
   a &= b + c \label{eq3} \\
-  x &= yz \label{eq4}\\
-  l &= m - n \label{eq5}
+  x &= yz \\
+  l &= m - n \\
   \end{align}
 $$
 
@@ -157,10 +157,10 @@ $$
 
 $$
   \begin{align}
-  -4 + 5x &= 2+y \nonumber  \\
+  -4 + 5x &= 2+y \\
   w+2 &= -1+w \\
-  ab &= cb
-  \end{align}
+  ab &= cb \\
+  \end{align} 
 $$
 
 ### 8.2.4 矩阵未断行：
