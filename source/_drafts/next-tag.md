@@ -10,6 +10,49 @@ categories: test
 mathjax: true
 ---
 ![封面](https://670133.s90i.faiusr.com/4/102/AFwIABAEGAAgpOWk8gUosoebpgMwhAc4-wI!1000x1000.png?v=1584188956724&_tm=3)
+## 8.2 有误
+### 8.2.1 等式未断行:
+
+$$
+  \begin{equation} \label{eq2}
+  \begin{aligned}
+  a &= b + c  \\
+    &= d + e + f + g \\
+    &= h + i \\
+  \end{aligned}
+  \end{equation}
+$$
+
+### 8.2.2 方程未断行不支持多行编号: 
+
+$$
+  \begin{align}
+  a &= b + c \label{eq3} \\
+  x &= yz \\
+  l &= m - n \\
+  \end{align}
+$$
+
+### 8.2.3 多列式未断行不编号:
+
+$$
+  \begin{align}
+  -4 + 5x &= 2+y \\
+  w+2 &= -1+w \\
+  ab &= cb \\
+  \end{align} 
+$$
+
+### 8.2.4 矩阵未断行：
+
+$$
+  \begin{pmatrix}
+  1 & a_1 & a_1^2 & \cdots & a_1^n \\
+  1 & a_2 & a_2^2 & \cdots & a_2^n \\
+  \vdots & \vdots & \vdots & \ddots & \vdots \\
+  1 & a_m & a_m^2 & \cdots & a_m^n \\
+  \end{pmatrix}
+$$
 
 # 11 限定hexo-next可用
 ## 11.1 Centered Quote
