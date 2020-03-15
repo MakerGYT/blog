@@ -113,6 +113,7 @@ $$
 $$
 
 ### 8.1.2 分式:
+$\frac {a+1}{b+2}$ 和 $x={a+1 \over b+1}$
 
 $$
   x+1\over\sqrt{1-x^2} \tag{i}\label{eq_tag}
@@ -129,6 +130,68 @@ $$
 $$
   H(D_2) = -\left(\frac{2}{4}\log_2 \frac{2}{4} + \frac{2}{4}\log_2 \frac{2}{4}\right) = 1
 $$
+
+$$ 
+  \sum_{i=0}^n = \frac{(n^2+n)(2n+1)}{6}\tag{sumDisplayed} 
+$$
+
+### 8.1.5 内联公式
+$ \sum_{i=0}^n $ 和 $ \frac{1}{2} $ 
+
+### 8.1.6 希腊字母
+
+对于希腊字母，用 $ \alpha \beta,...,\omega $来表示。
+
+$\phi \varphi$ 和 $\ell$
+
+### 8.1.7 上下标
+
+分别使用 ^ 和 _ 实现，比如：$x_i^{10}$ = ; ${x^y}^z$ = ; $x_{i^{10}}$ = 
+
+开根号$\sqrt[4] {x_3}$
+
+字母顶部
+- $\hat x$, $\widehat{xy}$
+- $\bar x$, $\overline {xyz}$
+- $\overrightarrow {xy}$, $\overleftrightarrow {xy}$
+- $\dot x$
+
+### 8.1.8 括号
+圆括号和方括号 $(2+2)[4-4]$ = 
+花括号需要用\{和\}表示，比如$\{x| x>0\}$ = 
+遇到高度较高的分数，括号会变小，如 $(\frac{\sqrt x}{y^3})$ = ，可以使用`\left(…\right)`可以自动调整括号的行高，比如 $\left(\frac{\sqrt x}{y^3}\right)$ = 
+
+### 8.1.9 求和、极限与积分
+$\sum_1^n$ = ，$\int$= ，$\prod$ = 
+$\bigcup$ = ，$\bigcap$ = ，$\iint$ = 
+
+$$
+\lim_{k\to\infty}k^{-1} = 0
+$$
+
+$$
+\sum_{k=1}^{n}f(k)
+$$
+
+### 8.1.10 特殊函数
+初等函数
+$\log_a b$， $\ln b$， $\sin x$ ，$\max x$ 
+### 8.1.11 特殊符号
+- $\lt \gt \le \ge \neq$
+- $\times \div \pm \mp$
+- $\cup \cap \setminus \subset \subseteq \subsetneq \supset \in \notin \emptyset \varnothing$
+- ${n+1 \choose 2k}$ or $\binom{n+1}{2k}$
+- $\to \rightarrow \leftarrow \Rightarrow \Leftarrow \mapsto$
+- $\land \lor \lnot \forall \exists \top \bot \vdash \vDash$
+- $\approx \sim \simeq \cong \equiv \prec$
+- $a\equiv b\pmod n$
+- $a_1,a_2,\ldots,a_n$
+- $a_1+a_2+\cdots+a_n$
+- $\infty \aleph_0$，$\nabla \partial$，$\Im \Re IR$
+
+### 8.1.12 纯文本
+$$\{x\in s | \text{x is extra large}\}$$
+单空格$a \ b$， 多空格$a \quad b$
 
 
 

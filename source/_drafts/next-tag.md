@@ -33,6 +33,16 @@ $$
   \end{align}
 $$
 
+$$
+  \left\{ 
+  \begin{array}{c}
+  a_1x+b_1y+c_1z=d_1 \\ 
+  a_2x+b_2y+c_2z=d_2 \\ 
+  a_3x+b_3y+c_3z=d_3
+  \end{array}
+  \right. 
+$$
+
 ### 8.2.3 多列式未断行不编号:
 
 $$
@@ -52,6 +62,26 @@ $$
   \vdots & \vdots & \vdots & \ddots & \vdots \\
   1 & a_m & a_m^2 & \cdots & a_m^n \\
   \end{pmatrix}
+$$
+
+### 8.2.5 分支等式未换行
+$$
+f(n)=
+\begin{cases}
+n/2,& \text{if $n$ is even}\\
+3n+1,& \text{if $n$ is odd}
+\end{cases}
+$$
+
+### 8.2.6 表格式数组
+$$
+\begin{array}{c|lcr}
+n & \text{Left} & \text{Center} & \text{Right} \\
+\hline
+1 & 0.24 & 1 & 125 \\
+2 & -1 & 189 & -8 \\
+3 & -20 & 2000 & 1+10i
+\end{array}
 $$
 
 # 11 限定hexo-next可用

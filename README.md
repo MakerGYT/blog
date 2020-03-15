@@ -14,6 +14,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 若以`<name>.github.io/<project>`访问，支持选择branch: gh-pages,master,master /docs, 但是hexo会无样式，需要配置url和root为`/<project>/`,若配置了自定义域名到`<name>.github.io`,则不需要, 但是需要在source下写一个CNAME文件，写入自定义域名（每次重新部署后管理页会清空）  
 
 - 如果没有文章,会404,index.html都没有
+- 深色模式未响应
 
 通过github pages搭建博客最简单的便是直接存放md文件，便可自动解析，但是
 - 支持的语法有限，不支持的会提交失败
