@@ -1,6 +1,12 @@
 # my blog
----
 [![Build Status](https://makergyt.coding.net/badges/blog/job/187329/master/build.svg)](https://makergyt.coding.net/p/blog/ci/job)
+[![gh-pages](https://badgen.net/github/status/makergyt/blog/gh-pages)](https://github.blog.makergyt.com)
+[![](https://badgen.net/travis/makergyt/blog)](https://travis-ci.com/MakerGYT/blog)
+![license](https://badgen.net/github/license/makergyt/blog)
+![last-commit](https://badgen.net/github/last-commit/makergyt/blog)
+[![hexo](https://badgen.net/npm/v/hexo)](https://www.npmjs.com/package/hexo)
+
+
 warning: deprecated key `skip_cleanup` deploy (not supported in dpl v2, use cleanup), 但是修改后
 ```sh
 Untracked files:
