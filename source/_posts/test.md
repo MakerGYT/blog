@@ -12,9 +12,9 @@ mathjax: true
 ![封面](https://670133.s90i.faiusr.com/4/102/AFwIABAEGAAgpOWk8gUosoebpgMwhAc4-wI!1000x1000.png?v=1584188956724&_tm=3)
 # 1 一级标题
 ## 1.1 二级标题
-### 1.1 三级标题
-#### 1.1.1 四级标题
-##### 1.1.1.1 五级标题
+### 1.1.1 三级标题
+#### 1.1.1.1 四级标题
+##### 1.1.1.1.1 五级标题
 # 2 列表
 ## 2.1 无序列表
 无序列表的使用，在符号`-`后加空格使用。如下：
@@ -107,18 +107,27 @@ diff:
 ### 8.1.1 公式:
 
 $$
-  \begin{equation} \label{eq1}
+  \begin{equation}
   e=mc^2
   \end{equation}
 $$
 
 ### 8.1.2 分式:
-$\frac {a+1}{b+2}$ 和 $x={a+1 \over b+1}$
+$\frac {a+1}{b+2}$ 和 $x={a+1 \\over b+1}$
 
 $$
-  x+1\over\sqrt{1-x^2} \tag{i}\label{eq_tag}
+{
+  x+1\over\sqrt{1-x^2} 
+}  \qquad(1)
 $$
 
+
+$$
+{
+e^x=\lim_{n\to\infty} \left( 1+\frac{x}{n} \right)^n
+\qquad (2) 
+}
+$$
 ### 8.1.3 化学公式：
 
 $$
@@ -132,7 +141,7 @@ $$
 $$
 
 $$ 
-  \sum_{i=0}^n = \frac{(n^2+n)(2n+1)}{6}\tag{sumDisplayed} 
+  \sum_{i=0}^n = \frac{(n^2+n)(2n+1)}{6}
 $$
 
 ### 8.1.5 内联公式
@@ -193,12 +202,75 @@ $\log_a b$， $\ln b$， $\sin x$ ，$\max x$
 $$\{x\in s | \text{x is extra large}\}$$
 单空格$a \ b$， 多空格$a \quad b$
 
+## 8.2 有误
 
+### 8.2.1 等式未断行:
+
+$$
+  \begin{equation} \label{eq2}
+  \begin{aligned}
+  a &= b + c  \\\\
+    &= d + e + f + g \\\\
+    &= h + i \\\\
+  \end{aligned}
+  \end{equation}
+$$
+
+### 8.2.2 方程未断行不支持多行编号: 
+
+$$
+  \begin{align}
+  a &= b + c \label{eq3} \\\\
+  x &= yz \\\\
+  l &= m - n \\\\
+  \end{align}
+$$
+
+### 8.2.3 多列式未断行不编号:
+
+$$
+  \begin{align}
+  -4 + 5x &= 2+y \\\\
+  w+2 &= -1+w \\\\
+  ab &= cb \\\\
+  \end{align} 
+$$
+
+### 8.2.4 矩阵未断行：
+
+$$
+  \begin{pmatrix}
+  1 & a_1 & a_1^2 & \cdots & a_1^n \\\\
+  1 & a_2 & a_2^2 & \cdots & a_2^n \\\\
+  \vdots & \vdots & \vdots & \ddots & \vdots \\\\
+  1 & a_m & a_m^2 & \cdots & a_m^n \\\\
+  \end{pmatrix}
+$$
+
+### 8.2.5 分支等式未换行
+$$
+f(n)=
+\begin{cases}
+n/2,& \text{if $n$ is even}\\\\
+3n+1,& \text{if $n$ is odd}
+\end{cases}
+$$
+
+### 8.2.6 表格式数组
+$$
+\begin{array}{c|lcr}
+n & \text{Left} & \text{Center} & \text{Right} \\\\
+\hline
+1 & 0.24 & 1 & 125 \\\\
+2 & -1 & 189 & -8 \\\\
+3 & -20 & 2000 & 1+10i
+\end{array}
+$$
 
 # 9 媒体
 ## 9.1  图片
 ![图5-1 这里写图片描述](https://1.s91i.faiusr.com/4/AFsIABAEGAAgztrP8QUohNjw0AYwhAc4-wI!800x800.png?v=1580461392155)
-支持 jpg、png、gif、svg 等图片格式，**其中 svg 文件仅可在微信公众平台中使用**，svg 文件示例如下：
+支持 jpg、png、gif、svg 等图片格式，svg 文件示例如下：
 ![图5-2 i_am_svg_20191024083453](https://my-wechat.mdnice.com/mdnice/i_am_svg_20191024083453.svg)
 
 # 10 特殊

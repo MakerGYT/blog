@@ -33,6 +33,10 @@ nothing added to commit but untracked files present (use "git add" to track)
 - 支持通用md语法，包含数学公式，保持独立性
 - 响应式设计
 
+error:
+- 换用markdown-it后，一级标题失去锚点
+- `\\`被转义成`\`,需使用`\\\\` =>http://qwqbear.coding.me/article/mathjax-problem/
+
 *About the configuration of this website*
 # 1 Init
 ## 1.1 Download
