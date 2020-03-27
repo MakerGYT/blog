@@ -217,7 +217,7 @@ $$
   \end{equation}
 $$
 
-### 8.2.2 方程未断行不支持多行编号: 
+#### 8.2.2 方程未断行不支持多行编号: 
 
 $$
   \begin{align}
@@ -227,7 +227,7 @@ $$
   \end{align}
 $$
 
-### 8.2.3 多列式未断行不编号:
+#### 8.2.3 多列式未断行不编号:
 
 $$
   \begin{align}
@@ -237,7 +237,7 @@ $$
   \end{align} 
 $$
 
-### 8.2.4 矩阵未断行：
+#### 8.2.4 矩阵未断行：
 
 $$
   \begin{pmatrix}
@@ -248,7 +248,7 @@ $$
   \end{pmatrix}
 $$
 
-### 8.2.5 分支等式未换行
+#### 8.2.5 分支等式未换行
 $$
 f(n)=
 \begin{cases}
@@ -257,7 +257,7 @@ n/2,& \text{if $n$ is even}\\\\
 \end{cases}
 $$
 
-### 8.2.6 表格式数组
+#### 8.2.6 表格式数组
 $$
 \begin{array}{c|lcr}
 n & \text{Left} & \text{Center} & \text{Right} \\\\
@@ -268,20 +268,20 @@ n & \text{Left} & \text{Center} & \text{Right} \\\\
 \end{array}
 $$
 
-# 9 媒体
-## 9.1  图片
+## 9 媒体
+### 9.1  图片
 ![图5-1 这里写图片描述](https://1.s91i.faiusr.com/4/AFsIABAEGAAgztrP8QUohNjw0AYwhAc4-wI!800x800.png?v=1580461392155)
 支持 jpg、png、gif、svg 等图片格式，svg 文件示例如下：
 ![图5-2 i_am_svg_20191024083453](https://my-wechat.mdnice.com/mdnice/i_am_svg_20191024083453.svg)
 
-# 10 特殊
+## 10 特殊
 
-## 10.1 HTML
+### 10.1 HTML
 <span style="display:block;text-align:left;color:rgb(255, 0, 54);">天猫红居左</span>
 <span style="display:block;text-align:right;color:#ff6a00;">阿里橙居右</span>
 <span style="display:block;text-align:center;color:#019fe8;">支付宝蓝居中</span>
 
-## 10.2 注释(不被解析)
+### 10.2 注释(不被解析)
 [tags]: <> (['node','js','java',])
 
 [description]: # (This may be the most platform independent comment)
