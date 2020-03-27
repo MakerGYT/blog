@@ -30,6 +30,7 @@ $box-shadow-base = 0 2px 8px rgba(0, 0, 0, 0.15);
 // --------------------------------------------------
 // Global text color on <body>
 $text-color                   = rgba(0, 0, 0, 0.65);
+$text-color-secondary         = rgba(0, 0, 0, 0.45);
 $text-color-dark              = #e1e1e1;
 
 // Global link color.
@@ -92,7 +93,7 @@ $font-family-icons        = 'FontAwesome';
 $font-size-base           = (hexo-config('font.enable') and hexo-config('font.global.size') is a 'unit') ? unit(hexo-config('font.global.size'), em) : 1em;
 $font-size-smallest       = .75em;
 $font-size-smaller        = .8125em;
-$font-size-small          = .875em;
+$font-size-small          = .875em; // 10.5pt 五号
 $font-size-medium         = 1em;
 $font-size-large          = 1.125em;
 $font-size-larger         = 1.25em;
@@ -102,7 +103,10 @@ $font-size-largest        = 1.375em;
 // Headings font size
 $font-size-headings-step  = .125em;
 $font-size-headings-base  = (hexo-config('font.enable') and hexo-config('font.headings.size') is a 'unit') ? unit(hexo-config('font.headings.size'), em) : 1.625em;
-
+$font-size-headings-1 = 1.75em; 
+$font-size-headings-2 = 1.333em; // 16pt 三号
+$font-size-headings-3 = 1.167em; // 14pt 四号
+$font-size-headings-4 = 1em; // 12pt 小四
 
 // Global line height
 $line-height-base         = 2;

@@ -20,6 +20,9 @@ sidebar:
   overview: 站点概览
   toc: 文章目录
 post:
+  abstract: 摘 要
+  tags: "关键词："
+  tag_indicate: "，"
   posted: 发表于
   edited: 更新于
   created: 创建时间
@@ -74,7 +77,7 @@ symbol:
   period: "。"
   colon: "："
 reward:
-  donate: 打赏
+  donate: 👍 喜欢作者
   wechatpay: 微信扫一扫
   alipay: 支付宝
   paypal: PayPal

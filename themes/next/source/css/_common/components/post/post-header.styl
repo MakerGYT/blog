@@ -61,19 +61,14 @@
 }
 
 .posts-expand .post-meta {
-  color: $grey-dark;
+  color: $grey;
   font-family: $font-family-posts;
   font-size: $font-size-smallest;
-  margin: 3px 0 60px 0;
+  margin: 3px 0 20px 0;
   text-align: center;
 
-  .post-description {
-    font-size: $font-size-small;
-    margin-top: 2px;
-  }
-
   time {
-    border-bottom: 1px dashed $grey-dark;
+    border-bottom: 1px dashed $grey;
     cursor: pointer;
   }
 }
@@ -102,5 +97,10 @@
 
   +tablet-mobile() {
     display: none;
+  }
+}
+.post-meta-item {
+  a{
+    color: $grey;
   }
 }

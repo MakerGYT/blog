@@ -5,9 +5,10 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: $table-font-size;
+  font-size: $font-size-small;
   margin: 0 0 20px 0;
-  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
   border-top: 2px solid $black-deep;
   border-bottom: 2px solid $black-deep;
 }
@@ -26,15 +27,12 @@ thead {
 }
 caption, th, td {
   font-weight: normal;
-  padding: 8px;
+  padding: 0 8px;
   text-align: center;
   vertical-align: middle;
-}
-td pre {
-  text-align: left;
+  width: 150px;
 }
 
 th {
   font-weight: 700;
-  padding-bottom: 10px;
 }

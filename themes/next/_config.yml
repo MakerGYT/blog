@@ -259,11 +259,9 @@ post_meta:
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
 symbols_count_time:
-  separated_meta: true
+  separated_meta: false
   item_text_post: true
   item_text_total: false
-  awl: 4
-  wpm: 275
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: false
@@ -425,7 +423,12 @@ font:
   enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
-  host: https://fonts.geekzu.org/
+  # - https://fonts.lug.ustc.edu.cn
+  # - https://fonts.loli.net
+  # - https://fonts.font.im
+  # - https://fonts.gstatic.font.im
+  # - fonts.useso.com
+  host: https://fonts.geekzu.org
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -436,25 +439,25 @@ font:
   global:
     external: true
     family: 
-    size:
+    size: 
 
   # Font settings for site title (.site-title).
   title:
     external: true
-    family:
-    size:
+    family: SimHei
+    size: 
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
     external: true
-    family:
+    family: SimHei
     size:
 
   # Font settings for posts (.post-body).
   posts:
     external: true
-    family:
-
+    family: SimSun
+    size: 1
   # Font settings for <code> and code blocks.
   codes:
     external: true
@@ -635,11 +638,11 @@ valine:
   appkey: GVl0KhJLtCbE2sGdN6hI5AnF
   notify: false # Mail notifier
   verify: false # Verification code
-  placeholder: Generous with your criticism # Comment box placeholder
+  placeholder: 不吝赐教 # Comment box placeholder
   avatar: wavatar # Gravatar style
   guest_info: mail # Custom comment header
   pageSize: 10 # Pagination size
-  language: en # Language, available values: en, zh-cn
+  language: zh-cn # Language, available values: en, zh-cn
   visitor: false # Article reading statistic
   comment_count: false # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP

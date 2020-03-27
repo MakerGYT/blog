@@ -63,20 +63,6 @@
             </span>
           {%- endif %}
 
-          {%- if theme.post_meta.updated_at.enable and datetime_diff %}
-            {%- set display_updated = not theme.post_meta.updated_at.another_day or theme.post_meta.updated_at.another_day and date_diff %}
-
-            {%- if display_updated or not theme.post_meta.created_at %}
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">{{ __('post.edited') }}</span>
-                <time title="{{ __('post.modified') + __('symbol.colon') + full_date(post.updated) }}" itemprop="dateModified" datetime="{{ moment(post.updated).format() }}">{{ date(post.updated) }}</time>
-              </span>
-            {%- endif %}
-          {%- endif %}
-
           {%- if post.categories and post.categories.length and theme.post_meta.categories %}
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -93,17 +79,6 @@
                   {{ __('symbol.comma') }}
                 {%- endif %}
               {%- endfor %}
-            </span>
-          {%- endif %}
-
-          {# LeanCloud PageView #}
-          {%- if theme.leancloud_visitors.enable or (theme.valine.enable and theme.valine.appid and theme.valine.appkey and theme.valine.visitor) %}
-            <span id="{{ url_for(post.path) }}" class="post-meta-item leancloud_visitors" data-flag-title="{{ post.title }}" title="{{ __('post.views') }}">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">{{ __('post.views') + __('symbol.colon') }}</span>
-              <span class="leancloud-visitors-count"></span>
             </span>
           {%- endif %}
 
@@ -129,20 +104,10 @@
 
           {{- next_inject('postMeta') }}
 
-          {%- if config.symbols_count_time.symbols %}
-          {%- if theme.symbols_count_time.separated_meta %}<br>{%- endif %}
-            <span class="post-meta-item" title="{{ __('symbols_count_time.count') }}">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              {%- if theme.symbols_count_time.item_text_post %}
-                <span class="post-meta-item-text">{{ __('symbols_count_time.count') + __('symbol.colon') }}</span>
-              {%- endif %}
-              <span>{{ symbolsCount(post) }}</span>
-            </span>
-          {%- endif %}
-
           {%- if config.symbols_count_time.time %}
+            {%- if theme.symbols_count_time.separated_meta %}
+                <br>
+            {%- endif %}
             <span class="post-meta-item" title="{{ __('symbols_count_time.time') }}">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
@@ -154,10 +119,6 @@
             </span>
           {%- endif %}
 
-          {%- if post.description and (not theme.excerpt_description or not is_index) %}
-            <div class="post-description">{{ post.description }}</div>
-          {%- endif %}
-
         </div>
       </header>
     {%- endif %}
@@ -166,7 +127,25 @@
     {### POST BODY ###}
     {#################}
     <div class="post-body{%- if post.direction and post.direction.toLowerCase() === 'rtl' %} rtl{%- endif %}" itemprop="articleBody">
-
+      {%- if post.description and (not theme.excerpt_description or not is_index) %}
+        <div class="post-description">
+          <h3 class="post-description-meta">{{ __('post.abstract') }}</h3>
+          <p class="post-description-content">{{ post.description }}</p>
+          {%- if post.tags and post.tags.length %}
+            <div class="post-tags">
+              <span class="post-tags-meta">{{ __('post.tags') }}</span>
+              {%- for tag in post.tags.toArray() %}
+                {%- if loop.last %}
+                  {%- set tag_indicate = '' %}
+                {% else %}
+                  {%- set tag_indicate = __('post.tag_indicate') %}
+                {%- endif %}
+                <a href="{{ url_for(tag.path) }}" rel="tag">{{ tag.name }}{{ tag_indicate }}</a>
+              {%- endfor %}
+            </div>
+          {%- endif %}
+        </div>
+      {%- endif %}
       {# Gallery support #}
       {%- if post.photos and post.photos.length %}
         <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
@@ -218,6 +197,43 @@
     {%- if not is_index %}
       {{- next_inject('postBodyEnd') }}
 
+      {%- if theme.post_meta.updated_at.enable and datetime_diff %}
+        {%- set display_updated = not theme.post_meta.updated_at.another_day or theme.post_meta.updated_at.another_day and date_diff %}
+
+        {%- if display_updated or not theme.post_meta.created_at %}
+          <div class="post-end-item">
+            <span class="post-end-item-icon">
+              <i class="fa fa-calendar-check-o"></i>
+            </span>
+            <span class="post-end-item-text">{{ __('post.modified') }}</span>
+            <time title="{{ __('post.modified') + __('symbol.colon') + full_date(post.updated) }}" itemprop="dateModified" datetime="{{ moment(post.updated).format() }}">{{ date(post.updated) }}</time>
+          </div>
+        {%- endif %}
+      {%- endif %}
+      {# LeanCloud PageView #}
+      {%- if theme.leancloud_visitors.enable or (theme.valine.enable and theme.valine.appid and theme.valine.appkey and theme.valine.visitor) %}
+        <div id="{{ url_for(post.path) }}" class="post-end-item leancloud_visitors" data-flag-title="{{ post.title }}" title="{{ __('post.views') }}">
+          <span class="post-end-item-icon">
+            <i class="fa fa-eye"></i>
+          </span>
+          <span class="post-end-item-text">{{ __('post.views') + __('symbol.colon') }}</span>
+          <span class="leancloud-visitors-count"></span>
+        </div>
+      {%- endif %}
+
+      {%- if config.symbols_count_time.symbols %}
+
+        <div class="post-end-item" title="{{ __('symbols_count_time.count') }}">
+          <span class="post-end-item-icon">
+            <i class="fa fa-file-word-o"></i>
+          </span>
+          {%- if theme.symbols_count_time.item_text_post %}
+            <span class="post-end-item-text">{{ __('symbols_count_time.count') + __('symbol.colon') }}</span>
+          {%- endif %}
+          <span>{{ symbolsCount(post) }}</span>
+        </div>
+      {%- endif %}
+
       {%- if post.reward_settings.enable %}
         {{ partial('_partials/post/post-reward.swig') }}
       {%- endif %}
@@ -231,18 +247,7 @@
       {%- endif %}
 
       <footer class="post-footer">
-        {%- if post.tags and post.tags.length %}
-          {%- if theme.tag_icon %}
-            {%- set tag_indicate = '<i class="fa fa-tag"></i>' %}
-          {% else %}
-            {%- set tag_indicate = '#' %}
-          {%- endif %}
-          <div class="post-tags">
-            {%- for tag in post.tags.toArray() %}
-              <a href="{{ url_for(tag.path) }}" rel="tag">{{ tag_indicate }} {{ tag.name }}</a>
-            {%- endfor %}
-          </div>
-        {%- endif %}
+
 
         {{ partial('_partials/post/post-footer.swig', {}, {cache: theme.cache.enable}) }}
 

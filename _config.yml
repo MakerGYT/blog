@@ -9,7 +9,7 @@ description:
 keywords: blog makergyt
 author: Gao Yuting
 language:
-  - en
+  - zh-CN
   
 timezone: Asia/Shanghai
 
@@ -100,7 +100,6 @@ theme: next
 
 # Security
 encrypt:
-  enable: true
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -124,3 +123,23 @@ sitemap:
 aplayer:
   meting: true
 all_minifier: true
+
+# Markdown-it config
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-footnote
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSide: 'left'
+    permalinkSymbol: ¶

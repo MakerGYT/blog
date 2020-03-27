@@ -22,6 +22,9 @@ sidebar:
   toc: Table of Contents
 
 post:
+  abstract: ABSTRACT
+  tags: "Key words:"
+  tag_indicate: ","
   posted: Posted on
   edited: Edited on
   created: Created

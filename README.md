@@ -19,6 +19,20 @@ nothing added to commit but untracked files present (use "git add" to track)
 若以`<name>.github.io`访问，需要设置repos名为`<name>.github.io`,即个人主页面,User pages must be built from the master branch.
 若以`<name>.github.io/<project>`访问，支持选择branch: gh-pages,master,master /docs, 但是hexo会无样式，需要配置url和root为`/<project>/`,若配置了自定义域名到`<name>.github.io`,则不需要, 但是需要在source下写一个CNAME文件，写入自定义域名（每次重新部署后管理页会清空）  
 
+```yml
+# Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
+seo: true
+{%- if theme.seo %}h2{% else %}h1{%- endif %}
+```
+anchors level h2
+
+font
+- https://fonts.lug.ustc.edu.cn
+- https://fonts.loli.net
+- https://fonts.font.im
+- https://fonts.gstatic.font.im
+- fonts.useso.com
+
 - 如果没有文章,会404,index.html都没有
 - 深色模式未响应
 
@@ -351,3 +365,4 @@ https://github.com/DesertsP/Valine-Admin
 https://deserts.io/valine-admin-document/#%E9%98%B2%E6%AD%A2%E4%BA%91%E5%BC%95%E6%93%8E%E4%BC%91%E7%9C%A0
 # Reference
 <small>[1] NexT.Gemini.Documentation[EB/OL].https://theme-next.org/docs/ .2019.</small>
+<small>[2] 程序鱼.nodejs前端模板引擎swig入门[EB/OL].https://www.jianshu.com/p/f0bffc42c1ce</small>

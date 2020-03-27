@@ -12,13 +12,12 @@
   }
 
   .image-caption, .figure .caption {
-    color: $grey-dark;
+    color: var(--text-color);
     font-size: $font-size-small;
-    font-weight: bold;
-    line-height: 1;
-    margin: 0px auto 15px;
+    margin: 0px auto;
     text-align: center;
   }
+
 }
 
 .post-sticky-flag {
@@ -71,3 +70,5 @@
 @import 'post-copyright' if (hexo-config('creative_commons.post'));
 
 @import 'post-followme' if (hexo-config('follow_me'));
+@import 'post-description';
+@import 'post-end';
