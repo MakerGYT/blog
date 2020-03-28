@@ -5,6 +5,8 @@
 ![license](https://badgen.net/github/license/makergyt/blog)
 ![last-commit](https://badgen.net/github/last-commit/makergyt/blog)
 [![hexo](https://badgen.net/npm/v/hexo)](https://www.npmjs.com/package/hexo)
+![](https://img.shields.io/badge/Generator-Hexo-0e83cd?&logo=hexo)
+![](https://img.shields.io/badge/Theme-NexT-181717.svg)
 
 
 warning: deprecated key `skip_cleanup` deploy (not supported in dpl v2, use cleanup), 但是修改后

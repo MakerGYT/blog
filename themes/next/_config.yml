@@ -110,7 +110,7 @@ scheme: Pisces
 #scheme: Gemini
 
 # Dark Mode
-darkmode: false
+darkmode: true
 
 
 # ---------------------------------------------------------------
@@ -132,7 +132,7 @@ menu:
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
   # photos: /photos/ || camera-retro
-  notebook: /notebook/ || sticky-note
+  # notebook: /notebook/ || sticky-note
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -428,7 +428,7 @@ font:
   # - https://fonts.font.im
   # - https://fonts.gstatic.font.im
   # - fonts.useso.com
-  host: https://fonts.geekzu.org
+  host: 
 
   # Font options:
   # `external: true` will load this font family from `host` above.
