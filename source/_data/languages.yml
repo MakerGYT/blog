@@ -1,0 +1,27 @@
+zh-CN:
+  post:
+    description: 摘 要
+    tags: "关键词："
+    tag_indicate: "，"
+    views: 阅读量
+  counter:
+    archive_posts:
+      zero: 搁笔。
+      one: 拙笔寥寥。
+      other: "已耕作 %d 。"
+  cheers:
+    um: ❀
+  reward:
+    donate: 👍 喜欢作者
+    wechatpay: 微信扫一扫
+en:
+  post:
+    description: ABSTRACT
+    tags: "Key words:"
+    tag_indicate: ","
+    views: Reading
+  cheers:
+    um: ❀
+  reward:
+    donate: 👍 Like the Author
+    wechatpay: Wechat scan

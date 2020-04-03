@@ -110,6 +110,6 @@ git config --global --unset http.proxy
 ```sh
 git clone urlPrevious --bare
 git remote add name urlNow
-git push urlNow --all
-git push urlNow --tags
+git push name --all
+git push name --tags
 ```

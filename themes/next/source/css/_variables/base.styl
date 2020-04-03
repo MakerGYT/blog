@@ -15,30 +15,27 @@ $grey-dark    = #999;
 $grey-dim     = #666;
 $black-light  = #555;
 $black-dim    = #333;
-$black-deep   = #000;
+$black-deep   = #222;
 $red          = #ff2a2a;
 $blue-bright  = #87daff;
 $blue         = #0684bd;
 $blue-deep    = #262a30;
 $orange       = #fc6423;
-$primary-color= #1890ff;
-$border-radius-base = 4px;
-$box-shadow-base = 0 2px 8px rgba(0, 0, 0, 0.15);
+
 
 // Scaffolding
 // Settings for some of the most global styles.
 // --------------------------------------------------
 // Global text color on <body>
-$text-color                   = rgba(0, 0, 0, 0.65);
-$text-color-secondary         = rgba(0, 0, 0, 0.45);
+$text-color                   = $black-light;
 $text-color-dark              = #e1e1e1;
 
 // Global link color.
 $link-color                   = $black-light;
 $link-color-dark              = #e1e1e1;
-$link-hover-color             = $primary-color;
+$link-hover-color             = $black-deep;
 $link-hover-color-dark        = white;
-$link-decoration-color        = $primary-color;
+$link-decoration-color        = $grey-dark;
 
 // Global border color.
 $border-color                 = $grey-light;
@@ -50,7 +47,7 @@ $content-bg-color             = white;
 $content-bg-color-dark        = #1d1d1d;
 
 // Selection
-$selection-bg                 = $primary-color;
+$selection-bg                 = $blue-deep;
 $selection-color              = white;
 
 // Dark mode color
@@ -69,7 +66,7 @@ get_font_family(config) {
 }
 
 // Font families.
-$font-family-chinese      = "Noto Serif SC", "PingFang SC", "Microsoft YaHei";
+$font-family-chinese      = "PingFang SC", "Microsoft YaHei";
 
 $font-family-base         = $font-family-chinese, sans-serif;
 $font-family-base         = get_font_family('global'), $font-family-chinese, sans-serif if get_font_family('global');
@@ -80,7 +77,7 @@ $font-family-logo         = get_font_family('title'), $font-family-base if get_f
 $font-family-headings     = $font-family-base;
 $font-family-headings     = get_font_family('headings'), $font-family-base if get_font_family('headings');
 
-$font-family-posts        = "EB Garamond", $font-family-chinese, sans-serif;
+$font-family-posts        = $font-family-base;
 $font-family-posts        = get_font_family('posts'), $font-family-base if get_font_family('posts');
 
 $font-family-monospace    = consolas, Menlo, monospace, $font-family-chinese;
@@ -93,7 +90,7 @@ $font-family-icons        = 'FontAwesome';
 $font-size-base           = (hexo-config('font.enable') and hexo-config('font.global.size') is a 'unit') ? unit(hexo-config('font.global.size'), em) : 1em;
 $font-size-smallest       = .75em;
 $font-size-smaller        = .8125em;
-$font-size-small          = .875em; // 10.5pt 五号
+$font-size-small          = .875em;
 $font-size-medium         = 1em;
 $font-size-large          = 1.125em;
 $font-size-larger         = 1.25em;
@@ -103,10 +100,7 @@ $font-size-largest        = 1.375em;
 // Headings font size
 $font-size-headings-step  = .125em;
 $font-size-headings-base  = (hexo-config('font.enable') and hexo-config('font.headings.size') is a 'unit') ? unit(hexo-config('font.headings.size'), em) : 1.625em;
-$font-size-headings-1 = 1.75em; 
-$font-size-headings-2 = 1.333em; // 16pt 三号
-$font-size-headings-3 = 1.167em; // 14pt 四号
-$font-size-headings-4 = 1em; // 12pt 小四
+
 
 // Global line height
 $line-height-base         = 2;
@@ -125,10 +119,10 @@ $zindex-5       = 1500;
 
 // Table
 // --------------------------------------------------
-$table-border-color             = $black-deep;
+$table-border-color             = $gray-lighter;
 $table-font-size                = $font-size-small;
 $table-cell-border-bottom-color = $gray-lighter;
-$table-row-odd-bg-color         = white;
+$table-row-odd-bg-color         = #f9f9f9;
 $table-row-odd-bg-color-dark    = #282828;
 $table-row-hover-bg-color       = $whitesmoke;
 $table-row-hover-bg-color-dark  = #363636;
@@ -143,13 +137,13 @@ $code-background                = $gainsboro;
 
 // Buttons
 // --------------------------------------------------
-$btn-default-radius             = $border-radius-base;
-$btn-default-bg                 = $primary-color;
-$btn-default-color              = white;  
-$btn-default-border-color       = $primary-color;
+$btn-default-radius             = 0;
+$btn-default-bg                 = $black-deep;
+$btn-default-color              = white;
+$btn-default-border-color       = $black-deep;
 $btn-default-hover-bg           = white;
-$btn-default-hover-color        = $primary-color;
-$btn-default-hover-border-color = $primary-color;
+$btn-default-hover-color        = $black-deep;
+$btn-default-hover-border-color = $black-deep;
 
 
 // Pagination
@@ -162,7 +156,7 @@ $pagination-link-border         = $gainsboro;
 
 $pagination-link-hover-bg       = transparent;
 $pagination-link-hover-color    = $link-color;
-$pagination-link-hover-border   = $primary-color;
+$pagination-link-hover-border   = $black-deep;
 
 $pagination-active-bg           = $grey-light;
 $pagination-active-color        = white;
@@ -182,8 +176,8 @@ $content-mobile-padding         = 8px;
 
 // Headband
 // --------------------------------------------------
-$headband-height                = 0px;
-$headband-bg                    = white;
+$headband-height                = 3px;
+$headband-bg                    = $black-deep;
 
 
 // Section Header
@@ -194,7 +188,7 @@ $head-bg                        = transparent;
 // Site Meta
 $site-meta-text-align           = center;
 $brand-color                    = white;
-$brand-hover-color              = $primary-color;
+$brand-hover-color              = white;
 $brand-color-dark               = white;
 $brand-hover-color-dark         = white;
 
@@ -249,7 +243,7 @@ $b2t-position-right           = 30px;
 $b2t-position-right-mobile    = 20px;
 $b2t-font-size                = 12px;
 $b2t-color                    = white;
-$b2t-bg-color                 = $primary-color;
+$b2t-bg-color                 = $black-deep;
 
 //  .post-expand .post-eof
 //  In Muse scheme, margin above and below the post separator
@@ -306,7 +300,7 @@ $note-modern-info-text      = #31708f;
 $note-modern-info-hover     = darken(spin($note-modern-info-text, -10), 32%);
 
 // Success
-$note-success-border        = #52c41a;
+$note-success-border        = #5cb85c;
 $note-success-bg            = lighten(spin($note-success-border, 10), 90% + $lbg);
 $note-success-text          = $note-success-border;
 $note-success-icon          = "\f058";
@@ -317,7 +311,7 @@ $note-modern-success-text   = #3c763d;
 $note-modern-success-hover  = darken(spin($note-modern-success-text, -10), 27%);
 
 // Warning
-$note-warning-border        = #faad14;
+$note-warning-border        = #f0ad4e;
 $note-warning-bg            = lighten(spin($note-warning-border, 10), 88% + $lbg);
 $note-warning-text          = $note-warning-border;
 $note-warning-icon          = "\f06a";
@@ -328,7 +322,7 @@ $note-modern-warning-text   = #8a6d3b;
 $note-modern-warning-hover  = darken(spin($note-modern-warning-text, -10), 18%);
 
 // Danger
-$note-danger-border         = #f5222d;
+$note-danger-border         = #d9534f;
 $note-danger-bg             = lighten(spin($note-danger-border, -10), 92% + $lbg);
 $note-danger-text           = $note-danger-border;
 $note-danger-icon           = "\f056";

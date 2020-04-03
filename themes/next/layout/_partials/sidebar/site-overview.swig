@@ -118,6 +118,3 @@
     </ul>
   </div>
 {%- endif %}
-{% if theme.music.enabled %}
-  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="{{ theme.music.song }}"></iframe>
-{% endif %}

@@ -1,0 +1,199 @@
+# ---------------------------------------------------------------
+# Hexo Configuration
+# See: Docs: https://hexo.io/docs/configuration.html
+# ---------------------------------------------------------------
+
+# Site
+title: MakerGYT
+keywords: blog,makergyt
+author: Gao Yuting
+timezone: Asia/Shanghai
+
+# URL
+url: https://blog.makergyt.com
+permalink: :title/
+
+# Render
+markdown:
+  plugins:
+    - markdown-it-footnote
+
+# Plugin
+## Post Wordcount
+symbols_count_time:
+  symbols: false
+  time: false
+  total_symbols: false
+  total_time: false
+  separated_meta: false
+  atEnd: true
+## Local search
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+  unescape: true
+  preload: false
+## Optimization
+all_minifier: true
+
+# ---------------------------------------------------------------
+# Theme-next Configuration
+# See: https://theme-next.org/docs/theme-settings/
+# ---------------------------------------------------------------
+
+# Core
+minify: true
+custom_file_path:
+  head: source/_data/head.swig
+  header: source/_data/header.swig
+  sidebar: source/_data/sidebar.swig
+  postMeta: source/_data/post-meta.swig
+  postBodyEnd: source/_data/post-body-end.swig
+  #footer: source/_data/footer.swig
+  #bodyEnd: source/_data/body-end.swig
+  variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  style: source/_data/styles.styl
+
+# Site
+favicon:
+  small: /images/favicon-16x16.png
+  medium: /images/favicon-32x32.png
+  apple_touch_icon: /images/apple-touch-icon.png
+  safari_pinned_tab: /images/safari-pinned-tab.svg
+  android_manifest: /images/site.webmanifest
+  ms_browserconfig: /images/ms_browserconfig.xml
+footer:
+  since: 2017
+  icon:
+    name: heartbeat
+    animated: true
+    color: "#ff0000"
+  powered:
+    enable: false
+  theme:
+    enable: false
+  beian:
+    enable: true
+    icp: 陕ICP备16017712号-1
+
+# Scheme
+scheme: Pisces
+darkmode: true
+menu:
+  home: / || chrome
+  about: /about/ || user
+
+# Sidebar
+avatar:
+  url: /images/apple-touch-icon.png
+  rounded: true
+site_state: false
+social:
+  E-Mail: mailto:me@makergyt.com || envelope
+  Twitter: https://twitter.com/makergyt1 || twitter
+  FB Page: https://www.facebook.com/makergyt || facebook
+  500PX: https://500px.com/makergyt || 500px
+social_icons:
+  icons_only: true
+links_settings:
+  title: (̿▀̿Ĺ̯̿̿▀̿)
+  icon: anchor
+  layout: inline
+links:
+  主站: https://www.makergyt.com
+  网盘: https://pan.makergyt.com
+toc:
+  number: false
+
+# Post
+read_more_btn: false
+post_meta:
+  updated_at:
+    enable: false
+    atEnd: true
+  categories: true
+tag_icon: true
+reward_settings:
+  enable: true
+reward:
+  wechatpay: /images/wechatpay.png
+
+# Misc Theme
+android_chrome_color: '#027AFF'
+codeblock:
+  highlight_theme: night
+  copy_button:
+    enable: true
+    show_result: true
+    style: mac
+back2top:
+  sidebar: true
+  scrollpercent: true
+reading_progress:
+  enable: true
+  color: "#027AFF"
+github_banner:
+  enable: true
+  permalink: https://github.com/makergyt
+
+# Font
+font:
+  host: https://fonts.googleapis.com
+  enable: true
+  global:
+    family: Times New Roman
+  headings:
+    family: SimHei
+  posts:
+    family: Noto Serif SC
+
+# SEO
+disable_baidu_transformation: true
+seo: true
+exturl: true
+google_site_verification: XAprdFd37bx8X8i-_S77-8ArPy8hkI5RCtKym1Z52rY
+bing_site_verification: E14AC9D3BA8CE3C20D05F77EE7BC738F
+baidu_site_verification: pXKOCxjrBp38hj14
+baidu_push: true
+
+# Third Party
+math:
+  mathjax:
+    enable: true
+fancybox: true
+lazyload: true
+
+# Comments
+valine:
+  enable: false
+  appid: 5vQNdxlHoGF0ULpA8n11nOXU-MdYXbMMI
+  appkey: GVl0KhJLtCbE2sGdN6hI5AnF
+  placeholder: 请留下邮箱方便获取答复 # Comment box placeholder
+  avatar: wavatar # Gravatar style
+  guest_info: mail # Custom comment header
+  language: zh-cn # Language, available values: en, zh-cn
+  visitorEnd: true
+  comment_count: false
+
+# Tags
+note:
+  icons: true
+
+# Animation
+motion:
+  enable: false
+# Vendors:
+vendors:
+  # 微信内字体无效
+  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# customize
+music:
+  enable: true
+  song: https://music.163.com/outchain/player?type=2&id=28692687&auto=0&height=66
+notice: 
+  enable: false
+  message: "新手上路，多多指教！"
+  url: "https://baidu.com"

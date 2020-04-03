@@ -1,6 +1,6 @@
 ---
-title: 测试markdown
-date: 2020-02-16 20:03:32
+title: 排版规约
+date: 2020-04-01 20:03:32
 tags:
   - 测试
   - 排版
@@ -9,42 +9,50 @@ description: 摘要是发明或者实用新型说明书的简明摘要。应当�
 categories: test
 mathjax: true
 cover: https://670133.s90i.faiusr.com/4/102/AFwIABAEGAAgpOWk8gUosoebpgMwhAc4-wI!1000x1000.png?v=1584188956724&_tm=3
+language: zh-CN
 ---
 ## 1 一级标题
+章标题居中，三号黑体，使用`##`。
 ### 1.1 二级标题
+章下为节，节标题四号黑体，使用`###`。
 #### 1.1.1 三级标题
+节下为小节，小节标题小四黑体，使用`####`。
 ##### 1.1.1.1 四级标题
 ###### 1.1.1.1.1 五级标题
+一般只使用一二三级标题。
 ## 2 列表
 ### 2.1 无序列表
-无序列表的使用，在符号`-`后加空格使用。如下：
+无序列表在符号`-`后加空格使用：
 - 无序列表 1
 - 无序列表 2
 - 无序列表 3
 
-如果要控制列表的层级，则需要在符号`-`前使用空格。如下：
+如果要控制列表的层级，则需要在符号`-`前使用空格：
 - 无序列表 1
 - 无序列表 2
   - 无序列表 2.1
   - 无序列表 2.2
 
+对条文内容采用分行并叙, 或结构有层级关系。**列举结束必须换行**。
 ### 2.2 有序列表
 有序列表的使用，在数字及符号`.`后加空格后输入内容，如下：
 1. 有序列表 1
 2. 有序列表 2
 3. 有序列表 3
 
+小节以下标题, 或表达同步顺序关系。**如果编号及其后内容新起一个段落，则需要换行,列举结束必须换行**
 ## 3 引用
 引用的格式是在符号`>`后面书写文字。如下：
 > 疫情就是命令，防控就是责任。 ——领袖
 
-## 4 字体
+用于大段原文引用，**引用结束必须换行**。
+
+## 4 文本
 ### 4.1 粗体和斜体
-**这个是粗体**
+**用粗体标识段落内强调项**，*一般只在英文中使用斜体*，***用粗体加斜体标识注意项***。
+如果信息之间关联性越高，它们之间的距离就应该越接近，也越像一个视觉单元；反之，则它们的距离就应该越远，也越像多个视觉单元。亲密性的根本目的是实现组织性，让用户对页面结构和信息层次一目了然。
 
-*这个是斜体*
-
-***这个是粗体加斜体***
+正如「格式塔学派」中的连续律（Law of Continuity）所描述的，在知觉过程中人们往往倾向于使知觉对象的直线继续成为直线，使曲线继续成为曲线。在界面设计中，将元素进行对齐，既符合用户的认知特性，也能引导视觉流向，让用户更流畅地接收信息[^1]。
 
 ### 4.2 分割线
 可以在一行中用三个以上的减号来建立一个分隔线，同时需要在分隔线的上面空一行。如下：
@@ -57,18 +65,9 @@ cover: https://670133.s90i.faiusr.com/4/102/AFwIABAEGAAgpOWk8gUosoebpgMwhAc4-wI!
 ~~新冠肺炎~~
 ## 5 插入
 ### 5.1 链接
-#### 5.1.1 行内式
-公众号文章链接[标题](https://mp.weixin.qq.com/s/s5IhxV2ooX3JN_X416nidA)
-#### 5.1.2 参考式不生效
-[younghz的Markdown库1][1]
-[younghz的Markdown库2][2]
-
-[1]:https://github.com/younghz/Markdown
-[2]:https://github.com/younghz/Markdown
-
+一个在hexo博客中插入豆瓣读书的[npm包]。(https://github.com/makergyt/hexo-tag-book-douban)
 ### 5.2 脚注
-全栈工程师[^1]在业务开发流程中起到了至关重要的作用。
-
+要在标点符号之前使用[^2]，用于备注，或综合原文得到的结论。**注解自动生成在最后，但还应该写在最后**。
 ## 6 表格
 可以使用冒号来定义表格的对齐方式，如下：
 
@@ -86,11 +85,10 @@ Use the `printf()` function.
 在需要高亮的代码块的前一行及后一行使用三个反引号，同时**第一行反引号后面表示代码块所使用的语言**，如下：
 
 ```java
-// FileName: HelloWorld.java
+//要写清文件位置信息
 public class HelloWorld {
-  // Java 入口程序，程序从此入口
   public static void main(String[] args) {
-    System.out.println("Hello,World!"); // 向控制台打印一条语句
+    System.out.println("Hello,World!"); // comment
   }
 }
 ```
@@ -120,7 +118,6 @@ $$
   x+1\over\sqrt{1-x^2} 
 }  \qquad(1)
 $$
-
 
 $$
 {
@@ -200,9 +197,9 @@ $\log_a b$， $\ln b$， $\sin x$ ，$\max x$
 
 #### 8.1.12 纯文本
 $$\{x\in s | \text{x is extra large}\}$$
-单空格$a \ b$， 多空格$a \quad b$
+单空格$a \ b$， 多空格$a \quad b$。
 
-### 8.2 有误
+### 8.2 可能有误
 
 #### 8.2.1 等式未断行:
 
@@ -274,7 +271,7 @@ $$
 ![图5-2 i_am_svg_20191024083453](https://my-wechat.mdnice.com/mdnice/i_am_svg_20191024083453.svg)
 
 ## 10 特殊
-
+**一般不使用，除非万不得已**
 ### 10.1 HTML
 <span style="display:block;text-align:left;color:rgb(255, 0, 54);">天猫红居左</span>
 <span style="display:block;text-align:right;color:#ff6a00;">阿里橙居右</span>
@@ -285,5 +282,5 @@ $$
 
 [description]: # (This may be the most platform independent comment)
 
-
-[^1]: Github.Websites for you and your projects.[EB/OL].https://pages.github.com .2017
+[^1]: Ant design.设计模式.[EB/OL].https://ant.design/docs/spec/introduce-cn .2020
+[^2]: Github.Mastering Markdown.[EB/OL].https://guides.github.com/features/mastering-markdown/ .2014

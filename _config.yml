@@ -3,25 +3,26 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: MakerGYT
-subtitle: 
-description: 
-keywords: blog makergyt
-author: Gao Yuting
-language:
+title: Hexo
+subtitle: ''
+description: ''
+keywords:
+author: John Doe
+language: 
   - zh-CN
-  
-timezone: Asia/Shanghai
+  - en
+timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://blog.makergyt.com
+url: http://yoursite.com
 root: /
-permalink: :title/
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: false # Set to false to remove trailing '.html' from permalinks
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
 # Directory
 source_dir: source
 public_dir: public
@@ -69,7 +70,7 @@ tag_map:
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
-meta_generator: false
+meta_generator: true
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -93,53 +94,16 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
-Plugins:
 ## Themes: https://hexo.io/themes/
 theme: next
-# Include/Exclude Files/Folders
 
-# Security
-encrypt:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  # - type: git
-  #   repo: git@github.com:MakerGYT/blog.git
-  #   branch: gh-pages
-symbols_count_time:
-  symbols: true
-  time: true
-  total_symbols: false
-  total_time: false
-search:
-  path: search.xml
-  field: post
-  format: html
-  limit: 10000
-sitemap:
-  path: sitemap.xml
-  template: 
-  rel: false
+  type: ''
+
 aplayer:
   meting: true
-all_minifier: true
 
-# Markdown-it config
-## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-footnote
-  anchors:
-    level: 2
-    collisionSuffix: 'v'
-    permalink: false
-    permalinkClass: header-anchor
-    permalinkSide: 'left'
-    permalinkSymbol: ¶
+dbook:
+  enable: false

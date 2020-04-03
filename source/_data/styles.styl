@@ -1,0 +1,347 @@
+a, span.exturl {
+  border-bottom: 0;
+}
+.site-brand-container {
+  background: $primary-color;
+    +tablet-mobile() {
+    box-shadow: 0 0 16px rgba(50,132,191,0.9);
+  }
+}
+.sidebar-inner {
+  padding: 18px 0;
+}
+.site-nav {
+
+  color: #69c0ff;
+  .menu-item a {
+    font-size: $font-size-main;
+    .fa {
+      color: #69c0ff;
+    }
+  }
+  .menu-item-active {
+    a::after {
+      background: $menu-item-bg-color;
+    }
+    border-right: 3px solid $primary-color;
+  }
+}
+
+.notice {
+  padding: 5px 20px;  
+  font-size: 14px;
+  background: #fffbe6;
+  border: 1px solid #ffe58f;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px auto;
+  
+  .notice-icon {
+    float: left;
+    padding: 0;
+
+    svg {
+      vertical-align: middle;
+    }
+  }
+  .notice-msg {
+    margin: 0; 
+    overflow: hidden;
+
+    .notice-main-con {
+      overflow: hidden;    
+    }
+ 
+    .notice-main {
+      display: inline-block;
+      width: auto;  
+      white-space: nowrap;
+    }
+	
+    .notice-content {
+      display: block;
+      -moz-animation: move 8s infinite linear;
+      -webkit-animation: move 8s infinite linear;
+      animation: move 8s infinite linear;       	  	
+    }
+  }
+}
+
+@-moz-keyframes move{ 
+    0%{transform:translateX(100%);}    
+    50%{transform:translateX(0);}
+    100%{transform:translateX(-100%);} 
+}
+@-webkit-keyframes move{ 
+    0%{transform:translateX(100%);}    
+    50%{transform:translateX(0);}
+    100%{transform:translateX(-100%);}
+}
+@keyframes move{ 
+    0%{transform:translateX(100%);}    
+    50%{transform:translateX(0);}
+    100%{transform:translateX(-100%);}   
+}
+  
+.posts-expand {
+  padding-top: 20px;
+
+  +mobile() {
+    margin: 0;
+  }
+}
+
+h3.post-description-meta {
+  line-height:400%  
+  margin: initial;
+  font-size: $font-size-14;
+  font-weight: 500;
+  color: $heading-color;
+}
+
+h3.post-description-meta.en {
+  font-weight: bold;
+}
+.posts-expand .post-meta {
+  margin: 0;
+  .post-meta-item, .post-meta-item a {
+    color: $text-color-secondary;
+    font-size: $font-size-secondary;
+  }
+  time {
+    border-bottom: 0;
+    cursor: pointer;
+  }  
+  .post-description {
+    zoom:1;
+    font-size: $font-size-12; // 1em ?
+    text-align: justify;
+    color: var(--text-color);
+  }
+}
+
+.post-keyword {
+  margin-top: 0;
+
+  .post-keyword-meta {
+    color: var(--text-color);
+    display: inline;
+    font: normal $font-size-12 $font-family-headings;
+  }
+  .post-keyword-meta.en {
+    font: bold $font-size-12 $font-family-base;
+  }
+
+  text-align: left;
+
+  a, a:not(:last-child) {
+    margin-right: 0;
+    display: inline-block;
+    font-size: 16px;
+  }
+}
+
+.post-body {
+  font-size: $font-size-12;// 默认小四
+  // 标题
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0; //段前段后0.5行
+    font-weight: 500;
+    line-height: 2em; //单倍行距
+    color: $heading-color;
+  }
+  h2 {
+    text-align: center; //章标题居中
+    font-size: $font-size-16; //三号黑体
+    margin: 1em auto; //段后1行
+  }
+  h3 {
+    font-size: $font-size-14; //节标题四号黑体
+  }
+  h4, h5, h6 {
+    font-size: $font-size-12; //小节标题小四黑体
+  }
+  // 正文
+  p {
+    margin-bottom: 0.5em; //段前段后0.5
+  }
+  .MJX-TEX {
+    font-size: $font-size-10-5;
+  }
+  .image-caption {
+    margin: 0px auto; //居中
+    font: normal $font-size-10-5 $font-family-posts; //图名称五号宋体
+  }
+  //列表
+  ol{
+    padding-left: 0;
+    list-style-type: none;
+    counter-reset:sectioncounter;
+    li::before {
+      content:counter(sectioncounter) ") "; 
+      counter-increment:sectioncounter;
+    }
+  }
+  ul{
+    list-style-type:lower-alpha;
+    padding-left: 20px;	
+  }
+  .aplayer-list {
+    li::before{
+      content: none; //修复
+    }
+  }
+  //表格
+  table {
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+    border-top: 2px solid $black-deep;
+    border-bottom: 2px solid $black-deep;
+    
+    thead {
+      border-bottom: 1px solid $grey-dark;
+    }
+
+    th, td {
+      padding: 4px 8px;
+      width: 150px;
+      border: none;
+    }
+  }
+  //分割线
+  hr {
+    height: 1px;
+    margin: 16px 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+  //参考文献
+  .footnotes{
+    white-space: nowrap;
+    overflow-x:auto;
+    ol {
+      padding-left: 0;
+      li::before {
+        content:"[" counter(sectioncounter) "] "; 
+        counter-increment:sectioncounter;
+      }
+      li {
+        p { 
+          display: inline;
+          text-align: justify;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+  h2.footnotes-meta {
+    margin: 2em 0 0 0;
+  }                   
+}
+// fix table in hight
+.highlight {
+  table {
+    margin: 0;
+  }
+  .gutter {
+    width: 28px;
+    padding: 0;
+  }
+  .code {
+    width: auto;
+    padding: 0;
+  }
+}
+
+
+
+.links-of-author {
+  a, span.exturl {
+    font-size: $font-size-main;
+  }
+  .fa-envelope {
+    color: #e4b56b;  
+  }
+  .fa-twitter {
+    color: #338de6;
+  }
+  .fa-facebook {
+    color: rgb(59,87,157)  
+  }
+  .fa-500px {
+    color: rgb(34, 34, 34);  
+  }
+}
+.links-of-blogroll {
+  
+  .links-of-blogroll-title {
+    .fa-anchor {
+      color: #643e3b;
+    }
+    font-size: $font-size-main;
+    color: $black-deep;
+    font-weight: normal;
+  }
+  .links-of-blogroll-list {
+    span.exturl {
+      font-size: $font-size-main;
+    }
+  }
+}
+
+.post-end-item {
+  text-align: right;
+  font: italic normal $font-size-secondary "Noto Serif SC";
+  color: $text-color-secondary;
+  margin-bottom: 3px;
+}
+.post-end-item-icon {
+  margin-right: 3px;
+}
+
+.post-end-item-text {
+  if (!hexo-config('post_meta.item_text')) {
+    display: none;
+  }
+}
+
+.reward-container {
+  button {
+    border-radius: 16px;
+  }
+  #qr img {
+    width: 220px;
+    margin: 0 auto;
+  }
+}
+
+.post-tags a {
+  font-size: $font-size-secondary;
+  .fa-tag {
+    color: #e4b56b;
+  }
+}
+
+.post-eof {
+  margin: $post-eof-margin-top auto $post-eof-margin-bottom;
+  height: 1px;
+  width: 100%;
+  padding: 0 10px;
+  background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(183, 183, 183),#000,rgb(183, 183, 183),rgb(255, 255, 255));
+}
+
+.footer-inner {
+  .beian span {
+    color: $grey-dark;
+  }
+}
+
+.home {
+  p {
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  }  
+}

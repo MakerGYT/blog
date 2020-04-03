@@ -5,12 +5,9 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: $font-size-small;
+  font-size: $table-font-size;
   margin: 0 0 20px 0;
-  max-width: 100%;
-  margin: 0 auto;
-  border-top: 2px solid $black-deep;
-  border-bottom: 2px solid $black-deep;
+  width: 100%;
 }
 
 tbody tr {
@@ -22,17 +19,24 @@ tbody tr {
     background: var(--table-row-hover-bg-color);
   }
 }
-thead {
-  border-bottom: 1px solid $grey-dark;
-}
+
 caption, th, td {
   font-weight: normal;
-  padding: 0 8px;
-  text-align: center;
+  padding: 8px;
+  text-align: left;
   vertical-align: middle;
-  width: 150px;
+}
+
+th, td {
+  border: 1px solid $table-border-color;
+  border-bottom: 3px solid $table-cell-border-bottom-color;
 }
 
 th {
   font-weight: 700;
+  padding-bottom: 10px;
+}
+
+td {
+  border-bottom-width: 1px;
 }

@@ -14,17 +14,12 @@ menu:
   schedule: Schedule
   sitemap: Sitemap
   commonweal: Commonweal 404
-  photos: Photos
-  notebook: Notebook
-  
+
 sidebar:
   overview: Overview
   toc: Table of Contents
 
 post:
-  abstract: ABSTRACT
-  tags: "Key words:"
-  tag_indicate: ","
   posted: Posted on
   edited: Edited on
   created: Created
@@ -89,8 +84,8 @@ symbol:
   colon: ": "
 
 reward:
-  donate: 👍 Like the Author
-  wechatpay: Scan with wechat
+  donate: Donate
+  wechatpay: WeChat Pay
   alipay: Alipay
   paypal: PayPal
   bitcoin: Bitcoin

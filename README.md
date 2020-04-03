@@ -21,6 +21,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 若以`<name>.github.io`访问，需要设置repos名为`<name>.github.io`,即个人主页面,User pages must be built from the master branch.
 若以`<name>.github.io/<project>`访问，支持选择branch: gh-pages,master,master /docs, 但是hexo会无样式，需要配置url和root为`/<project>/`,若配置了自定义域名到`<name>.github.io`,则不需要, 但是需要在source下写一个CNAME文件，写入自定义域名（每次重新部署后管理页会清空）  
 
+在[hexo deploy to github pages](https://hexo.io/docs/github-pages)中提到，`without the .gitmodules file.`。往往是themes库，比较大，直接clone都需要较长时间。好处在于方便管理嵌套git库，例如通过`git submodule update`来拉取其更新。但这样的话在push后显示灰色，CI中需要重新clone，耗费构建时间，除非将其视为普通文件即删除.git并add。或者使用github actions。
 ```yml
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
 seo: true
@@ -28,6 +29,51 @@ seo: true
 ```
 anchors level h2
 
+```html
+<div class="site-overview-wrap sidebar-panel">
+  {{ partial('_partials/sidebar/site-overview.swig', {}, {cache: theme.cache.enable}) }}
+
+  {{- next_inject('sidebar') }}
+</div>
+```
+在display_toc时，由于nav的存在，大小会被挤压变形，故在非主页模式下取消显示。
+
+`hexo-tag-aplayer`读取配置
+```js
+// lib/config.js
+hexo.config.aplayer
+```
+且有时在已配置
+```yml
+# config.yml
+aplayer:
+  meting: true
+```
+报错`Error: [hexo-tag-aplayer] Meting support is disabled, cannot resolve the meting tags properly.`而不配置并不报错，只是不显示。
+
+```css
+.posts-expand .post-meta .post-description {
+  font-size: /* 1em !=16px, 16px小于常规*/
+  letter-spacing: /* 比常规窄，需要定义*/
+}
+```
+
+~~未知定义~~
+```html
+<!-- next/scripts/filters/comment/valine.js -->
+<span class="post-meta-item"><span class="post-meta-item-icon"><i class="fa fa-comment-o"></i> </span><span class="post-meta-item-text">Valine：</span> <a title="valine" href="/test/#valine-comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/test/" itemprop="commentCount">1</span></a></span>
+```
+
+tags无法插入到description下面
+
+
+head.swig无法获取post变量
+
+keywords配置响应未知
+
+不做缩进，也便需要段后１行
+
+counters(sectioncounter, lower-alpha)". ";不支持，故不做级联序号
 font
 - https://fonts.lug.ustc.edu.cn
 - https://fonts.loli.net
@@ -35,8 +81,28 @@ font
 - https://fonts.gstatic.font.im
 - fonts.useso.com
 
+chrome有效, qq browser中英文均无效，微信内置浏览器中文无效，开发者工具均有效
+```html
+<!-- 有效　-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel+Decorative:wght@700&display=swap">
+<!-- 无效，　但单独样例有效-->
+<link rel="stylesheet" href="https://fonts.googleapis.cnpmjs.org/css?family=Lato:300,300italic,400,400italic,700,700italic|SimHei:300,300italic,400,400italic,700,700italic|Noto Serif SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+```
+
+
+```sh
+https://fonts.googleapis.com/css2?family=Noto%20Serif%20SC:wght@400;500;700&display=swap&subset=latin,latin-ext&family=Times%20New%20Roman:wght@400;500;700&display=swap&subset=latin,latin-ext  #无效
+https://fonts.googleapis.com/css2?family=Noto%20Serif%20SC:wght@400;500;700&display=swap&subset=latin,latin-ext　#有效
+```
+后者缺少font-weight 500,而已经指定其为500
+
 - 如果没有文章,会404,index.html都没有
 - 深色模式未响应
+
+主题色`#027AFF`,沾点财气:
+- tag meting.theme
+- android_chrome_color,reading_progress.color
+- varible $primary-color
 
 通过github pages搭建博客最简单的便是直接存放md文件，便可自动解析，但是
 - 支持的语法有限，不支持的会提交失败
@@ -52,6 +118,8 @@ font
 error:
 - 换用markdown-it后，一级标题失去锚点
 - `\\`被转义成`\`,需使用`\\\\` =>http://qwqbear.coding.me/article/mathjax-problem/
+
+- [中文字体压缩器](https://github.com/aui/gulp-font-spider)
 
 *About the configuration of this website*
 # 1 Init
