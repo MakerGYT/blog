@@ -24,8 +24,8 @@ Usually only use headlines one, two and three.
 ### 2.1 Unordered list
 For the use of unordered lists, use spaces after the symbols`-`. As follows:
 - Unordered list 1
--Unordered list 2
--Unordered list 3
+- Unordered list 2
+- Unordered list 3
 
 If you want to control the level of the list, you need to use spaces before the symbols`-`. As follows:
 - Unordered list 1

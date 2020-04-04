@@ -65,7 +65,7 @@ language: zh-CN
 ~~新冠肺炎~~
 ## 5 插入
 ### 5.1 链接
-一个在hexo博客中插入豆瓣读书的[npm包]。(https://github.com/makergyt/hexo-tag-book-douban)
+一个在hexo博客中插入豆瓣读书的[npm包](https://github.com/makergyt/hexo-tag-book-douban)。
 ### 5.2 脚注
 要在标点符号之前使用[^2]，用于备注，或综合原文得到的结论。**注解自动生成在最后，但还应该写在最后**。
 ## 6 表格
@@ -88,7 +88,7 @@ Use the `printf()` function.
 //要写清文件位置信息
 public class HelloWorld {
   public static void main(String[] args) {
-    System.out.println("Hello,World!"); // comment
+    System.out.println("Hello,World!"); // 评论
   }
 }
 ```

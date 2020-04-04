@@ -70,8 +70,7 @@ footer:
     name: heartbeat
     animated: true
     color: "#ff0000"
-  powered:
-    enable: false
+  powered: false
   theme:
     enable: false
   beian:
@@ -151,7 +150,6 @@ font:
 
 # SEO
 disable_baidu_transformation: true
-seo: true
 exturl: true
 google_site_verification: XAprdFd37bx8X8i-_S77-8ArPy8hkI5RCtKym1Z52rY
 bing_site_verification: E14AC9D3BA8CE3C20D05F77EE7BC738F
@@ -197,4 +195,4 @@ notice:
   enable: true
   message: "深切哀悼抗击新冠肺炎疫情斗争牺牲烈士和逝世同胞！"
   url: "http://www.gov.cn/zhengce/content/2020-04/03/content_5498472.htm"
-grayscale: true
+grayscale: false
