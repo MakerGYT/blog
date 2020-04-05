@@ -12,4 +12,5 @@ comments: false
 ### 最近在读
 {% dbook 9787530214657 %}
 
+{% dbook 9787101051469 %}
 ☞ [About config of this site](./config.html)

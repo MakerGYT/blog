@@ -106,4 +106,5 @@ aplayer:
   meting: true
 
 dbook:
-  enable: false
+  enable: true
+  proxy: https://douban-api.now.sh
