@@ -146,8 +146,9 @@ $$
 $$
 
 #### 8.1.5 Inline formula
-$ \sum_{i=0}^n $ 和 $ \frac{1}{2} $ 
+$\sum_{i=0}^n$ 和 $\frac{1}{2}$ 
 
+**The opening $ must have a non-space character immediately to its right, while the closing $ must have a non-space character immediately to its left, and must not be followed immediately by a digit.**
 #### 8.1.6 Greek alphabet
 
 For Greek letters，$ \alpha \beta,...,\omega $。

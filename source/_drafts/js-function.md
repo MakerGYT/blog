@@ -73,3 +73,8 @@ var subSecondStr=subFirstStr.substring(0,subFirstStr.indexOf(end));
 ```js
 data.match(/before(.+?)end/)[1]
 ```
+
+> js获取字符串原值
+```js
+String.raw``;
+```
