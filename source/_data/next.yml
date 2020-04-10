@@ -160,6 +160,7 @@ baidu_push: true
 math:
   mathjax:
     enable: true
+    mhchem: true
 fancybox: true
 lazyload: true
 
