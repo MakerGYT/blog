@@ -268,11 +268,11 @@ $$
 
 ## 9 媒体
 ### 9.1  图片
-![图5-1 这里写图片描述](https://1.s91i.faiusr.com/4/AFsIABAEGAAgztrP8QUohNjw0AYwhAc4-wI!800x800.png?v=1580461392155)
+![图9-1 这里写图片描述](https://1.s91i.faiusr.com/4/AFsIABAEGAAgztrP8QUohNjw0AYwhAc4-wI!800x800.png?v=1580461392155)
 
 支持 jpg、png、gif、svg 等图片格式，svg 文件示例如下：
 
-![图5-2 i_am_svg_20191024083453](https://my-wechat.mdnice.com/mdnice/i_am_svg_20191024083453.svg)
+![图9-2 i_am_svg_20191024083453](https://my-wechat.mdnice.com/mdnice/i_am_svg_20191024083453.svg)
 
 ## 10 特殊
 **一般不使用，除非万不得已**

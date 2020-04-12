@@ -271,9 +271,9 @@ $$
 
 ### 9 Media
 #### 9.1  Images
-![Caption 5-1 Write picture description here](https://1.s91i.faiusr.com/4/AFsIABAEGAAgztrP8QUohNjw0AYwhAc4-wI!800x800.png?v=1580461392155)
+![Caption 9-1 Write picture description here](https://1.s91i.faiusr.com/4/AFsIABAEGAAgztrP8QUohNjw0AYwhAc4-wI!800x800.png?v=1580461392155)
 Supports jpg, png, gif, svg and other image formats, examples of svg files are as follows：
-![Caption 5-2 i_am_svg_20191024083453](https://my-wechat.mdnice.com/mdnice/i_am_svg_20191024083453.svg)
+![Caption 9-2 i_am_svg_20191024083453](https://my-wechat.mdnice.com/mdnice/i_am_svg_20191024083453.svg)
 
 ### 10 Special
 **Generally not used unless absolutely necessary**
