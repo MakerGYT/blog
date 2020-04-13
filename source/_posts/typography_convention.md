@@ -211,9 +211,9 @@ Wrap four backslashes
 $$
   \begin{equation} \label{eq2}
   \begin{aligned}
-  a &= b + c  \\\\
-    &= d + e + f + g \\\\
-    &= h + i \\\\
+  a &= b + c  \\
+    &= d + e + f + g \\
+    &= h + i \\
   \end{aligned}
   \end{equation}
 $$
@@ -222,9 +222,9 @@ $$
 
 $$
   \begin{align}
-  a &= b + c \label{eq3} \\\\
-  x &= yz \\\\
-  l &= m - n \\\\
+  a &= b + c \label{eq3} \\
+  x &= yz \\
+  l &= m - n \\
   \end{align}
 $$
 
@@ -232,9 +232,9 @@ $$
 
 $$
   \begin{align}
-  -4 + 5x &= 2+y \\\\
-  w+2 &= -1+w \\\\
-  ab &= cb \\\\
+  -4 + 5x &= 2+y \\
+  w+2 &= -1+w \\
+  ab &= cb \\
   \end{align} 
 $$
 
@@ -242,10 +242,10 @@ $$
 
 $$
   \begin{pmatrix}
-  1 & a_1 & a_1^2 & \cdots & a_1^n \\\\
-  1 & a_2 & a_2^2 & \cdots & a_2^n \\\\
-  \vdots & \vdots & \vdots & \ddots & \vdots \\\\
-  1 & a_m & a_m^2 & \cdots & a_m^n \\\\
+  1 & a_1 & a_1^2 & \cdots & a_1^n \\
+  1 & a_2 & a_2^2 & \cdots & a_2^n \\
+  \vdots & \vdots & \vdots & \ddots & \vdots \\
+  1 & a_m & a_m^2 & \cdots & a_m^n \\
   \end{pmatrix}
 $$
 
@@ -253,7 +253,7 @@ $$
 $$
 f(n)=
 \begin{cases}
-n/2,& \text{if $n$ is even}\\\\
+n/2,& \text{if $n$ is even}\\
 3n+1,& \text{if $n$ is odd}
 \end{cases}
 $$
@@ -261,10 +261,10 @@ $$
 #### 8.2.6 Tabular array
 $$
 \begin{array}{c|lcr}
-n & \text{Left} & \text{Center} & \text{Right} \\\\
+n & \text{Left} & \text{Center} & \text{Right} \\
 \hline
-1 & 0.24 & 1 & 125 \\\\
-2 & -1 & 189 & -8 \\\\
+1 & 0.24 & 1 & 125 \\
+2 & -1 & 189 & -8 \\
 3 & -20 & 2000 & 1+10i
 \end{array}
 $$

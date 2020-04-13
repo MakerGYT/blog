@@ -71,11 +71,11 @@ language: zh-CN
 ## 6 表格
 可以使用冒号来定义表格的对齐方式，如下：
 
-| 居中  |左对齐  | 右对齐 | 备注 | 备注2 |备注2 |
-| :--: | :-- | -------: | :--: | --: |--:  |
-| 山西 |  133  | 133 |2| 37 |37 |
-| 湖北 |  67790  | 52960 |2895| 0| 0|
-| 意大利 |  17660  | 1439 |80539| 19468 |19468 |
+| 居中  |左对齐  | 右对齐 | 备注 |
+| :--: | :-- | -------: | :--: |
+| 山西 |  133  | 133 |2|
+| 湖北 |  67790  | 52960 |2895|
+| 意大利 |  17660  | 1439 |80539|
 
 ## 7 代码块
 如果在一个行内需要引用代码，只要用反引号引起来就好，如下：
@@ -208,9 +208,9 @@ $$\\{x\in s | \text{x is extra large}\\}$$
 $$
   \begin{equation} \label{eq2}
   \begin{aligned}
-  a &= b + c  \\\\
-    &= d + e + f + g \\\\
-    &= h + i \\\\
+  a &= b + c  \\
+    &= d + e + f + g \\
+    &= h + i \\
   \end{aligned}
   \end{equation}
 $$
@@ -219,9 +219,9 @@ $$
 
 $$
   \begin{align}
-  a &= b + c \label{eq3} \\\\
-  x &= yz \\\\
-  l &= m - n \\\\
+  a &= b + c \label{eq3} \\
+  x &= yz \\
+  l &= m - n \\
   \end{align}
 $$
 
@@ -229,9 +229,9 @@ $$
 
 $$
   \begin{align}
-  -4 + 5x &= 2+y \\\\
-  w+2 &= -1+w \\\\
-  ab &= cb \\\\
+  -4 + 5x &= 2+y \\
+  w+2 &= -1+w \\
+  ab &= cb \\
   \end{align} 
 $$
 
@@ -239,10 +239,10 @@ $$
 
 $$
   \begin{pmatrix}
-  1 & a_1 & a_1^2 & \cdots & a_1^n \\\\
-  1 & a_2 & a_2^2 & \cdots & a_2^n \\\\
-  \vdots & \vdots & \vdots & \ddots & \vdots \\\\
-  1 & a_m & a_m^2 & \cdots & a_m^n \\\\
+  1 & a_1 & a_1^2 & \cdots & a_1^n \\
+  1 & a_2 & a_2^2 & \cdots & a_2^n \\
+  \vdots & \vdots & \vdots & \ddots & \vdots \\
+  1 & a_m & a_m^2 & \cdots & a_m^n \\
   \end{pmatrix}
 $$
 
@@ -250,7 +250,7 @@ $$
 $$
 f(n)=
 \begin{cases}
-n/2,& \text{if $n$ is even}\\\\
+n/2,& \text{if $n$ is even}\\
 3n+1,& \text{if $n$ is odd}
 \end{cases}
 $$
@@ -258,10 +258,10 @@ $$
 #### 8.2.6 表格式数组
 $$
 \begin{array}{c|lcr}
-n & \text{Left} & \text{Center} & \text{Right} \\\\
+n & \text{Left} & \text{Center} & \text{Right} \\
 \hline
-1 & 0.24 & 1 & 125 \\\\
-2 & -1 & 189 & -8 \\\\
+1 & 0.24 & 1 & 125 \\
+2 & -1 & 189 & -8 \\
 3 & -20 & 2000 & 1+10i
 \end{array}
 $$
