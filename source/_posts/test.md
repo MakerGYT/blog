@@ -101,6 +101,14 @@ diff:
 - 删除项
 ```
 
+html:
+
+```html
+<span style="display:block;text-align:left;color:rgb(255, 0, 54);">天猫红居左</span>
+<span style="display:block;text-align:right;color:#ff6a00;">阿里橙居右</span>
+<span style="display:block;text-align:center;color:#019fe8;">支付宝蓝居中</span>
+```
+
 ## 8 数学公式
 ### 8.1 可用
 #### 8.1.1 公式:
