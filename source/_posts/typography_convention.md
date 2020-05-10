@@ -8,7 +8,7 @@ tags:
 description: Abstract is a concise abstract of the specification of an invention or utility model. The subject matter and substance of the invention or utility model should be described concisely. The important purpose of this paper is to facilitate people's literature retrieval and preliminary classification.
 categories: test
 mathjax: true
-cover: https://670133.s90i.faiusr.com/4/102/AFwIABAEGAAgpOWk8gUosoebpgMwhAc4-wI!1000x1000.png?v=1584188956724&_tm=3
+cover: https://cdn.blog.makergyt.com/images/book-Cries_in_the_Drizzle-cover.jpg
 language: en
 ---
 ## 1 h1
