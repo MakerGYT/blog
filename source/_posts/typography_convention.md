@@ -287,5 +287,5 @@ Supports jpg, png, gif, svg and other image formats, examples of svg files are a
 
 [description]: # (This may be the most platform independent comment)
 
-[^1]: Ant design.设计模式.[EB/OL].https://ant.design/docs/spec/introduce-cn .2020
-[^2]: Github.Mastering Markdown.[EB/OL].https://guides.github.com/features/mastering-markdown/ .2014
+[^1]: Ant design.设计模式[EB/OL].https://ant.design/docs/spec/introduce-cn .2020
+[^2]: Github.Mastering Markdown[EB/OL].https://guides.github.com/features/mastering-markdown/ .2014

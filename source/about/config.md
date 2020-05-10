@@ -3,7 +3,7 @@ title: About the configuration of this website
 date: 2019-12-27 10:17:14
 comments: false
 ---
-### 更新日志
+## 更新日志
 - 2017.3 使用wordpress,由cloudleft(香港)托管，使用gaoyuting.org访问
   - 2017.9 存在恶意后门，遭遇攻击，主机商关停访问，自行删除后未能克服，故下架
 - 2017.11 迁移使用typecho，由京东云托管，使用blog.makergyt.com访问

@@ -8,7 +8,7 @@ tags:
 description: 摘要是发明或者实用新型说明书的简明摘要。应当对发明或者实用新型的主题和实质内容作简要说明。本文的主要目的是方便人们进行文献检索和初步分类。
 categories: test
 mathjax: true
-cover: https://670133.s90i.faiusr.com/4/102/AFwIABAEGAAgpOWk8gUosoebpgMwhAc4-wI!1000x1000.png?v=1584188956724&_tm=3
+cover: https://cdn.blog.makergyt.com/images/news-week_bulletin-cover.png
 language: zh-CN
 ---
 ## 1 一级标题
@@ -294,5 +294,5 @@ $$
 
 [description]: # (This may be the most platform independent comment)
 
-[^1]: Ant design.设计模式.[EB/OL].https://ant.design/docs/spec/introduce-cn .2020
-[^2]: Github.Mastering Markdown.[EB/OL].https://guides.github.com/features/mastering-markdown/ .2014
+[^1]: Ant design.设计模式[EB/OL].https://ant.design/docs/spec/introduce-cn .2020
+[^2]: Github.Mastering Markdown[EB/OL].https://guides.github.com/features/mastering-markdown/ .2014
