@@ -1,14 +1,13 @@
 ---
 title: 排版规约
-date: 2020-02-01 12:03:32
+date: 2020-06-18 22:00:32
 tags:
   - 测试
   - 排版
   - 标记
-description: 摘要是发明或者实用新型说明书的简明摘要。应当对发明或者实用新型的主题和实质内容作简要说明。本文的主要目的是方便人们进行文献检索和初步分类。
+description: 这里写全文摘要。摘要又称概要、内容提要，意思是摘录要点或摘录下来的要点。摘要是以提供文献内容梗概为目的，不加评论和补充解释，简明、确切地记述文献重要内容的短文。
 categories: test
-mathjax: true
-cover: https://cdn.blog.makergyt.com/images/news-week_bulletin-cover.png
+cover: https://cdn.blog.makergyt.com/image/typesetting-cover.png
 language: zh-CN
 ---
 ## 1 一级标题

@@ -10,7 +10,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "4.2.0"
+    "version": "4.2.1"
   },
   "dependencies": {
     "hexo": "^4.2.0",
@@ -27,6 +27,7 @@
     "hexo-server": "^1.0.0",
     "hexo-symbols-count-time": "^0.7.1",
     "hexo-tag-aplayer": "^3.0.4",
-    "hexo-tag-book-douban": "^0.2.2"
+    "hexo-tag-book-douban": "^0.2.2",
+    "markdown-it-latex2img": "^0.0.5"
   }
 }

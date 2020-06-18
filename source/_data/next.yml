@@ -17,7 +17,9 @@ permalink: :title/
 markdown:
   plugins:
     - markdown-it-footnote
-
+    - name: markdown-it-latex2img
+      options:
+        style: 'filter: opacity(90%);transform:scale(0.85);'
 # Plugin
 ## Post Wordcount
 symbols_count_time:
@@ -159,7 +161,7 @@ baidu_push: true
 # Third Party
 math:
   mathjax:
-    enable: true
+    enable: false
     mhchem: true
 fancybox: true
 lazyload: true

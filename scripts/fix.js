@@ -1,7 +1,6 @@
 hexo.extend.filter.register('after_post_render', function(data){
-
   let footnoteBlockOpen = `<hr class="footnotes-sep">`;
-  let replaceBlockOpen = `<h2 id="#-参考文献" class="footnotes-meta ${data.language}">${data.language == 'en'?'REFERENCES': '参 考 文 献' }</h2>`;
+  let replaceBlockOpen = `<h2 id="-参考文献" class="footnotes-meta ${data.language}">${data.language == 'en'?'REFERENCES': '参 考 文 献' }</h2>`;
   data.content = data.content.replace(footnoteBlockOpen, footnoteBlockOpen+replaceBlockOpen);
   return data;
 });
