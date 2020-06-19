@@ -283,12 +283,12 @@ $$
 
 ## 10 特殊
 **一般不使用，除非万不得已**
-### 10.1 HTML
+### 10.1 解析HTML
 <span style="display:block;text-align:left;color:rgb(255, 0, 54);">天猫红居左</span>
 <span style="display:block;text-align:right;color:#ff6a00;">阿里橙居右</span>
 <span style="display:block;text-align:center;color:#019fe8;">支付宝蓝居中</span>
 
-### 10.2 注释(不被解析)
+### 10.2 不解析注释(不可见)
 [tags]: <> (['node','js','java',])
 
 [description]: # (This may be the most platform independent comment)
