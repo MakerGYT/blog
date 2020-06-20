@@ -7,7 +7,7 @@ tags:
   - 标记
 description: 这里写全文摘要。摘要又称概要、内容提要，意思是摘录要点或摘录下来的要点。摘要是以提供文献内容梗概为目的，不加评论和补充解释，简明、确切地记述文献重要内容的短文。
 categories: test
-cover: https://cdn.blog.makergyt.com/image/typesetting-cover.png
+cover: https://cdn.blog.makergyt.com/images/study-typesetting-cover.png
 language: zh-CN
 ---
 ## 1 一级标题
@@ -210,7 +210,7 @@ $$\\{x\in s | \text{x is extra large}\\}$$
 
 ### 8.2 可能有误
 
-#### 8.2.1 等式未断行:
+#### 8.2.1 等式断行:
 
 $$
   \begin{equation} \label{eq2}
@@ -222,7 +222,7 @@ $$
   \end{equation}
 $$
 
-#### 8.2.2 方程未断行不支持多行编号: 
+#### 8.2.2 方程断行编号: 
 
 $$
   \begin{align}
@@ -232,7 +232,7 @@ $$
   \end{align}
 $$
 
-#### 8.2.3 多列式未断行不编号:
+#### 8.2.3 多列式断行编号:
 
 $$
   \begin{align}
@@ -242,7 +242,7 @@ $$
   \end{align} 
 $$
 
-#### 8.2.4 矩阵未断行：
+#### 8.2.4 矩阵断行：
 
 $$
   \begin{pmatrix}
@@ -253,7 +253,7 @@ $$
   \end{pmatrix}
 $$
 
-#### 8.2.5 分支等式未换行
+#### 8.2.5 分支等式换行
 $$
 f(n)=
 \begin{cases}
