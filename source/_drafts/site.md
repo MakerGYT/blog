@@ -25,3 +25,9 @@ font
 
 svg
 - https://svg.wxeditor.com/
+
+speed:
+- https://17ce.com
+
+speak:
+- https://www.6pian.cn/peiyin/44.html
