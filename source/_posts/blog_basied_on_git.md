@@ -13,13 +13,13 @@ language: zh-CN
 ## 1 背景
 本文通过对markdown内容发布、同步、展示由浅入深的分析与实践，构建出一个相对可靠的博文编写、知识沉淀工作流，精简工具的同时提升阅读体验，更好的记录、分享和交流传播。
 ## 2 需求分析
-- 专注于用Markdown写文档。
-- 一端书写，多端同步：小程序、静态站点，高效的持续集成
-- 快速的资源加载，优雅的排版
+- 专注于用Markdown写文档，为了实现正常解析，使用通用语法支持；
+- 一端书写，多端同步：小程序、静态站点，高效的持续集成；
+- 快速的资源加载，优雅的排版。
 
 但是要明晰项目边界：
-- 不需要满足随时随地写文章,因为随时随地写的大部分是随笔、记录一类的帖子，若要呈现出来，必然要经过整理。
-- 不需要自定义主题风格,博客就主体业务类型(除了评论、点赞、收藏)而言受众个性色彩不强
+- 不需要满足随时随地写文章,因为随时随地写的大部分是随笔、记录一类的帖子，若要呈现出来，必然要经过整理；
+- 不需要自定义主题风格,博客就主体业务类型(除了评论、点赞、收藏)而言受众个性色彩不强。
 
 ## 3 系统设计
 ### 3.1 概要设计
@@ -32,10 +32,10 @@ language: zh-CN
 
 | 类型 | 方案 | 备注 |
 | :--: | :--: | --|
-| 代码托管 | Coding | github api访问较大概率慢且不稳定 |
+| 代码托管 | [Coding](https://url.cn/fXmq4Rb9) | github api访问较大概率慢且不稳定 |
 | 云开发 | [腾讯云TCB](https://url.cn/HqLHX3x6) | 含小程序云开发服务 |
 | 持续集成 | Coding CI | 使用Jenkinsfile定义pipeline |
-| 静态托管 | [腾讯云COS](https://url.cn/lhzrIgeX) | 也可使用[阿里云OSS](https://www.aliyun.com/product/oss?source=5176.11533457&userCode=89lfnf3q&type=copy),或直接使用云开发提供的[静态网站托管](https://cloud.tencent.com/product/wh),使用对象存储配合内容分发加速。|
+| 静态托管 | [腾讯云COS](https://url.cn/lhzrIgeX) | 也可使用[阿里云OSS](https://www.aliyun.com/product/oss?source=5176.11533457&userCode=89lfnf3q&type=copy),或直接使用云开发提供的[静态网站托管](https://cloud.tencent.com/product/wh),使用[对象存储](https://url.cn/8SUwOgsd)配合[内容分发加速]()。|
 | Markdown解析 | markdown-it | 也可使用markdjs,但markdown-it支持拓展插件 |
 | 富文本渲染 | [parser](https://jin-yufeng.github.io/Parser/#/) | 比原生rich-text功能丰富且效果稳定 | 
 
@@ -505,6 +505,8 @@ await cloud.openapi.subscribeMessage.send({
 
 ![图5-1 微信扫一扫预览小程序](https://cdn.blog.makergyt.com/mini/assets/poster-H.png)
 
+### 5.4 开源
+开源地址：整理中，将会上传于[github.com/makergyt](https://github.com/makergyt),敬请关注
 
 [^1]: Tencent Cloud.云开发CloudBase文档[EB/OL].https://cloud.tencent.com/document/product/876/41136. 2020
 [^2]: Tory Walker.The-Pitfalls-of-Async-Await-in-Array-Loops[EB/OL].https://medium.com/dailyjs/the-pitfalls-of-async-await-in-array-loops-cf9cf713bfeb. 2020
