@@ -506,7 +506,12 @@ await cloud.openapi.subscribeMessage.send({
 ![图5-1 微信扫一扫预览小程序](https://cdn.blog.makergyt.com/mini/assets/poster-H.png)
 
 ### 5.4 开源
-开源地址：整理中，将会上传于[github.com/makergyt](https://github.com/makergyt),敬请关注
+开源地址：整理中，将会上传于[github.com/makergyt](https://github.com/makergyt),敬请关注。现将部分组件开源:
+- 弹出式导航 => [https://github.com/MakerGYT/mini-menu](https://github.com/MakerGYT/mini-menu)
+- 取色器 => [https://github.com/MakerGYT/mini-color-picker](https://github.com/MakerGYT/mini-color-picker)
+- 分享海报 => [https://github.com/MakerGYT/share](https://github.com/MakerGYT/share)
+- 提示添加到小程序 => [https://github.com/MakerGYT/mini-add-tips](https://github.com/MakerGYT/mini-add-tips)
+- latex、mathjax解析通用方案 => [https://github.com/MakerGYT/markdown-it-latex2img](https://github.com/MakerGYT/markdown-it-latex2img)
 
 [^1]: Tencent Cloud.云开发CloudBase文档[EB/OL].https://cloud.tencent.com/document/product/876/41136. 2020
 [^2]: Tory Walker.The-Pitfalls-of-Async-Await-in-Array-Loops[EB/OL].https://medium.com/dailyjs/the-pitfalls-of-async-await-in-array-loops-cf9cf713bfeb. 2020
