@@ -5,7 +5,7 @@ tags:
   - 博客
   - 微信小程序
   - 建站
-description: 云开发提供的支持最大意义在于弱化后端和运维在开发中所占的时间成本和角色，按需提供可靠服务，但并不能理解为某些项目所谓的“不依赖任何后端服务”、“无需服务器、域名”。结合git自身commit附带的变更信息，可以实现对资源的增删改查。这样，博客构建更新无感进行，也无需实现管理后台和编辑器功能，借助WebHook同步多端，可以专注于内容沉淀。而git天生支持协同编辑，从而也可以拓展至团队博客。
+description: 云开发的出现带来了极大便捷，但并不能理解为某些项目所标榜的“不依赖任何后端服务”、“无需服务器、域名”，其提供支持最大意义在于弱化后端和运维在开发中所占的时间成本和角色，按需提供可靠服务。结合git自身commit附带的变更信息，可以实现对资源的增删改查。这样，博客构建更新无感进行，也无需实现管理后台和编辑器功能，借助WebHook同步多端，可以专注于内容沉淀。而git天生支持协同编辑，从而也可以拓展至团队博客。
 categories: 项目
 cover: https://cdn.blog.makergyt.com/images/project-blog_basied_on_git-cover.png
 language: zh-CN
@@ -42,7 +42,7 @@ language: zh-CN
 
 #### 3.1.3 界面设计
 由于是内容类应用，需要格外注意视觉规范，以使用户获取较好的阅读体验。以下规范参考了"WEDESIGN"和"Ant Design",根据实际需要进行了修改和补充。
-对于文本有如下设定:
+对于文本要求：字间距0.05em，行间距1.8(此处为行高)，段间距，对字体有如下设定:
 | 字号pt　| 像素px |颜色| 用途|
 |:--:|:--:|:--:|--|
 | 17 |17|#000000| 页面内首要层级信息,标题 |
@@ -66,7 +66,7 @@ language: zh-CN
 主要通过使用rpx作为尺寸单位，由于基本不涉及列表项目，不考虑自适应布局变换，仅做不同屏幕下元素呈现比例保持一致，以iphone-6作为标准，考虑如下方面
 - 图片横向铺满屏幕时按比例填充；
 - 主体文本字体大小基本固定，不做适应；
-- 由于已经有静态站点，暂不考虑PC端适配；
+- 由于已经有静态站点，且PC端基础库尚未支持到2.11.0，暂不考虑PC端适配；
 - 内容间隙适应。
 
 对于iphone-x类异形屏，重点考虑操作菜单(如贴顶、贴底、悬浮)的安全区域问题，可通过CSS中`env(safe-area-inset-bottom)`设定。
@@ -144,7 +144,7 @@ if ('refs/heads/' + branch === ref) {
   }
 }
 ```
-要建立数据库文件与git仓库文件的关联，由于每次commit的文件没有唯一id信息,可以通过文件名来建立联系，将文件名作为slug字段(主键)
+要建立数据库文件与git仓库文件的关联，由于每次commit的文件没有唯一id信息,可以通过文件名来建立联系，将文件名作为slug字段(主键)，应注意文件名不得含有空格，必须使用半角字符[^1]，多个单词使用`_`分隔。
 ```js
 let slug = filePath.match(new RegExp(dirPrefix + "([\\s\\S]+)\\.md"))[1];
 ```
@@ -187,9 +187,9 @@ const data = tocObj(str, { min_depth:2, max_depth: 4 });
 #### 3.2.3 数据同步
 在小程序的文档中，触发云函数可以通过http api（invokeCloudFunction）的方式。但是invokeCloudFunction需要关键的access_token，需要两小时内刷新获取，webhook无法提前获知。考虑设置中控服务器统一获取和刷新 access_token，webhook首先向中控服务器发起请求，再向云函数请求，但这样显然是不可能的，因其只能push一个地址一次，没有上下文。其间再加一个中间函数，那么这个中间函数又放在哪里，如何请求...(同样需要access_token)
 
-这时，在[腾讯云－云开发控制台](https://url.cn/ZHExHUCa)，发现可以直接通过"云接入HTTP触发方式"触发云函数，这样就可以直接该地址作为WebHook的Url。但需要关注业务和资源安全[^1],上文在处理webhook push事件时已经做了安全检验，可以再将Coding的request domain加入到WEB安全域名列表中。
+这时，在[腾讯云－云开发控制台](https://url.cn/ZHExHUCa)，发现可以直接通过"云接入HTTP触发方式"触发云函数，这样就可以直接该地址作为WebHook的Url。但需要关注业务和资源安全[^2],上文在处理webhook push事件时已经做了安全检验，可以再将Coding的request domain加入到WEB安全域名列表中。
 
-获取到文章信息和内容后就可以同步到云数据库的相应集合中,这里循环中使用`async/await`遍历,为了在每个调用解析之前保持循环,只使用`for...of`进行异步[^2]。
+获取到文章信息和内容后就可以同步到云数据库的相应集合中,这里循环中使用`async/await`遍历,为了在每个调用解析之前保持循环,只使用`for...of`进行异步[^3]。
 ```js
 for (const file of added) {
   await db.collection('sync_posts').add({
@@ -221,7 +221,7 @@ for (const file of removed) {
 |Parser| 表格溢出 |
 *Tips*: 注意到腾讯Omi团队开发的小程序代码高亮和markdown渲染组件[Comi](https://github.com/Tencent/omi/tree/master/packages/comi/mp/comi)，实际上采用模板引入的方式使用。考虑随后实测效果和对比渲染速度。
 
-相比之下，都会出现溢出组件边界，产生横向滚动条问题。在使用上，存在不支持解析style标签缺陷[^3]
+相比之下，都会出现溢出组件边界，产生横向滚动条问题。在使用上，存在不支持解析style标签缺陷[^4]
 
 ![图3-3 表格溢出](https://imgkr.cn-bj.ufileos.com/9781bc4f-de66-4338-a993-21cfc987b405.png?imageView2/3/h/200)
 
@@ -271,10 +271,10 @@ highlight(content, attrs) {
 
 当然，这两种都是网页客户端渲染，在小程序端天生不可用，考虑采用服务端渲染。问题有:
 - 服务端渲染如果使用外部接口，需encodeUrl(公式)，但内部`\`被转义消失，需要`\\`，replace(/\\/g,'\\')无效
-- 服务端渲染如果使用mathjax-node,其依赖项mathjax版本^2.7.2，需将所有`\`替换为`\\`,会经常性出现`SVG - Unknown character: U+C in MathJax_Main,MathJax_Size1,MathJax_AMS`, 矩阵解析错误`TeX parse error: Misplaced &`
+- 服务端渲染如果使用mathjax-node,其依赖项mathjax版本^2.7.2，需将所有`\`替换为`\\`,会经常性出现`SVG - Unknown character`与矩阵解析错误`TeX parse error: Misplaced &`
 - 如何比较精准的识别markdown中特定标记的Latex，不造成误处理。
 
-考虑在markdown解析html阶段就将其转化为`<img>`，也是很多内容平台采取的方式，较为可靠可控。这里使用[markdown-it-latex2img](https://github.com/MakerGYT/markdown-it-latex2img)插件，在书写上遵循一定的规范[^4]以避免误处理。
+考虑在markdown解析html阶段就将其转化为`<img>`，也是很多内容平台采取的方式，较为可靠可控。这里使用[markdown-it-latex2img](https://github.com/MakerGYT/markdown-it-latex2img)插件，在书写上遵循一定的规范[^5]以避免误处理。
 ```js
 const md = require('markdown-it')({
   html: true,// Enable HTML tags in source
@@ -358,7 +358,7 @@ user_info = [
 
 实际上微信小程序最大的特点就是可以方便地获取微信提供的用户身份标识，快速建立小程序内的用户体系，但上述情形均没有妥善处理用户登录这一基本策略。
 
-基于"来去自如"[^5]的原则,可以游客身份浏览，但在涉及一些需要采集和输入用户信息、或保存用户记录的功能时会要求用户跳至登录页授权获取信息，通过云函数将其与上下文中的openid保存到数据库，同时在回调中将用户标识生成自定义登录态缓存到本地，如果用户点击退出会将其置空。
+基于"来去自如"[^6]的原则,可以游客身份浏览，但在涉及一些需要采集和输入用户信息、或保存用户记录的功能时会要求用户跳至登录页授权获取信息，通过云函数将其与上下文中的openid保存到数据库，同时在回调中将用户标识生成自定义登录态缓存到本地，如果用户点击退出会将其置空。
 ```js
 // cloudfunction/login
 const openid = wxContext.OPENID
@@ -513,8 +513,9 @@ await cloud.openapi.subscribeMessage.send({
 - 提示添加到小程序 => [https://github.com/MakerGYT/mini-add-tips](https://github.com/MakerGYT/mini-add-tips)
 - latex、mathjax解析通用方案 => [https://github.com/MakerGYT/markdown-it-latex2img](https://github.com/MakerGYT/markdown-it-latex2img)
 
-[^1]: Tencent Cloud.云开发CloudBase文档[EB/OL].https://cloud.tencent.com/document/product/876/41136. 2020
-[^2]: Tory Walker.The-Pitfalls-of-Async-Await-in-Array-Loops[EB/OL].https://medium.com/dailyjs/the-pitfalls-of-async-await-in-array-loops-cf9cf713bfeb. 2020
-[^3]: 金煜峰.小程序富文本能力的深入研究与应用[EB/OL].https://developers.weixin.qq.com/community/develop/article/doc/0006e05c1e8dd80b78a8d49f356413. 2019
-[^4]: MakerGYT.排版规约[EB/OL].https://blog.makergyt.com/typesetting/. 2020
-[^5]: Tencent.微信小程序设计指南[EB/OL]https://developers.weixin.qq.com/miniprogram/design/. 2019
+[^1]: 阮一峰.中文技术文档规范[EB/OL].https://github.com/ruanyf/document-style-guide. 2019
+[^2]: Tencent Cloud.云开发CloudBase文档[EB/OL].https://cloud.tencent.com/document/product/876/41136. 2020
+[^3]: Tory Walker.The-Pitfalls-of-Async-Await-in-Array-Loops[EB/OL].https://medium.com/dailyjs/the-pitfalls-of-async-await-in-array-loops-cf9cf713bfeb. 2020
+[^4]: 金煜峰.小程序富文本能力的深入研究与应用[EB/OL].https://developers.weixin.qq.com/community/develop/article/doc/0006e05c1e8dd80b78a8d49f356413. 2019
+[^5]: MakerGYT.排版规约[EB/OL].https://blog.makergyt.com/typesetting/. 2020
+[^6]: Tencent.微信小程序设计指南[EB/OL]https://developers.weixin.qq.com/miniprogram/design/. 2019

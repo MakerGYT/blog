@@ -163,7 +163,7 @@ h3.post-description-meta.en {
   }
   // 正文
   p {
-    margin-bottom: 0.5em; //段前段后0.5
+    margin-bottom: 1em; //段前段后0.5
   }
   .MJX-TEX {
     font-size: $font-size-10-5;
@@ -172,16 +172,6 @@ h3.post-description-meta.en {
     margin: 0px auto; //居中
     font: normal $font-size-10-5 $font-family-posts; //图名称五号宋体
   }
-  //列表
-  ol{
-    padding-left: 0;
-    list-style-type: none;
-    counter-reset:sectioncounter;
-    li::before {
-      content:counter(sectioncounter) ") "; 
-      counter-increment:sectioncounter;
-    }
-  }
   .aplayer-list {
     li::before{
       content: none; //修复
@@ -189,7 +179,7 @@ h3.post-description-meta.en {
   }
   //表格
   .table-container {
-    margin: 1.5em auto;  
+    margin-bottom: 1em;
   }
   table {
     margin: 0 auto;
@@ -226,6 +216,8 @@ h3.post-description-meta.en {
     overflow-x:auto;
     ol {
       padding-left: 0;
+      list-style-type: none;
+      counter-reset:sectioncounter;
       li::before {
         content:"[" counter(sectioncounter) "] "; 
         counter-increment:sectioncounter;

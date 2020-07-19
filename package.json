@@ -7,7 +7,9 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "lint": "lint-md source/_posts/",
+    "lint:fn": "npx fnlint -c .fnlint.json"
   },
   "hexo": {
     "version": "4.2.1"
@@ -29,5 +31,9 @@
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-tag-book-douban": "^0.2.2",
     "markdown-it-latex2img": "^0.0.6"
+  },
+  "devDependencies": {
+    "fnlint": "^1.5.1",
+    "lint-md-cli": "^0.1.2"
   }
 }

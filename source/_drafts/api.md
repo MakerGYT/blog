@@ -1,6 +1,8 @@
 ## 网址安全
 - https://bsb.baidu.com/diagnosis
 - https://www.showapi.com/apiGateway/onlineTest?apiCode=1509&pointCode=1
+- https://apis.eps.gs/qqurl.php?url=henhenlu.com
+- https://api.uomg.com/api/check.qq?domain=henhenlu.com
 
 ## IP地理位置
 - http://ip.taobao.com/service/getIpInfo.php?ip= 不支持https 卡慢
