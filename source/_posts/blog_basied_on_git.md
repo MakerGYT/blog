@@ -35,7 +35,7 @@ language: zh-CN
 | 代码托管 | [Coding](https://url.cn/fXmq4Rb9) | github api访问较大概率慢且不稳定 |
 | 云开发 | [腾讯云TCB](https://url.cn/HqLHX3x6) | 含小程序云开发服务 |
 | 持续集成 | Coding CI | 使用Jenkinsfile定义pipeline |
-| 静态托管 | [腾讯云COS](https://url.cn/lhzrIgeX) | 也可使用[阿里云OSS](https://www.aliyun.com/product/oss?source=5176.11533457&userCode=89lfnf3q&type=copy),或直接使用云开发提供的[静态网站托管](https://cloud.tencent.com/product/wh),使用[对象存储](https://url.cn/8SUwOgsd)配合[内容分发加速]()。|
+| 静态托管 | [腾讯云COS](https://url.cn/lhzrIgeX) | 也可使用[阿里云OSS](https://www.aliyun.com/product/oss?source=5176.11533457&userCode=89lfnf3q&type=copy),或直接使用云开发提供的[静态网站托管](https://cloud.tencent.com/product/wh),使用[对象存储](https://url.cn/8SUwOgsd)配合[内容分发加速](https://url.cn/paD7E8lb)。|
 | Markdown解析 | markdown-it | 也可使用markdjs,但markdown-it支持拓展插件 |
 | 富文本渲染 | [parser](https://jin-yufeng.github.io/Parser/#/) | 比原生rich-text功能丰富且效果稳定 | 
 
@@ -487,21 +487,9 @@ await cloud.openapi.subscribeMessage.send({
 - 云控制台数据库管理页中数组更新操作符addToSet无效,对象元素传入后[不稳定](https://developers.weixin.qq.com/community/develop/doc/0006e2966e886042445a5e6c456c00)，或生效或不生效
 
 ### 5.3 效果
-静态站点: [blog.makergyt.com](https://blog.makergyt.com) 
-<div>
-<a href="https://makergyt.coding.net/p/blog/ci/job"><img style="display:inline" src="https://makergyt.coding.net/badges/blog/job/187329/master/build.svg"></a>
-<a href="https://hexo.io"><img style="display:inline;margin-left:5px;" src="https://img.shields.io/badge/Generator-Hexo-0e83cd?&logo=hexo"></a>
-</div>
-
-备用链接: [github.blog.makergyt.com](https://github.blog.makergyt.com)
-<div>
-<a href="https://github.blog.makergyt.com"><img style="display:inline" src="https://badgen.net/github/status/makergyt/blog/gh-pages"></a>
-<a href="https://travis-ci.com/MakerGYT/blog"><img style="display:inline;margin-left:5px;" src="https://img.shields.io/travis/com/makergyt/blog?logo=travis"></a>
-</div>
-
-语雀:[《激扬文字》](https://www.yuque.com/books/share/4b51224a-b8b0-4191-8403-d28563f6a6ed?#) 
-小程序：「源创智造」,其中接入了一些工具
-<div><img style="display:inline" src="https://img.shields.io/badge/basicLib-%3E=2.11.0-brightgreen?logo=wechat"></div>
+- 静态站点: [blog.makergyt.com](https://blog.makergyt.com) 备用链接: [github.blog.makergyt.com](https://github.blog.makergyt.com)
+- 语雀:[「激扬文字」](https://www.yuque.com/books/share/4b51224a-b8b0-4191-8403-d28563f6a6ed?#) 
+- 小程序：「源创智造」,其中接入了一些工具
 
 ![图5-1 微信扫一扫预览小程序](https://cdn.blog.makergyt.com/mini/assets/poster-H.png)
 

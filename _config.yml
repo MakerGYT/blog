@@ -104,7 +104,3 @@ deploy:
 
 aplayer:
   meting: true
-
-dbook:
-  enable: true
-  proxy: https://douban-api.now.sh

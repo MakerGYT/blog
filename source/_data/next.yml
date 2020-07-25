@@ -1,8 +1,3 @@
-# ---------------------------------------------------------------
-# Hexo Configuration
-# See: Docs: https://hexo.io/docs/configuration.html
-# ---------------------------------------------------------------
-
 # Site
 title: MakerGYT
 keywords: blog,makergyt
@@ -159,10 +154,6 @@ baidu_site_verification: pXKOCxjrBp38hj14
 baidu_push: true
 
 # Third Party
-math:
-  mathjax:
-    enable: false
-    mhchem: true
 fancybox: true
 lazyload: true
 
@@ -185,10 +176,6 @@ note:
 # Animation
 motion:
   enable: false
-# Vendors:
-vendors:
-  # 微信内字体无效
-  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # customize
 music:

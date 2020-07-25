@@ -24,3 +24,10 @@
 - https://cdn.nlark.com/yuque/__latex
 - https://math.jianshu.com/math?formula=
 - http://latex.codecogs.com/gif.latex
+
+## 在线字体
+- https://fonts.lug.ustc.edu.cn
+- https://fonts.loli.net
+- https://fonts.font.im
+- https://fonts.gstatic.font.im
+- fonts.useso.com

@@ -9,8 +9,4 @@ comments: false
 
 {% meting "2526283537" "netease" "playlist" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#027AFF"%}
 
-## 最近在读
-{% dbook 9787530214657 %}
-
-{% dbook 9787101051469 %}
 ☞ [About config of this site](./config.html)
