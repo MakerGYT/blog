@@ -299,18 +299,13 @@ $$
 <span style="display:block;text-align:right;color:#ff6a00;">阿里橙居右</span>
 <span style="display:block;text-align:center;color:#019fe8;">支付宝蓝居中</span>
 
-### 10.2 不解析注释(不可见)
-```
-[tags]: <> (['node','js','java',])
-
-[description]: # (This may be the most platform independent comment)
-```
 ## 11 规范检查
 在文章内容定稿后，同前端开发中的`eslint`，应该进行编写规范检查，Markdown 常用代码规范检查工具如下[^4]：
 |工具	|用途	|lint命令	|支持IDE|
 |:--:|:--:|:--:|:--:|
 |remark	|Markdown 通用规范|	remark -f docs/	|VSCode|
 |lint-md|Markdown 中文规范|lint-md docs/|VSCode|
+
 一般以中文为主，故使用[lint-md](https://github.com/lint-md/lint-md)，其中涵盖了中英文混写的规范。但注意其检查结果仅做参考，应以实际效果为先。
 
 [^1]: Ant design.设计模式[EB/OL].https://ant.design/docs/spec/introduce-cn .2020

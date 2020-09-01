@@ -1,5 +1,5 @@
 ---
-title: 基于git构建markdown文档(含站点与小程序)
+title: 基于云开发构建markdown，git同步hexo静态站点与小程序
 date: 2020-07-04 22:08:16
 tags:
   - 博客
