@@ -150,8 +150,7 @@ sudo apt-get install privoxy
 # 配置privoxy
 sudo chmod 666 /etc/privoxy/config # 只读改可写
 vim /etc/privoxy/config
-# 4.1节取消注释`listen-address localhost:8118`
-# 5.2节末尾加入 `forward-socks5 / 127.0.0.1:1080 .`
+# 5.2节末尾(line 1364)加入 `forward-socks5 / 127.0.0.1:1080 .`
 # 重启privoxy服务
 sudo /etc/init.d/privoxy restart
 #开机自启privoxy服务
