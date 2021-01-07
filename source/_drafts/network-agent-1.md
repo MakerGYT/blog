@@ -133,6 +133,14 @@ sudo pip install shadowsocks
 ```sh
 sudo sslocal -c /etc/shadowsocks.json 
 ```
+异常
+
+ `AttributeError: /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1: undefined symbol: EVP_CIPHER_CTX_cleanup`
+```sh
+vim /home/user/.local/lib/python3.6/site-packages/shadowsocks/crypto/openssl.py
+:%s/cleanup/reset/
+:x
+```
 上述命令执行后，此终端不能关闭，可通过`nohup/setsid`实现后台运行。
 #### 3.2.1.2 privoxy配置
 privoxy实现将sock5代理映射为http代理
@@ -188,9 +196,5 @@ wget google.com
 
 # Reference
 <small>
-[1] Geyh.Ubuntu系统SS搭建配置[EB/OL].http://blog.51cto.com/13589319/2068374. 2018.
-
-[2] EXP.Centos + Shadowsocks客户端 + Privoxy实现外网访问[EB/OL].http://exp-blog.com/2018/07/04/pid-1591. 2018.
-
-[3] 苏黎世1995.ubuntu18.0.4搭建ss服务器步骤及问题[EB/OL].https://blog.51cto.com/13544424/2314396. 2018
+[1] kionf.ShadowSocks启动报错[EB/OL].https://kionf.com/2016/12/15/errornote-ss/. 2016
 </small>
